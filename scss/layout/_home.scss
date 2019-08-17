@@ -1,0 +1,11 @@
+.home {
+    width: 70rem;
+    height: 30rem;
+    background: rgba(120, 187, 205, .1);
+    position: relative;
+    padding: 3rem 5rem;
+
+    &__text > p {
+        text-align: justify;
+    }
+}

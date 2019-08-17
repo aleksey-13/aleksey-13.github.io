@@ -1,0 +1,36 @@
+.social {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 16rem 3rem 0 3rem;
+
+    &__nav {
+        padding: 2rem;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+    &:focus {
+        -moz-outline-radius: 2rem; 
+        
+    }
+    }
+
+    &__icon {
+        height: 2rem;
+        fill: $color-white;
+
+        &:hover, 
+        &:active {
+            transform: scale(1.2);
+        }
+    }
+}

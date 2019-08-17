@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    //This defines what 1rem 
+    font-size: 62.5%; //or 62.5% ((10(px)/16(px)) * 100)
+}
+
+body {
+    box-sizing: border-box;
+}
