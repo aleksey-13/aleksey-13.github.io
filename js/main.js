@@ -1,46 +1,57 @@
-/*
-(function() {
-    const square = document.querySelectorAll('.square');
-    const containers = document.querySelectorAll('.containers');
+(function () {
+    const DOM = {
+        navLabel: '.navigation__item',
+        sectionLabel: '.section',
+        navLabelActive: 'navigation__item--active',
+        hideClass: 'hideContainer',
+        showClass: 'showContainer'
+    }
+
+    const btns = document.querySelectorAll(DOM.navLabel);
+    const sections = document.querySelectorAll(DOM.sectionLabel);
 
     let dataBtns = 0;
     let dataContainers = 0;
     let isActive = 0;
 
-    square.forEach(element => {
+    btns.forEach(element => {
         element.dataset.data = dataBtns++;
-        element.onclick = changeContainer;
+        element.onclick = nextContainer;
     });
 
-    containers.forEach(element => {
+    sections.forEach(element => {
         element.dataset.data = dataContainers++;
         element.style.visibility = 'hidden';
         element.style.opacity = 0;
+        element.style.display = 'none';
     });
 
-    containers[isActive].style.visibility = 'visible';
-    containers[isActive].style.opacity = 1;
+    sections[isActive].style.visibility = 'visible';
+    sections[isActive].style.opacity = 1;
+    sections[isActive].style.display = 'block';
 
-    function changeContainer() {
+    function nextContainer() {
         const data = this.dataset.data;
 
         if (data === isActive) {
             return 0;
         }
 
-        containers[isActive].classList.remove('showContainer');
-        containers[isActive].classList.add('hideContainer');
+        btns[isActive].classList.toggle(DOM.navLabelActive);
+        btns[data].classList.toggle(DOM.navLabelActive);
 
-        containers[data].classList.remove('hideContainer');
-        containers[data].classList.add('showContainer');
+        sections[isActive].classList.toggle(DOM.hideClass);
+        sections[data].classList.toggle(DOM.showClass);
 
-        containers[isActive].style.visibility = 'hidden';
-        containers[data].style.visibility = 'visible';
+        sections[isActive].style.visibility = 'hidden';
+        sections[data].style.visibility = 'visible';
 
-        containers[isActive].style.opacity = 0;
-        containers[data].style.opacity = 1;
+        sections[isActive].style.opacity = 0;
+        sections[data].style.opacity = 1;
 
-        isActive = containers[data].dataset.data; 
+        sections[isActive].style.display = 'none';
+        sections[data].style.display = 'block';
+
+        isActive = btns[data].dataset.data;
     }
 })();
-*/

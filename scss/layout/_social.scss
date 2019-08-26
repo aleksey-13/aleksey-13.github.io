@@ -12,25 +12,32 @@
     &__list {
         display: flex;
         justify-content: space-around;
-        
+
         list-style: none;
     }
 
     &__link {
         text-decoration: none;
-    &:focus {
-        -moz-outline-radius: 2rem; 
-        
-    }
+
+        &:focus {
+            -moz-outline-radius: 2rem;
+
+        }
     }
 
     &__icon {
+        width: 2rem;
         height: 2rem;
         fill: $color-white;
+        transition: transform .2s;
 
-        &:hover, 
+        &>embed {
+            fill: aqua;
+        }
+
+        &:hover,
         &:active {
-            transform: scale(1.2);
+            transform: scale(1.5);
         }
     }
 }
