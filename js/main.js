@@ -12,7 +12,7 @@
 
     let dataBtns = 0;
     let dataContainers = 0;
-    let isActive = 0;
+    let isActive = 2;
 
     btns.forEach(element => {
         element.dataset.data = dataBtns++;
@@ -54,4 +54,10 @@
 
         isActive = btns[data].dataset.data;
     }
+    
+    // Out age on display UI
+    const yearOfBirth = 1996;
+    const age = new Date().getFullYear() - yearOfBirth;
+    
+    document.querySelector('#age').textContent = age;    
 })();

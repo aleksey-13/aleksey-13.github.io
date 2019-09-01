@@ -5,6 +5,8 @@
     position: relative;
 }
 
-.hideContainer { transition: all .5s ease; }
+.hideContainer { 
+    transition: all .5s ease; 
+}
 
 .showContainer { transition: all 1s ease .3s; }

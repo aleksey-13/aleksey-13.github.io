@@ -1,129 +1,6 @@
-/*
-.skills-box {
-    position: relative;
-    width: 100%;
-    padding: 0rem 7rem 0;
-    
-    .timeline {
-        &__container {
-            width: 100%;
-            position: relative;
-            display: flex;
-            
-            &:nth-child(2n) {
-                flex-direction: row-reverse;
-            }
-
-            &:after {
-                content: '';
-                clear: both;
-                display: table;
-            }
-
-            &:nth-child(odd) .timeline--text:before {
-                right: -20px;
-                border-left: 20px solid #222;
-            }
-
-            &:nth-child(even) .timeline--text:before {
-                left: -20px;
-                border-right: 20px solid #222;
-            }
-
-            &:nth-child(odd) .timeline--text {
-                margin-right: 10rem;
-            }
-
-            &:nth-child(even) .timeline--text {
-                margin-left: 10rem;
-            }
-        }
-
-        &--text {
-            padding: 1.5rem;
-            background: #222;
-            transition: all 0.3s ease;
-            position: relative;
-            width: 45%;
-            opacity: .7;
-            
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 20px;
-                border-top: 20px solid transparent;
-                border-bottom: 20px solid transparent;
-            }
-
-            &:hover {
-                opacity: 1;
-            }
-
-            &:hover+.timeline--icon-box {
-                background: $color-accent;
-            }
-        }
-
-        &--icon-box {
-            position: absolute;
-            top: 6%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 5rem;
-            height: 5rem;
-            border-radius: 5rem;
-            background: #222;
-            transition: all 0.3s ease;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .icon {
-            fill: #fff;
-            height: 3rem;
-        }
-
-        
-
-        &__date-box {
-            margin-top: 2rem;
-        }
-    }
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 8rem;
-        left: calc(50% - 1px);
-        width: 2px;
-        background: $color-accent;
-        height: 98%;
-    }
-
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: -8rem;
-        left: calc(50% - 7px);
-        border-top: 14px solid $color-accent;
-        border-right: 7px solid transparent;
-        border-left: 7px solid transparent;
-    }
-}
-*/
-
-.header-box {
-    padding: 1rem;
-    background-color:rgba($color: #bcbbbf, $alpha: .6);
-    width: 17rem;
-    border-radius: 1rem;
-}
-
 .summary-box {
     width: 85%;
-    
+
     &__list {
         margin-left: 4rem;
     }
@@ -180,7 +57,7 @@
         padding: 1rem;
         margin-right: 1rem;
 
-        & > svg {
+        &>svg {
             height: 6rem;
             fill: $color-accent-2;
         }
@@ -191,38 +68,3 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

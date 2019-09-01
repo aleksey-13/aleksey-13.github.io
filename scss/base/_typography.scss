@@ -61,14 +61,15 @@ body {
     display: block;
 }
 
-.summary-paragraph--main {
+.paragraph--main {
     color: $color-blue-light-1;
     font-size: 2rem;
     font-weight: 700;
 }
 
-.summary-link {
+.link {
     color: $color-accent;
     font-family: 'raleway_bold';
     font-size: 2rem;
+    //text-transform: uppercase;
 }
