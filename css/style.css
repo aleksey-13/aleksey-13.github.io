@@ -90,6 +90,27 @@ body {
   font-size: 2rem;
 }
 
+.p-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #cc7878;
+  font-weight: 800;
+  border: 1px solid #cc7878;
+  border-radius: 10%;
+  padding: 1rem;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.p-link:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.p-link:hover {
+  color: #fff;
+  background-color: #cc7878;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -233,6 +254,14 @@ body {
   width: 65%;
   text-align: justify;
   padding: 0 4rem 0 2rem;
+}
+
+.portfolio__description > p:first-child {
+  text-transform: uppercase;
+}
+
+.portfolio__links {
+  text-align: right;
 }
 
 .summary-box {
