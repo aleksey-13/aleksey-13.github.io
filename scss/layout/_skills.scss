@@ -51,6 +51,10 @@
         border-radius: 1rem;
         padding: 1rem;
         margin-bottom: 2rem;
+
+        &:hover {
+            background-color: rgba($color: $color-white, $alpha: 1);
+        }
     }
 
     &--icon {

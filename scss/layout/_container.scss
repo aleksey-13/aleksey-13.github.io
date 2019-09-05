@@ -1,8 +1,51 @@
-.container {
+.side-pannel {
     width: 30rem;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     background: linear-gradient($color-blue-light-1, $color-blue-light-2);
+    z-index: 110;
+
+    @include animSidePanl;
+
+    &__toggle {
+        width: 4rem;
+        height: 4rem;
+        background: #fff;
+        border-radius: 0 50% 50% 0;
+        position: absolute;
+        top: 50%;
+        right: -4rem;
+        transform: translateY(-50%);
+        display: none;
+
+        &--svg {
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            transform: translateX(50%);
+            width: 2rem;
+            height: 2rem;
+            fill: #cecece;
+        }
+    }
+
+    @media (max-width: 60rem) {
+        left: -30rem;
+
+
+        &__toggle {
+            display: block
+        }
+    }
+}
+
+.isActive-pannel {
+    left: 0;
+}
+
+.isActive-toggle {
+    transform: rotate(180deg);
+    left: .7rem;
 }

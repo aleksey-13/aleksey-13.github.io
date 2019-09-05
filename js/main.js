@@ -1,37 +1,40 @@
-(function () {
+(() => {
     const DOM = {
-        navLabel: '.navigation__item',
-        sectionLabel: '.section',
+        navLabel: 'navigation__item',
+        sectionLabel: 'section',
         navLabelActive: 'navigation__item--active',
         hideClass: 'hideContainer',
-        showClass: 'showContainer'
+        showClass: 'showContainer',
+        age: 'age',
+        sidePannel: 'side-pannel',
+        toggleSide: 'side-pannel__toggle',
+        sidePannelSvg: 'side-pannel__toggle--svg',
+        bodyMask: 'panel-body-mask'
     }
 
-    const btns = document.querySelectorAll(DOM.navLabel);
-    const sections = document.querySelectorAll(DOM.sectionLabel);
+    const btns = document.querySelectorAll(`.${DOM.navLabel}`);
+    const sections = document.querySelectorAll(`.${DOM.sectionLabel}`);
 
     let dataBtns = 0;
     let dataContainers = 0;
-    let isActive = 2;
+    let isActive = 0;
 
     btns.forEach(element => {
-        element.dataset.data = dataBtns++;
+        element.dataset.goto = dataBtns++;
         element.onclick = nextContainer;
     });
 
     sections.forEach(element => {
-        element.dataset.data = dataContainers++;
-        element.style.visibility = 'hidden';
+        element.dataset.goto = dataContainers++;
         element.style.opacity = 0;
         element.style.display = 'none';
     });
 
-    sections[isActive].style.visibility = 'visible';
     sections[isActive].style.opacity = 1;
     sections[isActive].style.display = 'block';
 
     function nextContainer() {
-        const data = this.dataset.data;
+        const data = parseInt(this.dataset.goto);
 
         if (data === isActive) {
             return 0;
@@ -43,21 +46,27 @@
         sections[isActive].classList.toggle(DOM.hideClass);
         sections[data].classList.toggle(DOM.showClass);
 
-        sections[isActive].style.visibility = 'hidden';
-        sections[data].style.visibility = 'visible';
-
         sections[isActive].style.opacity = 0;
-        sections[data].style.opacity = 1;
 
-        sections[isActive].style.display = 'none';
-        sections[data].style.display = 'block';
-
-        isActive = btns[data].dataset.data;
+       setTimeout(() => {
+            sections[isActive].style.display = 'none';
+                setTimeout(() => {
+                    isActive = data;
+                    sections[data].style.display = 'block'
+                    setTimeout(() => sections[data].style.opacity = 1, 100);
+                }, 100);
+        }, 500);
     }
+
+    document.querySelector(`.${DOM.toggleSide}`).addEventListener('click', () => {
+        document.querySelector(`.${DOM.sidePannel}`).classList.toggle('isActive-pannel');
+        document.querySelector(`.${DOM.sidePannelSvg}`).classList.toggle('isActive-toggle');
+        document.querySelector(`.${DOM.bodyMask}`).classList.toggle('active-mask');
+    });
     
     // Out age on display UI
     const yearOfBirth = 1996;
     const age = new Date().getFullYear() - yearOfBirth;
     
-    document.querySelector('#age').textContent = age;    
+    document.querySelector(`#${DOM.age}`).textContent = age;    
 })();

@@ -3,14 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewpotr" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=2.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preload" href="assets/fonts/RalewayBold/RalewayBold.woff" as="font" type="font/woff" crossorigin="">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <div class="container">
+    <div class="panel-body-mask"></div>
+    <div class="side-pannel">
+        <a class="side-pannel__toggle">
+            <svg class="side-pannel__toggle--svg">
+                <use href="img/icons.svg#side-row"></use>
+            </svg>
+        </a>
         <header class="header">
             <div class="header__photo-box">
                 <img src="img/my_photo_bw.jpg" alt="photo" class="header__photo">
@@ -106,7 +114,8 @@
                                 Алексей Мельник
                             </span>
                             <span class="heading-secondary--sub">
-                                Веб разработчик <span class="heading-secondary--marker">&#8226;</span> <span id="age">22</span> года
+                                Веб разработчик <span class="heading-secondary--marker">&#8226;</span> <span
+                                    id="age">22</span> года
                             </span>
                         </h2>
 
@@ -556,79 +565,98 @@
 
                 <ul class="work-list">
                     <li class="work-list__item">
-                <div class="portfolio">
-                    <figure class="portfolio__shape">
-                        <img src="img/miami.jpg" alt="Miami landing" class="portfolio__img">
-                        <figcaption class="portfolio__caption">html, css, jquery</figcaption>
-                    </figure>
+                        <div class="portfolio">
+                            <figure class="portfolio__shape">
+                                <img src="img/miami.jpg" alt="Miami landing" class="portfolio__img">
+                                <figcaption class="portfolio__caption">html, css, jquery</figcaption>
+                            </figure>
 
-                    <div class="portfolio__description">
-                        <p class="paragraph--main">Miami</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti asperiores explicabo,
-                            ipsam adipisci eius sint, aperiam quo a sunt reiciendis amet distinctio tempora non
-                            veritatis ad! Veniam, quasi sapiente!</p>
-                    </div>
-                </div>
-            </li>
-            <li class="work-list__item">
-                <div class="portfolio">
-                    <figure class="portfolio__shape">
-                        <img src="img/corporate.jpg" alt="Corporate landing" class="portfolio__img">
-                        <figcaption class="portfolio__caption">html, css, jquery</figcaption>
-                    </figure>
+                            <div class="portfolio__description">
+                                <p class="paragraph--main">Miami</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti asperiores
+                                    explicabo,
+                                    ipsam adipisci eius sint, aperiam quo a sunt reiciendis amet distinctio tempora non
+                                    veritatis ad! Veniam, quasi sapiente!</p>
 
-                    <div class="portfolio__description">
-                        <p class="paragraph--main">Corporate</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti asperiores explicabo,
-                            ipsam adipisci eius sint, aperiam quo a sunt reiciendis amet distinctio tempora non
-                            veritatis ad! Veniam, quasi sapiente!</p>
-                    </div>
-                </div>
-            </li>
-
-            <li class="work-list__item">
-                <div class="portfolio">
-                    <figure class="portfolio__shape">
-                        <img src="img/kappe.jpg" alt="Kappe theme" class="portfolio__img">
-                        <figcaption class="portfolio__caption">HTML, CSS, JQuery</figcaption>
-                    </figure>
-
-                    <div class="portfolio__description">
-                        <p class="paragraph--main">Kappe</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti asperiores explicabo,
-                            ipsam adipisci eius sint, aperiam quo a sunt reiciendis amet distinctio tempora non
-                            veritatis ad! Veniam, quasi sapiente!</p>
-                            
-                        <div class="portfolio__links">
-                            <a href="#" class="p-link">view</a>
-                            <a href="#" class="p-link">code</a>
+                                <div class="portfolio__links">
+                                    <a href="#" class="p-link">view</a>
+                                    <a href="#" class="p-link">code</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </li>
+                    </li>
+                    <li class="work-list__item">
+                        <div class="portfolio">
+                            <figure class="portfolio__shape">
+                                <img src="img/corporate.jpg" alt="Corporate landing" class="portfolio__img">
+                                <figcaption class="portfolio__caption">html, css, jquery</figcaption>
+                            </figure>
 
-            <li class="work-list__item">
-                <div class="portfolio">
-                    <figure class="portfolio__shape">
-                        <img src="img/budget.jpg" alt="Budget" class="portfolio__img">
-                        <figcaption class="portfolio__caption">HTML, CSS, JS</figcaption>
-                    </figure>
+                            <div class="portfolio__description">
+                                <p class="paragraph--main">Corporate</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti asperiores
+                                    explicabo,
+                                    ipsam adipisci eius sint, aperiam quo a sunt reiciendis amet distinctio tempora non
+                                    veritatis ad! Veniam, quasi sapiente!</p>
 
-                    <div class="portfolio__description">
-                        <p class="paragraph--main">Budget</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti asperiores explicabo,
-                            ipsam adipisci eius sint, aperiam quo a sunt reiciendis amet distinctio tempora non
-                            veritatis ad! Veniam, quasi sapiente!</p>
-                    </div>
-                </div>
-            </li>
-            
-            
-        </ul>
+                                <div class="portfolio__links">
+                                    <a href="#" class="p-link">view</a>
+                                    <a href="#" class="p-link">code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-    
+                    <li class="work-list__item">
+                        <div class="portfolio">
+                            <figure class="portfolio__shape">
+                                <img src="img/kappe.jpg" alt="Kappe theme" class="portfolio__img">
+                                <figcaption class="portfolio__caption">HTML, CSS, JQuery</figcaption>
+                            </figure>
 
-                
+                            <div class="portfolio__description">
+                                <p class="paragraph--main">Kappe</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti asperiores
+                                    explicabo,
+                                    ipsam adipisci eius sint, aperiam quo a sunt reiciendis amet distinctio tempora non
+                                    veritatis ad! Veniam, quasi sapiente!</p>
+
+                                <div class="portfolio__links">
+                                    <a href="#" class="p-link">view</a>
+                                    <a href="#" class="p-link">code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="work-list__item">
+                        <div class="portfolio">
+                            <figure class="portfolio__shape">
+                                <img src="img/budget.jpg" alt="Budget" class="portfolio__img">
+                                <figcaption class="portfolio__caption">HTML, CSS, JS</figcaption>
+                            </figure>
+
+                            <div class="portfolio__description">
+                                <p class="paragraph--main">Budget</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corrupti asperiores
+                                    explicabo,
+                                    ipsam adipisci eius sint, aperiam quo a sunt reiciendis amet distinctio tempora non
+                                    veritatis ad! Veniam, quasi sapiente!</p>
+
+                                <div class="portfolio__links">
+                                    <a href="#" class="p-link">view</a>
+                                    <a href="#" class="p-link">code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+
+
             </div>
         </section>
 
