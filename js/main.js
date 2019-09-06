@@ -8,7 +8,7 @@
         age: 'age'
     };
 
-    if (window.innerWidth > 900) {
+    if (document.documentElement.clientWidth > 900) {
         const btns = document.querySelectorAll(`.${DOM.navLabel}`);
         const sections = document.querySelectorAll(`.${DOM.sectionLabel}`);
 

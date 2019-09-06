@@ -3,13 +3,13 @@
 
     &__item {
         margin-left: 2rem;
-        
+
         &:not(:last-child) {
             margin-bottom: 4rem;
         }
     }
 
-    @media only screen and (max-width: $bp-medium) { 
+    @media only screen and (max-width: $bp-medium) {
         padding: 0;
 
         &__item {
@@ -42,9 +42,7 @@
     &__img {
         width: 100%;
         height: 100%;
-        //transform: translateX(-4rem) scale(1.4);
         transition: all .5s;
-        //transform: skewX(12deg);
     }
 
     &__caption {
@@ -60,7 +58,6 @@
         transition: all .5s;
         backface-visibility: hidden;
         text-transform: uppercase;
-        //transform: skewX(12deg);
     }
 
     &:hover &__caption {
@@ -69,7 +66,6 @@
     }
 
     &:hover &__img {
-        //transform: translateX(-4rem) scale(1);
         filter: blur(3px) brightness(80%);
     }
 
@@ -83,7 +79,7 @@
         text-align: justify;
         padding: 0 4rem 0 2rem;
 
-        & > p:first-child {
+        &>p:first-child {
             text-transform: uppercase;
         }
     }
@@ -93,7 +89,8 @@
         text-align: right;
     }
 
-    @media only screen and (max-width: $bp-medium) { 
+    @media only print,
+    screen and (max-width: $bp-medium) {
         width: 100%;
         transform: skewX(0);
 
@@ -105,18 +102,12 @@
             transform: skewX(0);
             padding-right: 2rem;
         }
-
-        &__links {
-            //margin-top: .5rem;
-        }
     }
 
     @media only screen and (max-width: $bp-small) {
         flex-flow: column;
-        
 
         &__shape {
-            //margin-right: 0;
             width: 100%;
             margin-right: 0;
         }
@@ -125,6 +116,12 @@
             width: 100%;
             padding: 1rem;
             text-align: left;
+        }
+    }
+
+    @media only print and (max-width: $bp-medium) {
+        &__links {
+            display: none;
         }
     }
 }

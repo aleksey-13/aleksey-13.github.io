@@ -7,8 +7,6 @@
     background: linear-gradient($color-blue-light-1, $color-blue-light-2);
     z-index: 110;
 
-    @include animSidePanl;
-
     &__toggle {
         width: 4rem;
         height: 4rem;
@@ -30,30 +28,11 @@
             fill: #cecece;
         }
     }
-    
-    @media only screen and (max-width: $bp-medium){
+
+    @media only print,
+    screen and (max-width: $bp-medium) {
         display: none;
     }
-
-    /*
-    @media screen and (max-width: 64rem) {
-        left: -50%;
-        width: 50%;
-
-        &__toggle {
-            display: block;
-            width: 7rem;
-            height: 7rem;
-            right: -7rem;
-        }
-    }
-
-    @media only screen and (max-width: 32.625rem) {
-        left: -80%;
-        width: 80%;
-        padding: 0 2rem;
-    }
-    */
 }
 
 .isActive-pannel {

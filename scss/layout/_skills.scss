@@ -32,7 +32,8 @@
         width: 85%;
     }
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only print,
+    screen and (max-width: $bp-medium) {
         width: 100%;
 
         &__list {
@@ -54,6 +55,12 @@
         &--text {
             padding: 0;
             width: 100%;
+        }
+    }
+
+    @media only print and (max-width: $bp-medium) {
+        &--item {
+            border: 1px solid $color-blue-light-1;
         }
     }
 }
@@ -92,11 +99,10 @@
         }
     }
 
-    &--text {
-        
-    }
+    &--text {}
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only print,
+    screen and (max-width: $bp-medium) {
         width: 100%;
 
         &__list {
@@ -105,7 +111,7 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-        &--item { 
+        &--item {
             width: 100%;
         }
     }

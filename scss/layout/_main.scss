@@ -1,14 +1,17 @@
 .main {
     margin-left: 30rem;
-    width: 100;
-    //height: 100vh;
     position: relative;
 
-    @media only screen and (max-width: $bp-medium){
+    @media only print,
+    screen and (max-width: $bp-medium) {
         margin-left: 0;
     }
 }
 
-.hideContainer { transition: all .4s ease; }
+.hideContainer {
+    transition: all .4s ease;
+}
 
-.showContainer { transition: all .8s ease; }
+.showContainer {
+    transition: all .8s ease;
+}
