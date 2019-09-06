@@ -8,15 +8,15 @@
     flex-flow: column;
 
     &__photo-box {
-        width: 15rem;
-        height: 15rem;
+        width: 10vmax;
+        height: 10vmax;
         border-radius: 50%;
         background: #fff;
         overflow: hidden;
     }
 
     &__photo {
-        height: 15rem;
+        height: 100%;
     }
 
     &__text-box {
@@ -24,5 +24,14 @@
         text-align: center;
     }
 
+    
 
+    /*
+    @media screen and (max-width: 64rem) {
+        &__photo-box {
+            width: 20vmax;
+            height: 20vmax;
+        }
+    }
+    */
 }

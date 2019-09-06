@@ -15,14 +15,15 @@
     opacity: 1;
 }
 
-
-
 .section {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 
+    @media only screen and (max-width: $bp-medium) {
+        position: relative;
+    }
 }
 
 .wrap {
@@ -36,6 +37,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 
 .section-summary {

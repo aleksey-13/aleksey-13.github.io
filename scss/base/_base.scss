@@ -7,6 +7,15 @@
 html {
     //This defines what 1rem 
     font-size: 62.5%; //or 62.5% ((10(px)/16(px)) * 100)
+    /*
+    @media only screen and (max-width: 43.75rem) {
+        font-size: 71.42%;
+    }
+
+    @media only screen and (max-width: 32.625rem) {
+        font-size: 83.3%;
+    }
+    */
 }
 
 body {

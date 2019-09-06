@@ -30,15 +30,30 @@
             fill: #cecece;
         }
     }
+    
+    @media only screen and (max-width: $bp-medium){
+        display: none;
+    }
 
-    @media (max-width: 60rem) {
-        left: -30rem;
-
+    /*
+    @media screen and (max-width: 64rem) {
+        left: -50%;
+        width: 50%;
 
         &__toggle {
-            display: block
+            display: block;
+            width: 7rem;
+            height: 7rem;
+            right: -7rem;
         }
     }
+
+    @media only screen and (max-width: 32.625rem) {
+        left: -80%;
+        width: 80%;
+        padding: 0 2rem;
+    }
+    */
 }
 
 .isActive-pannel {

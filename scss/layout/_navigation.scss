@@ -59,6 +59,20 @@
 
 
     }
+/*
+    @media screen and (max-width: 64rem) {
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
 
-
+        &__link {
+            &:link,
+            &:visited {
+                font-size: 2.5vmax;
+            }
+        }
+    }
+*/
 }

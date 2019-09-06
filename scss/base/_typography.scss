@@ -24,6 +24,29 @@ body {
         font-weight: 300;
         letter-spacing: .7rem;
     }
+
+    /*
+    @media screen and (max-width: 64rem){
+        &--main {
+            font-size: 4vmax;
+        }
+
+        &--sub {
+            font-size: 3vmax;
+        }
+    }
+
+    @media only screen and (max-width: 32.625rem) {
+        &--main {
+            font-size: 1.8rem;
+        }
+
+        &--sub {
+            font-size: 1.5rem;
+            letter-spacing: .3rem;
+        }
+    }
+    */
 }
 
 .heading-secondary {
@@ -52,6 +75,26 @@ body {
 
     &--marker {
         margin: 0 1rem 0 1rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        &--main {
+            margin-left: 0;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 32.625rem) {
+        &--main {
+            top: -8rem;
+            line-height: 5rem;
+        }
+
+        &--sub {
+            text-align: center;
+            display: block;
+        }
     }
 }
 
@@ -82,7 +125,7 @@ body {
     border: 1px solid $color-accent;
     border-radius: 15%;
     padding: 1rem;
-    transition: all .3s ease-out; 
+    transition: all .3s ease-out;
 
     &:not(:last-child) {
         margin-right: 1rem;
@@ -90,6 +133,6 @@ body {
 
     &:hover {
         color: $color-white;
-        background-color: $color-accent; 
-    } 
+        background-color: $color-accent;
+    }
 }
