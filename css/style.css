@@ -12,6 +12,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
 }
 
 body {
@@ -201,6 +202,10 @@ body {
   }
   .work-list__item {
     margin-left: 0;
+    margin-bottom: 4rem;
+  }
+  .work-list__item:last-child {
+    margin-bottom: 20rem;
   }
 }
 
@@ -443,6 +448,7 @@ body {
 }
 
 .skills-box--icon > svg {
+  width: 6rem;
   height: 6rem;
   fill: #feb7c2;
 }
@@ -487,7 +493,7 @@ body {
   width: 30rem;
   height: 100vh;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#4d9ac8), to(#78bbcd));
   background: linear-gradient(#4d9ac8, #78bbcd);
@@ -518,20 +524,100 @@ body {
   fill: #cecece;
 }
 
-@media only print, screen and (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
+  .side-pannel {
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+@media only print and (max-width: 56.25em) {
   .side-pannel {
     display: none;
   }
 }
 
-.isActive-pannel {
-  left: 0;
+.resume {
+  width: 100%;
+  text-align: center;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+  height: 10rem;
 }
 
-.isActive-toggle {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  left: .7rem;
+.resume__link {
+  color: #fafafa;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.resume__title {
+  margin: 40px auto;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.13333s linear, -webkit-transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215);
+  transition: opacity 0.13333s linear, -webkit-transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215);
+  transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215), opacity 0.13333s linear;
+  transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215), opacity 0.13333s linear, -webkit-transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.resume__icon {
+  width: 50px;
+  height: 50px;
+  margin: 25px auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s linear, -webkit-transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215);
+  transition: opacity 0.4s linear, -webkit-transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215);
+  transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215), opacity 0.4s linear;
+  transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215), opacity 0.4s linear, -webkit-transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215);
+  -webkit-transform: translate3D(0, -4em, 0) scale(0);
+          transform: translate3D(0, -4em, 0) scale(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.resume:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.resume:hover .resume__title {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3D(0, 4em, 0) scale(0.25);
+          transform: translate3D(0, 4em, 0) scale(0.25);
+}
+
+.resume:hover .resume__icon {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3D(0, 0, 0) scale(1);
+          transform: translate3D(0, 0, 0) scale(1);
 }
 
 .social {
@@ -573,13 +659,23 @@ body {
   transition: transform .2s, -webkit-transform .2s;
 }
 
-.social__icon > embed {
-  fill: aqua;
-}
-
 .social__icon:hover, .social__icon:active {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .social {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .social__nav {
+    padding: 0;
+  }
+  .social__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 .header {
@@ -616,6 +712,12 @@ body {
 .header__text-box {
   padding-top: 2rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header {
+    display: none;
+  }
 }
 
 .navigation {
@@ -670,6 +772,12 @@ body {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation {
+    display: none;
+  }
 }
 
 .home {

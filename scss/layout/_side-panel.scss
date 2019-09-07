@@ -2,7 +2,7 @@
     width: 30rem;
     height: 100vh;
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     background: linear-gradient($color-blue-light-1, $color-blue-light-2);
     z-index: 110;
@@ -29,17 +29,83 @@
         }
     }
 
-    @media only print,
-    screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-medium) {
+        position: absolute;
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        align-items: stretch;
+    }
+
+    @media only print and (max-width: $bp-medium) {
         display: none;
     }
 }
 
-.isActive-pannel {
-    left: 0;
-}
+.resume {
+    width: 100%;
+    text-align: center;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.5s linear;
+    height: 10rem;
 
-.isActive-toggle {
-    transform: rotate(180deg);
-    left: .7rem;
+    &__link {
+        color: #fafafa;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        margin: 40px auto;
+        opacity: 1;
+        visibility: visible;
+        transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215), opacity 0.13333s linear;
+        transform: scale(1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        margin: 25px auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215), opacity 0.4s linear;
+        transform: translate3D(0, -4em, 0) scale(0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, .2);
+        transition: all 0.3s ease;
+    }
+
+    &:hover .resume__title {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3D(0, 4em, 0) scale(0.25);
+    }
+
+    &:hover .resume__icon {
+        opacity: 1;
+        visibility: visible;
+        transform: translate3D(0, 0, 0) scale(1);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        //height: 50%;
+    }
 }

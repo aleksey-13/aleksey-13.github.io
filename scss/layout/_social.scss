@@ -21,7 +21,6 @@
 
         &:focus {
             -moz-outline-radius: 2rem;
-
         }
     }
 
@@ -31,13 +30,23 @@
         fill: $color-white;
         transition: transform .2s;
 
-        &>embed {
-            fill: aqua;
-        }
-
         &:hover,
         &:active {
             transform: scale(1.5);
+        }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 0;
+        margin-bottom: 2rem;
+
+        &__nav {
+            padding: 0;
+        }
+
+        &__icon {
+            width: 2.5rem;
+            height: 2.5rem;
         }
     }
 }
