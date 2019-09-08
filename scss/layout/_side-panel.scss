@@ -32,9 +32,7 @@
     @media only screen and (max-width: $bp-medium) {
         position: absolute;
         width: 100%;
-        height: 20rem;
-        display: flex;
-        align-items: stretch;
+        height: 25rem;
     }
 
     @media only print and (max-width: $bp-medium) {
@@ -51,6 +49,8 @@
     position: relative;
     transition: background-color 0.5s linear;
     height: 10rem;
+    border: 1px solid rgba($color: $color-white, $alpha: .3);
+    margin-top: 1rem;
 
     &__link {
         color: #fafafa;
@@ -61,13 +61,13 @@
     }
 
     &__title {
-        margin: 40px auto;
         opacity: 1;
         visibility: visible;
         transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215), opacity 0.13333s linear;
         transform: scale(1);
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
         right: 0;
         text-align: center;
@@ -106,6 +106,6 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
-        //height: 50%;
+        margin-top: 0; 
     }
 }

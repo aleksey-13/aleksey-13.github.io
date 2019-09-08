@@ -3,7 +3,6 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    padding: 16rem 3rem 0 3rem;
 
     &__nav {
         padding: 2rem;
@@ -36,6 +35,42 @@
         }
     }
 
+    &__contact {
+        text-align: center;
+
+        &>a {
+            padding: .3rem 0;
+            color: $color-white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            display: inline-block;        
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: .4rem;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 2px;
+                width: 0;
+                background: rgba($color: $color-white, $alpha: .3);
+                transition: width 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215);
+            }
+
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        &--tel {
+            margin-top: .5rem;
+            letter-spacing: 2px;           
+        }
+    }
+
     @media only screen and (max-width: $bp-medium) {
         padding: 0;
         margin-bottom: 2rem;
@@ -47,6 +82,18 @@
         &__icon {
             width: 2.5rem;
             height: 2.5rem;
+        }
+
+        &__contact {
+            margin-bottom: 1.5rem;
+
+            &>a {
+                display: block;
+
+                &::after {
+                    display: none;
+                }
+            }
         }
     }
 }

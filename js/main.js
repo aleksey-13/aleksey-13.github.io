@@ -51,7 +51,7 @@
                     }, 100);
                 }, 500);
             }
-        }
+        } 
     }
 
     // Out age on display UI
