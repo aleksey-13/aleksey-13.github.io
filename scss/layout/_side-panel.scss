@@ -40,7 +40,7 @@
     }
 }
 
-.resume {
+.cv {
     width: 100%;
     text-align: center;
     display: block;
@@ -93,13 +93,13 @@
         transition: all 0.3s ease;
     }
 
-    &:hover .resume__title {
+    &:hover .cv__title {
         opacity: 0;
         visibility: hidden;
         transform: translate3D(0, 4em, 0) scale(0.25);
     }
 
-    &:hover .resume__icon {
+    &:hover .cv__icon {
         opacity: 1;
         visibility: visible;
         transform: translate3D(0, 0, 0) scale(1);

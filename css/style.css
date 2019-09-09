@@ -538,7 +538,7 @@ body {
   }
 }
 
-.resume {
+.cv {
   width: 100%;
   text-align: center;
   display: block;
@@ -552,7 +552,7 @@ body {
   margin-top: 1rem;
 }
 
-.resume__link {
+.cv__link {
   color: #fafafa;
   font-size: 18px;
   text-transform: uppercase;
@@ -560,7 +560,7 @@ body {
   letter-spacing: 1px;
 }
 
-.resume__title {
+.cv__title {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.13333s linear, -webkit-transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215);
@@ -578,7 +578,7 @@ body {
   text-align: center;
 }
 
-.resume__icon {
+.cv__icon {
   width: 50px;
   height: 50px;
   margin: 25px auto;
@@ -597,20 +597,20 @@ body {
   text-align: center;
 }
 
-.resume:hover {
+.cv:hover {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.resume:hover .resume__title {
+.cv:hover .cv__title {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translate3D(0, 4em, 0) scale(0.25);
           transform: translate3D(0, 4em, 0) scale(0.25);
 }
 
-.resume:hover .resume__icon {
+.cv:hover .cv__icon {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate3D(0, 0, 0) scale(1);
@@ -618,7 +618,7 @@ body {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .resume {
+  .cv {
     margin-top: 0;
   }
 }
