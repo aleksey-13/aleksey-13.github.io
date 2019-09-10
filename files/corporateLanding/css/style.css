@@ -264,7 +264,7 @@ header{
     border-bottom: 2px solid rgba(0,0,0,.32);
 }
 
-#bottom_header>div{
+#bottom_header>ul{
     height:  inherit;
 }
 
