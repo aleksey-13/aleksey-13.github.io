@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?60qmsk');
+  src:  url('fonts/icomoon.eot?60qmsk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?60qmsk') format('truetype'),
+    url('fonts/icomoon.woff?60qmsk') format('woff'),
+    url('fonts/icomoon.svg?60qmsk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Envelope:before {
+  content: "\e90f";
+  color: #fec009;
+}
+.icon-Woman:before {
+  content: "\e900";
+}
+.icon-tg:before {
+  content: "\e901";
+}
+.icon-viber:before {
+  content: "\e902";
+}
+.icon-Phones:before {
+  content: "\e903";
+}
+.icon-calc:before {
+  content: "\e904";
+}
+.icon-false:before {
+  content: "\e905";
+}
+.icon-massage:before {
+  content: "\e906";
+}
+.icon-arrow_right:before {
+  content: "\e907";
+}
+.icon-arrow_left:before {
+  content: "\e908";
+}
+.icon-ico6:before {
+  content: "\e909";
+}
+.icon-ico5:before {
+  content: "\e90a";
+}
+.icon-ico4:before {
+  content: "\e90b";
+}
+.icon-ico3:before {
+  content: "\e90c";
+}
+.icon-ico2:before {
+  content: "\e90d";
+}
+.icon-ico1:before {
+  content: "\e90e";
+}
