@@ -1,718 +1,256 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <title>JUSTO - Система автоматизации приема заказов в HoReCa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="fonts/ico-moon/style.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aleksey Melnyk - Developer</title>
+    <meta name="keywords" content="aleksey melnyk portfolio front-end разработчик responsive ux css sass">
+    <meta name="Description" content="Portfolio of Aleksey Melnyk front-end developer">
+    <meta name="author" lang="ru" content="Aleksey Melnyk">
+
+    <meta property="og:title" content="Алексей мельник">
+    <meta property="og:description" content="Front-end разработчик">
+    <meta property="og:url" content="https://aleksey-13.github.io">
+    <meta property="og:image" content="/img/og-image.jpg">
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="400" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="import">
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148373370-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-148373370-5');
-</script>
 </head>
+
 <body>
-<div class="first-screen">
-    <div class="container">
-        <header class="header-inner">
-            <div class="header-inner-logo">
-                <div class="header-inner-logo-left">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div class="header-inner-logo-right">
-                    <p class="header-inner-logo-right__text">Система автоматизации приема заказов в HoReCa
-                    </p>
-                </div>
+    <div class="side-pannel">
+        <header class="header">
+            <div class="header__photo-box">
+                <img src="img/my_photo_bw.jpg" alt="photo" class="header__photo">
             </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Алексей Мельник</span>
+                    <span class="heading-primary--sub">веб разработчик</span>
+                </h1>
+            </div>
+        </header>
 
-             <a href="presentation.pdf" target="_blank" class="header-inner-price "><div >
-                <div class="header-inner-price__mockup">
-                    <img src="img/price_mockup.png" alt="">
+        <div class="navigation">
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item navigation__item--active"><a href="#"
+                            class="navigation__link">Главная</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Резюме</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Портфолио</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cv">
+            <a href="files/oleksii_melnyk_cv.pdf" class="cv__link">
+                <span class="cv__title">Просмотреть резюме</span>
+                <img src="img/svg/download.svg" alt="Download cv" class="cv__icon">
+            </a>
+        </div>
+
+        <div class="social">
+            <div class="social__contact">
+                <a href="mailto:oleksii.mlnk@gmail.com" aria-label="email">oleksii.mlnk@gmail.com</a>
+                <a href="tel:+380634821032" aria-label="tel" class="social__contact--tel">+38 063 482 10 32</a>
+            </div>
+            <nav class="social__nav">
+                <ul class="social__list">
+                    <li class="social__item"><a href="https://www.linkedin.com/in/aleksey-melnyk/" class="social__link"
+                            target="_blank" aria-label="Linkedin" rel="nofollow noopener">
+                            <svg class="social__icon">
+                                <use xlink:href="img/svg/linkedin.svg#Linkedin"></use>
+                            </svg>
+                        </a></li>
+
+                    <li class="social__item"><a href="whatsapp://send?phone=+380970221817" class="social__link"
+                            aria-label="WhatsApp">
+                            <svg class="social__icon">
+                                <use xlink:href="img/svg/whatsapp-logo.svg#WhatsApp"></use>
+                            </svg>
+                        </a></li>
+
+                    <li class="social__item"><a href="https://github.com/aleksey-13" class="social__link"
+                            target="_blank" aria-label="GitHub" rel="nofollow noopener">
+                            <svg class="social__icon">
+                                <use xlink:href="img/svg/github-logo.svg#GitHub"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="section">
+            <div class="wrap section-home">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/video.mp4" type="video/mp4">
+                        <source src="img/video.webm" type="video/webm">
+                        Your browser is not supported!
+                    </video>
                 </div>
-              <p class="header-inner-price__text">СКАЧАЙТЕ ПРЕЗЕНТАЦИЮ</p>
-            </div></a>
-            <div class="header-inner-contacts">
-                <div class="contacts">
-                    <p class="contacts__title">
-                    </p>
-                    <div class="contacts-phone">
-                        <div class="contacts-phone__num">
-                            <span class="icon-Phones"></span>
-                            <a href="tel:+380679310307">+38 067 931 03 07</a>
-                        </div>
 
-                        <p class="contacts-phone__recall consult">
-                            ПЕРЕЗВОНИТЕ МНЕ
+                <div class="home">
+                    <div class="home__text">
+                        <h2 class="heading-secondary">
+                            <span class="heading-secondary--main">
+                                Алексей Мельник
+                            </span>
+                            <span class="heading-secondary--sub">
+                                Веб разработчик <span class="heading-secondary--marker">&#8226;</span> <span
+                                    id="age">22</span> года
+                            </span>
+                        </h2>
+
+                        <p>
+                            Начинающий front-end разработчик. Владею HTML и CSS, умею писать скрипты на JS, использую
+                            GitHub. Для стандартизации кода я использую Bootstrap и методологию BEM. Постоянно
+                            развиваюсь в направлении разработки и программирования, изучаю новые технологии и тем самым
+                            совершенствую свои знания и навыки.
                         </p>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="first-screen-content">
+        </section>
 
-            <h1 class="title-first">УЗНАЙТЕ, КАК ПРИНИМАТЬ БЕСКОНТАКТНЫЕ ЗАКАЗЫ ДЛЯ ВАШЕГО РЕСТОРАНА УЖЕ ЧЕРЕЗ 3 ДНЯ!</h1>
-            <p class="first-screen-content__desc subtitle-first">
-                Быстрая адаптация ресторана к новым ресторанным <br/> стандартам для <span>безопасности от COVID-19</span>
-            </p>
-            <div class="first-screen-content-adv">
-                <div class="first-screen-content-adv__item">
-                    <img src="img/advant1.png" alt="">
-                    <p>Быстрое привлечение и удержание аудитории в ресторане</p>
-                </div>
-                <div class="first-screen-content-adv__item">
-                    <img src="img/advant3.png" alt="">
-                    <p>Возможность быстро восстановить бизнес</p>
-                </div>
-                <div class="first-screen-content-adv__item">
-                    <img src="img/advant2.png" alt="">
-                    <p>Прием платежей через Apple pay и Google pay</p>
-                </div>
-            </div>
-            <div class="btn-main-wrap">
-                <button class="btn btn-main test-scroll">
-                    <span class="icon-calc"></span>Пройти тест</button>
-
-            </div>
-        </div>
-    </div>
-</div>
-<section class="second-screen grey">
-    <div class="test">
-
-
-        <div class="container">
-            <div class="test-item__content form-before">
-                <div class="test-item__header">
-                    <h2 class="section-title section-title--black">Дайте ответ на 6 вопросов
-                        и уже через 3 дня получайте заказы онлайн</h2>
-
-                    <div class="test-item__progress">
-                        <div class="test-item__number">
-                            <span class="test-item__number-furst">01</span>
-                            <span class="test-item__number-all">/ 06</span>
-                            <span class="test-item__number-text">Почти готово!</span>
-                        </div>
-
-                        <div class="test__visual">
-
-                            <div class="test-circle test-circle-0 test-circle-active">
-                            </div>
-
-                            <div class="test-block test-block-0 test-block-active">
-                            </div>
-
-                            <div class="test-circle test-circle-1 test-circle-active">
-                            </div>
-
-                            <div class="test-block test-block-1">
-                            </div>
-
-                            <div class="test-circle test-circle-2">
-                            </div>
-
-                            <div class="test-block test-block-2">
-                            </div>
-
-                            <div class="test-circle test-circle-3">
-                            </div>
-
-                            <div class="test-block test-block-3">
-                            </div>
-
-                            <div class="test-circle test-circle-4">
-                            </div>
-
-                            <div class="test-block test-block-4">
-                            </div>
-
-                            <div class="test-circle test-circle-5">
-                            </div>
-							<div class="test-block test-block-5">
-                            </div>
-
-                            <div class="test-circle test-circle-6">
-                            </div>
-						</div>
-
-
-
-
-                        </div>
-                    </div>
-
+        <section class="section">
+            <div class="wrap section-summary">
+                <div class="header-box u-center-text u-margin-bottom-medium">
+                    <h3 class="heading-third">Образование</h3>
                 </div>
 
-                <div class="test__content">
-
-                    <div class="test-slider__wrap" style="margin-right: auto;margin-left: auto;">
-                        <form action="thanks.php" id="testForm" class="test-form" method="POST">
-                            <input type="hidden" name="formname" value="test">
-
-                            <div class="test-slider">
-
-
-
-
-
-								<div class="test-slider__item">
-                                    <h3 class="test-slider-title">
-                                    Выберите тип вашего заведения</h3>
-                                    <div class="test-slider__content">
-
-                                        <div class="test-slider__elem-min">
-                                            <label for="roofType-1">
-										    	   <span class="customRadio__img"
-                                                         style="background: url(img/item1_1.jpg) no-repeat center; background-size: cover;">
-										    	   </span>
-                                            </label>
-
-                                            <input type="radio" name="roofType" class="customRadio_radio"
-                                                   id="roofType-1" value="Ресторан">
-
-                                            <label for="roofType-1" class="customRadio_label">
-										    	   <span class="customRadio_label-cirkle">
-										    	   </span>
-                                                <span>Ресторан</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="test-slider__elem-min">
-                                            <label for="roofType-2">
-										    	   <span class="customRadio__img"
-                                                         style="background: url(img/item1_2.jpg) no-repeat center; background-size: cover;">
-										    	   </span>
-                                            </label>
-
-                                            <input type="radio" name="roofType" class="customRadio_radio"
-                                                   id="roofType-2" value="Пиццерия">
-
-                                            <label for="roofType-2" class="customRadio_label">
-										    	   <span class="customRadio_label-cirkle">
-										    	   </span>
-                                                <span>Пиццерия</span>
-                                            </label>
-                                        </div>
-
-                                        <div class="test-slider__elem-min">
-                                            <label for="roofType-3">
-										    	   <span class="customRadio__img"
-                                                         style="background: url(img/item1_3.jpg) no-repeat center; background-size: cover;">
-										    	   </span>
-                                            </label>
-
-                                            <input type="radio" name="roofType" class="customRadio_radio"
-                                                   id="roofType-3" value="Бар">
-
-                                            <label for="roofType-3" class="customRadio_label">
-										    	   <span class="customRadio_label-cirkle">
-										    	   </span>
-                                                <span>Бар</span>
-                                            </label>
-                                        </div>
-										<div class="test-slider__elem-min">
-                                            <label for="roofType-4">
-										    	   <span class="customRadio__img"
-                                                         style="background: url(img/item1_4.jpg) no-repeat center; background-size: cover;">
-										    	   </span>
-                                            </label>
-
-                                            <input type="radio" name="roofType" class="customRadio_radio"
-                                                   id="roofType-4" value="Кафе">
-
-                                            <label for="roofType-4" class="customRadio_label">
-										    	   <span class="customRadio_label-cirkle">
-										    	   </span>
-                                                <span>Кафе</span>
-                                            </label>
-                                        </div>
-
-										<div class="test-slider__elem-min">
-                                            <label for="roofType-5">
-										    	   <span class="customRadio__img"
-                                                         style="background: url(img/item1_5.jpg) no-repeat center; background-size: cover;">
-										    	   </span>
-                                            </label>
-
-                                            <input type="radio" name="roofType" class="customRadio_radio"
-                                                   id="roofType-5" value="Фастфуд">
-
-                                            <label for="roofType-5" class="customRadio_label">
-										    	   <span class="customRadio_label-cirkle">
-										    	   </span>
-                                                <span>Фастфуд</span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="test-slider__item" style="display: none;">
-									<span class="question question-test" style="display: none;">
-										<svg xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20"
-                                             viewBox="0 0 24 20"><defs><g id="questionSvg"><g
-                                                transform="translate(-981 -631)">
-                                                <path id="2twwa" d="M1005 641c0 5.523-4.991 10-11.149 10-2.263 0-4.368-.606-6.126-1.645l-5.773 1.541a.773.773 0 0 1-.79-.253.715.715 0 0 1-.068-.807l2.637-4.635a9.11 9.11 0 0 1-1.029-4.201c0-5.523 4.992-10 11.15-10 6.157 0 11.148 4.477 11.148 10zm-10.064 4.065c0-.592-.495-1.073-1.103-1.073-.609 0-1.104.481-1.104 1.073 0 .591.495 1.072 1.104 1.072.608 0 1.103-.48 1.103-1.072zm1.59-6.584c0-1.444-1.208-2.618-2.693-2.618-1.486 0-2.694 1.174-2.694 2.618 0 .46.384.833.857.833a.846.846 0 0 0 .856-.833c0-.525.44-.953.98-.953.541 0 .981.428.981.953 0 .653-.315.862-.791 1.179-.441.292-1.046.694-1.046 1.5v1.207c0 .46.384.833.857.833a.846.846 0 0 0 .856-.833v-1.12c.054-.045.155-.116.3-.213.575-.382 1.537-1.021 1.537-2.553z"></path></g></g></defs><use
-                                                xlink:href="#questionSvg"></use></svg>
-									</span>
-                                    <h3 class="test-slider-title">
-                                        Вы планируете открываться или уже работаете?</h3>
-                                    <div class="test-slider__content">
-                                        <div class="test-slider__data test-slider__data--row">
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q3" class="customRadio_radio"
-                                                       id="q3_1" value="Закрыты, но хотим открываться">
-
-                                                <label for="q3_1"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Закрыты, но хотим открываться</span>
-
-                                                </label>
-                                            </div>
-
-											<div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q3" class="customRadio_radio"
-                                                       id="q3_2" value="В процессе открытия">
-
-                                                <label for="q3_2"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>В процессе открытия</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q3" class="customRadio_radio"
-                                                       id="q3_3" value="Открыты и уже работаем">
-
-                                                <label for="q3_3"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Открыты и уже работаем</span>
-
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="test-slider__img test-slider__img--2">
-                                            <img src="img/room1.png" alt="">
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-
-								<div class="test-slider__item" style="display: none;">
-									<span class="question question-test" style="display: none;">
-										<svg xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20"
-                                             viewBox="0 0 24 20"><defs><g id="questionSvg"><g
-                                                transform="translate(-981 -631)">
-                                                <path id="2twwa" d="M1005 641c0 5.523-4.991 10-11.149 10-2.263 0-4.368-.606-6.126-1.645l-5.773 1.541a.773.773 0 0 1-.79-.253.715.715 0 0 1-.068-.807l2.637-4.635a9.11 9.11 0 0 1-1.029-4.201c0-5.523 4.992-10 11.15-10 6.157 0 11.148 4.477 11.148 10zm-10.064 4.065c0-.592-.495-1.073-1.103-1.073-.609 0-1.104.481-1.104 1.073 0 .591.495 1.072 1.104 1.072.608 0 1.103-.48 1.103-1.072zm1.59-6.584c0-1.444-1.208-2.618-2.693-2.618-1.486 0-2.694 1.174-2.694 2.618 0 .46.384.833.857.833a.846.846 0 0 0 .856-.833c0-.525.44-.953.98-.953.541 0 .981.428.981.953 0 .653-.315.862-.791 1.179-.441.292-1.046.694-1.046 1.5v1.207c0 .46.384.833.857.833a.846.846 0 0 0 .856-.833v-1.12c.054-.045.155-.116.3-.213.575-.382 1.537-1.021 1.537-2.553z"></path></g></g></defs><use
-                                                xlink:href="#questionSvg"></use></svg>
-									</span>
-                                    <h3 class="test-slider-title">
-                                        Какой способ оплаты заказа предпочтителен для вас в заведении?</h3>
-                                    <div class="test-slider__content">
-                                        <div class="test-slider__data test-slider__data--row">
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q4" class="customRadio_radio"
-                                                       id="q4_1" value="Наличныe">
-
-                                                <label for="q4_1"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Наличныe</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q4" class="customRadio_radio"
-                                                       id="q4_2" value="Банковский терминал">
-
-                                                <label for="q4_2"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Банковский терминал</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q4" class="customRadio_radio"
-                                                       id="q4_3" value="Онлайн оплаты Apple/Google Pay">
-
-                                                <label for="q4_3"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Онлайн оплаты Apple/Google Pay</span>
-
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                        <div class="test-slider__img test-slider__img--2">
-                                            <img src="img/room2.png" alt="">
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-
-								<div class="test-slider__item" style="display: none;">
-									<span class="question question-test" style="display: none;">
-										<svg xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20"
-                                             viewBox="0 0 24 20"><defs><g id="questionSvg"><g
-                                                transform="translate(-981 -631)">
-                                                <path id="2twwa" d="M1005 641c0 5.523-4.991 10-11.149 10-2.263 0-4.368-.606-6.126-1.645l-5.773 1.541a.773.773 0 0 1-.79-.253.715.715 0 0 1-.068-.807l2.637-4.635a9.11 9.11 0 0 1-1.029-4.201c0-5.523 4.992-10 11.15-10 6.157 0 11.148 4.477 11.148 10zm-10.064 4.065c0-.592-.495-1.073-1.103-1.073-.609 0-1.104.481-1.104 1.073 0 .591.495 1.072 1.104 1.072.608 0 1.103-.48 1.103-1.072zm1.59-6.584c0-1.444-1.208-2.618-2.693-2.618-1.486 0-2.694 1.174-2.694 2.618 0 .46.384.833.857.833a.846.846 0 0 0 .856-.833c0-.525.44-.953.98-.953.541 0 .981.428.981.953 0 .653-.315.862-.791 1.179-.441.292-1.046.694-1.046 1.5v1.207c0 .46.384.833.857.833a.846.846 0 0 0 .856-.833v-1.12c.054-.045.155-.116.3-.213.575-.382 1.537-1.021 1.537-2.553z"></path></g></g></defs><use
-                                                xlink:href="#questionSvg"></use></svg>
-									</span>
-                                    <h3 class="test-slider-title">
-                                       Какая структура каталога с товарами предпочтительна для вас?</h3>
-                                    <div class="test-slider__content">
-                                        <div class="test-slider__data test-slider__data--row">
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q5" class="customRadio_radio"
-                                                       id="q5_1" value="Вся номенклатура товаров">
-
-                                                <label for="q5_1"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Вся номенклатура товаров</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q5" class="customRadio_radio"
-                                                       id="q5_2" value="Наборы/комбо меню с популярными позициями">
-
-                                                <label for="q5_2"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Наборы/комбо меню с популярными позициями</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q5" class="customRadio_radio"
-                                                       id="q5_3" value="Основные товары и категории, которые можно купить по отдельности">
-
-                                                <label for="q5_3"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Основные товары и категории, которые можно купить по отдельности</span>
-
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="test-slider__img test-slider__img--2">
-                                            <img src="img/room4.png" alt="">
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-								<div class="test-slider__item" style="display: none;">
-									<span class="question question-test" style="display: none;">
-										<svg xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20"
-                                             viewBox="0 0 24 20"><defs><g id="questionSvg"><g
-                                                transform="translate(-981 -631)">
-                                                <path id="2twwa" d="M1005 641c0 5.523-4.991 10-11.149 10-2.263 0-4.368-.606-6.126-1.645l-5.773 1.541a.773.773 0 0 1-.79-.253.715.715 0 0 1-.068-.807l2.637-4.635a9.11 9.11 0 0 1-1.029-4.201c0-5.523 4.992-10 11.15-10 6.157 0 11.148 4.477 11.148 10zm-10.064 4.065c0-.592-.495-1.073-1.103-1.073-.609 0-1.104.481-1.104 1.073 0 .591.495 1.072 1.104 1.072.608 0 1.103-.48 1.103-1.072zm1.59-6.584c0-1.444-1.208-2.618-2.693-2.618-1.486 0-2.694 1.174-2.694 2.618 0 .46.384.833.857.833a.846.846 0 0 0 .856-.833c0-.525.44-.953.98-.953.541 0 .981.428.981.953 0 .653-.315.862-.791 1.179-.441.292-1.046.694-1.046 1.5v1.207c0 .46.384.833.857.833a.846.846 0 0 0 .856-.833v-1.12c.054-.045.155-.116.3-.213.575-.382 1.537-1.021 1.537-2.553z"></path></g></g></defs><use
-                                                xlink:href="#questionSvg"></use></svg>
-									</span>
-                                    <h3 class="test-slider-title">
-                                        Какой вариант продвижения новой услуги Вам подходит больше всего?</h3>
-                                    <div class="test-slider__content">
-                                        <div class="test-slider__data test-slider__data--row">
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q6" class="customRadio_radio"
-                                                       id="q6_1" value="Напечатать флаера/визитки/банеры с информацией о новой услуге">
-
-                                                <label for="q6_1"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Напечатать флаера/визитки/банеры с информацией о новой услуге</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q6" class="customRadio_radio"
-                                                       id="q6_2" value="Онлайн реклама в социальных сетях и поисковых системах">
-
-                                                <label for="q6_2"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Онлайн реклама в социальных сетях и поисковых системах</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q6" class="customRadio_radio"
-                                                       id="q6_3" value="Оба варианта">
-
-                                                <label for="q6_3"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Оба варианта</span>
-
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                        <div class="test-slider__img test-slider__img--2">
-                                            <img src="img/room5.png" alt="">
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-
-
-                                <div class="test-slider__item" style="display: none;">
-                                    <h3 class="test-slider-title">
-                                        Сколько позиций вы хотите внести в онлайн меню для заказа? </h3>
-                                    <div class="test-slider__content">
-                                        <div class="test-slider__data">
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q8" class="customRadio_radio"
-                                                       id="q8_1" value="До 50 позиций">
-
-                                                <label for="q8_1"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>До 50 позиций</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q8" class="customRadio_radio"
-                                                       id="q8_2" value="До 100 позиций">
-
-                                                <label for="q8_2"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>До 100 позиций</span>
-
-                                                </label>
-                                            </div>
-                                            <div class="test-slider__elem test-slider__elem-radio">
-                                                <input type="radio" name="q8" class="customRadio_radio"
-                                                       id="q8_3" value="Более 100 позиций">
-
-                                                <label for="q8_3"
-                                                       class="customRadio_label customRadio_label-fix">
-											   <span class="customRadio_label-cirkle">
-											   </span>
-                                                    <span>Более 100 позиций</span>
-
-                                                </label>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="test-slider__img test-slider__img--2">
-                                            <img src="img/room8.png" alt="">
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-
-
-
-
-
-                                <div class="test-slider__item" style="display: none;">
-                                    <div class="test-slider__item-end">
-                                        <div class="test-slider__item-end_inner">
-                                            <p class="test-slider__item-end__complete">
-                                                Готово!
-                                            </p>
-                                            <div class="test-slider__item-end__send">
-                                                <p class="test-slider__item-end__title">
-                                                    Оставьте свои данные и наш менеджер свяжется с вами для подключения к Justo
-                                                </p>
-
-                                            </div>
-                                            <div class="inputs_form">
-                                                <div class="main-input" style="margin-bottom: 15px;"><span class="icon-Woman"></span><input
-                                                        class="main-input__inner" type="text"
-                                                        placeholder="Ваше имя" name="name" required>
-                                                </div>
-                                                <div class="main-input"><span class="icon-Phones"></span><input
-                                                        class="main-input__inner" type="tel" id="tel"
-                                                        placeholder="+380 (**) *** ** **" name="phone" required>
-                                                </div>
-                                                <button class="btn_quiz btn" name="sendForm1" type="submit">Отправить
-                                                </button>
-
-                                            </div>
-                                        </div>
-                                        <div class="quiz_mockup">
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="summary-box">
+                    <ul class="summary-box__list">
+                        <li class="summary-box--item">
+                            <div class="summary-box--date">
+                                <p class="link">2013 - 2016</p>
+                            </div>
+                            <div class="summary-box--text">
+                                <p class="paragraph--main">Частное высшее учебное заведение Общества содействия
+                                    обороне Украины &laquo;Коростенский
+                                    технический колледж&raquo;</p>
+                                <p>Получена квалификация младший специалист техник с вычислительной техники</p>
+                            </div>
+                        </li>
+
+                        <li class="summary-box--item">
+                            <div class="summary-box--date">
+                                <p class="link">2016 - 2018</p>
+                            </div>
+                            <div class="summary-box--text">
+                                <p class="paragraph--main">&laquo;Житомирский государственный технологический
+                                    университет&raquo;</p>
+                                <a class="link" href="https://ztu.edu.ua/ua/structure/faculties/fikt/kpzot.php"
+                                    target="_blank" rel="nofollow noopener">Инженерия ПО</a>
+                                <p>Получена квалификация бакалавр инженерии программного обеспечения</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-box u-center-text u-margin-top-medium u-margin-bottom-medium">
+                    <h3 class="heading-third">Навыки</h3>
+                </div>
+
+                <div class="skills-box">
+                    <ul class="skills-box__list">
+                        <li class="skills-box--item">
+                            <div class="skills-box--icon">
+                                <svg>
+                                    <use xlink:href="img/svg/skill-icon-0.svg#icon-0"></use>
+                                </svg>
+                            </div>
+                            <div class="skills-box--text">
+                                <h4 class="paragraph--main">HTML + CSS</h4>
+                                <p>Использование препроцессоров SASS и LESS</p>
+                            </div>
+                        </li>
+
+                        <li class="skills-box--item">
+                            <div class="skills-box--icon">
+                                <svg>
+                                    <use xlink:href="img/svg/skill-icon-1.svg#icon-1"></use>
+                                </svg>
                             </div>
 
-                            <div class="text-subbtn">
-                                Виберите вариант ответа или введите значение
+                            <div class="skills-box--text">
+                                <h4 class="paragraph--main">Adaptive Layout</h4>
+                                <p>Адаптивная верстка с использованием flexbox и медиа-запросов</p>
                             </div>
-                            <div class="btn--wrap test__btn-block">
-                                <button class=" btn-test prev-test" disabled="true">
-                                    <span>Назад</span>
-                                </button>
-                                <button class="btn-test next-test" disabled="true">
-                                    <span>Дальше</span>
+                        </li>
 
-                                </button>
+                        <li class="skills-box--item">
+                            <div class="skills-box--icon">
+                                <svg>
+                                    <use xlink:href="img/svg/skill-icon-2.svg#icon-2"></use>
+                                </svg>
                             </div>
-                        </form>
-                    </div>
+                            <div class="skills-box--text">
+                                <h4 class="paragraph--main">Cross-Browser</h4>
+                                <p>Оптимальное отображение сайта во всех современных браузерах</p>
+                            </div>
+                        </li>
+
+                        <li class="skills-box--item">
+                            <div class="skills-box--icon">
+                                <svg>
+                                    <use xlink:href="img/svg/skill-icon-3.svg#icon-3"></use>
+                                </svg>
+                            </div>
+                            <div class="skills-box--text">
+                                <h4 class="paragraph--main">JavaScript</h4>
+                                <p>Хорошие знания JavaScript.</p>
+                            </div>
+                        </li>
+
+                        <li class="skills-box--item">
+                            <div class="skills-box--icon">
+                                <svg>
+                                    <use xlink:href="img/svg/skill-icon-4.svg#icon-4"></use>
+                                </svg>
+                            </div>
+                            <div class="skills-box--text">
+                                <h4 class="paragraph--main">Validator</h4>
+                                <p>Соответствие стандартам W3C</p>
+                            </div>
+                        </li>
+
+                        <li class="skills-box--item">
+                            <div class="skills-box--icon">
+                                <svg>
+                                    <use xlink:href="img/svg/skill-icon-5.svg#icon-5"></use>
+                                </svg>
+                            </div>
+                            <div class="skills-box--text">
+                                <h4 class="paragraph--main">Photoshop</h4>
+                                <p>Использование фотошопа для работы с макетами</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<footer class="twelveth-screen" style="padding-top: 0;">
-
-
-    <div class="other" style="margin-top: 0;">
-        <div class="container">
-            <div class="other-left">
-                <p>Justo © 2020</p>
-                <p>Все права защищено</p>
-            </div>
-            <div class="other-center">
-                <p> Политика конфиденциальности</p>
-				<a href="tel:+380679310307">+38 067 931 03 07</a>
-            </div>
-            <div class="other-right">
-                <p>info@justo.com.ua</p>
-                <a target="_blank" href="https://justo.com.ua"><a href="https://justo.com.ua">Наш основной сайт</a></a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-<!-- 2222 -->
-<div class="overlay" id="modal-recall" style="display: none">
-    <div class="modal-wrap">
-        <div class="close-modal">
-            <span class="icon-false"></span>
-        </div>
-        <div class="modal">
-
-            <div class="modal-title">
-                Перезвоним в течении
-                30 минут
-            </div>
-
-
-            <form class="modal-form" action="thank.php" method="post">
-                <div class="main-input  input-modal-wrap"><span class="icon-Woman"></span><input class="main-input__inner" type="text" id="text1232" placeholder="Ваше имя" name="name" required>
+        <section class="section">
+            <div class="wrap section-portfolio">
+                <div class="header-box u-center-text u-margin-bottom-medium">
+                    <h3 class="heading-third">Портфолио работ</h3>
                 </div>
 
-                <div class="main-input input-modal-wrap"><span class="icon-Phones"></span>
-                    <input class="main-input__inner input-modal" type="tel" id="tel23" placeholder="+380 (**) *** ** **" tabindex="0" name="Phone" required>
-                </div>
+                <ul class="work-list">
 
-                <div class="btn-modal-wrap">
-                    <button type="submit" name="sendForm3" class="btn modal-btn">
-                        ПЕРЕЗВОНИТЕ МНЕ
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- 3333 -->
-<div class="overlay" id="modal-thanks" style="display: none">
-    <div class="modal-wrap">
-        <div class="close-modal">
-            <span class="icon-false"></span>
-        </div>
-        <div class="modal">
-            <img src="img/modal_ok.svg" alt="" class="modal-icon">
-            <div class="modal-title">
-                Спасибі за
-                проявлений інтерес!
+                </ul>
             </div>
-            <div class="modal-descr">
-                Ми прямо зараз обробляємо Ваш
-                запит і відповімо найближчим
-часом Пн-Пт 9: 00-20: 00
-            </div>
-        </div>
-    </div>
-</div>
+        </section>
+    </main>
 
-<div class="overlay" id="modal-down" style="display: none">
-    <div class="modal-wrap">
-        <div class="close-modal">
-            <span class="icon-false"></span>
-        </div>
-        <div class="modal">
-            <img src="img/down.svg" alt="" class="modal-icon">
-            <div class="modal-title">
-               Завантаження почалося ...
-            </div>
-            <div class="modal-descr">
-                Дочекайтеся закінчення, завантаження може
-                тривати кілька секунд
-            </div>
-        </div>
-    </div>
-</div>
+<script type="text/javascript" src="js/bundle.js"></script></body>
 
-
-
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/ui.js"></script>
-<script src="js/jquery.ui.touch-punch.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/fancybox/jquery.fancybox.pack.js"></script>
-<script src="js/sly.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/spin.js"></script>
-<script src="js/test.js"></script>
-<script src="js/script.js"></script>
-
-</body>
 </html>

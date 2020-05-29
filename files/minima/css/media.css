@@ -1,0 +1,245 @@
+@media all and (min-width: 1919px) {
+  .billboard {
+    height: 700px;
+    background-position: 0 -100px;
+    margin-bottom: 1%; }
+    .billboard .josefin {
+      font-size: 60px; }
+    .billboard p {
+      font-size: 24px; }
+    .billboard a {
+      width: 360px;
+      line-height: 55px; }
+  header nav {
+    width: 600px; }
+  .slideMenu a {
+    font-size: 22px; }
+  .services div h3 {
+    font-size: 32px; }
+  .services div p {
+    font-size: 20px; }
+  .video-block h3 {
+    font-size: 32px; }
+  .video-block p {
+    font-size: 20px; }
+  .video-block .video {
+    width: 800px;
+    height: 400px; }
+    .video-block .video img {
+      width: 90px; }
+  #recent-work {
+    font-size: 45px; }
+  #work img {
+    width: 350px; }
+  #work .brand p {
+    width: 350px;
+    font-size: 20px; }
+  #subscribe h3 {
+    font-size: 40px; }
+  #subscribe p {
+    font-size: 20px; }
+  #subscribe a {
+    width: 350px;
+    line-height: 45px;
+    font-size: 18px; }
+  .social img {
+    width: 88px; }
+  footer h4 {
+    font-size: 28px; }
+  footer ul a, footer p {
+    font-size: 20px; }
+  footer .minima a, footer .location a {
+    font-size: 20px; } }
+
+@media all and (max-width: 1346px) {
+  #work .brand {
+    margin: 20px 50px; } }
+
+@media all and (max-width: 1216px) {
+  .services {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .video-block .video {
+    width: 500px;
+    height: 250px; } }
+
+@media all and (max-width: 920px) {
+  .billboard {
+    height: 450px;
+    background-position: 0 -40px; }
+    .billboard .josefin {
+      font-size: 42px; }
+  #work .brand {
+    margin: 20px 5px; }
+  footer div {
+    width: 250px; } }
+
+@media all and (max-width: 767px) {
+  .billboard {
+    height: 450px;
+    background-position: 0 -40px; }
+    .billboard .josefin {
+      font-size: 36px; }
+    .billboard p {
+      font-size: 16px; }
+  .video-block h3 {
+    font-size: 24px; }
+  .video-block .video {
+    width: 390px;
+    height: 190px; }
+    .video-block .video img {
+      width: 70px; }
+  #subscribe h3 {
+    font-size: 24px; }
+  #subscribe p {
+    font-size: 13px; }
+  header {
+    position: relative; }
+    header nav ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: absolute;
+      width: 60%;
+      height: 100vh;
+      background: rgba(67, 67, 67, 0.85);
+      left: -70%;
+      top: 0;
+      z-index: 10;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      header nav ul li {
+        margin: 20px; }
+      header nav ul a {
+        font-size: 24px;
+        line-height: 50px;
+        color: #fff; }
+        header nav ul a:before {
+          height: 4px;
+          background: #fff;
+          bottom: -10px; }
+    header .wrapper-menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      right: 10%; }
+  #recent-work {
+    font-size: 24px; }
+  footer {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    footer div {
+      width: 200px; } }
+
+@media all and (max-width: 639px) {
+  header {
+    height: 100px; }
+    header p {
+      font-size: 30px; }
+    header .slideMenu a {
+      font-size: 20px; }
+  .wrapper-menu {
+    width: 30px;
+    height: 30px; }
+  .billboard {
+    height: 400px;
+    background-position: 0 -70px; }
+    .billboard .josefin {
+      font-size: 30px; }
+    .billboard p {
+      font-size: 15px; }
+    .billboard a {
+      width: 220px;
+      font-size: 14px; }
+      .billboard a img {
+        margin-bottom: 2px; }
+  #subscribe a {
+    width: 250px;
+    font-size: 14px; }
+  .social img {
+    width: 50px; }
+  .video-block h3 {
+    font-size: 20px; }
+  .video-block p {
+    font-size: 12px; }
+  .video-block .video {
+    width: 350px;
+    height: 180px; }
+    .video-block .video img {
+      width: 60px; }
+  footer {
+    padding: 7% 5%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer h4 {
+      font-size: 16px; }
+    footer p {
+      font-size: 13px; } }
+
+@media all and (max-width: 515px) {
+  .billboard {
+    height: 300px; }
+    .billboard .josefin {
+      font-size: 24px; }
+    .billboard p {
+      font-size: 13px; }
+    .billboard a {
+      width: 190px;
+      font-size: 12px;
+      line-height: 30px; }
+      .billboard a img {
+        margin-bottom: 1px; }
+  .video-block h3 {
+    font-size: 20px; }
+  .video-block p {
+    font-size: 12px; }
+  .video-block .video {
+    width: 300px;
+    height: 150px; }
+    .video-block .video img {
+      width: 60px; }
+  footer {
+    padding: 7% 10%;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    footer div {
+      width: 230px; }
+    footer .minima {
+      display: none; } }
+
+@media all and (max-width: 416px) {
+  .billboard .josefin {
+    font-size: 20px; }
+  .billboard p {
+    font-size: 12px; } }
+
+@media all and (max-width: 339px) {
+  .billboard .josefin {
+    font-size: 18px; }
+  .billboard p {
+    font-size: 10px; }
+  .video-block h3 {
+    font-size: 18px; }
+  .video-block p {
+    font-size: 10px; }
+  #subscribe h3 {
+    font-size: 18px;
+    pfsize: 10px; } }
