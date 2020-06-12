@@ -96,6 +96,10 @@ h4 {
   max-width: 30px;
 }
 
+.menu__list-social img:hover {
+  transform: scale(0.98);
+}
+
 .menu__list-social:not(:last-child) {
   margin-right: 15px;
 }
@@ -131,6 +135,11 @@ h4 {
   border: 0;
   font-size: 20px;
   font-family: "Arial", sans-serif;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(223, 107, 6);
 }
 
 .section-page {
@@ -599,6 +608,11 @@ main {
   font-size: 22px;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-us input[type="submit"]:hover {
+  background-color: #7da518;
 }
 
 .footer {
@@ -637,9 +651,17 @@ main {
   margin-right: 25px;
 }
 
+.footer__list-item-social li:hover {
+  transform: scale(0.98);
+}
+
 .footer__list-item .button {
   background-color: var(--light-green);
   font-size: 24px;
+}
+
+.footer__list-item .button:hover {
+  background-color: #7da518;
 }
 
 @media only screen and (max-width: 1440px) {
