@@ -156,14 +156,14 @@ h4 {
 .cube-center-right {
   position: absolute;
   right: 0;
-  top: 525px;
+  top: 375px;
   max-width: 120px;
 }
 
 .cube-bottom-center {
   position: absolute;
-  bottom: 160px;
-  right: 43%;
+  bottom: 100px;
+  right: 40%;
   max-width: 170px;
 }
 
@@ -182,7 +182,7 @@ main {
   background-image: url("../img/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: center center;
 
   width: 100%;
   padding: 10.8vmax 0 10.15vmax;
@@ -218,6 +218,7 @@ main {
   padding: 45px 10px 40px 365px;
 }
 
+.banner__title--primary span, 
 .banner__title--secondary span {
   display: block;
 }
@@ -227,6 +228,7 @@ main {
   padding: 50px 15px 100px;
   font-family: "Montserrat Medium", sans-serif;
   color: var(--light-green);
+  position: relative;
 }
 
 .why-justo__title {
@@ -281,14 +283,16 @@ main {
   position: relative;
 }
 
-.chips > img {
+.why-justo > img {
   position: absolute;
-  top: -25%;
+  top: -40%;
   right: 0;
   max-width: 20%;
 }
 
 .chips__title {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .chips__video {
@@ -401,12 +405,13 @@ main {
   padding: 75px 15px 110px;
 }
 
-.profit > img {
+.topicality > img {
   position: absolute;
-  left: -2%;
+  left: -3%;
   top: -12%;
   max-width: 370px;
   transform: rotate(21deg);
+  
 }
 
 .profit__title {
@@ -665,12 +670,12 @@ main {
 }
 
 @media only screen and (max-width: 1440px) {
-  .chips > img {
+  .why-justo > img {
     top: -15%;
     max-width: 12%;
   }
 
-  .profit > img {
+  .topicality > img {
     top: -8%;
     max-width: 18%;
   }
@@ -698,12 +703,12 @@ main {
     top: 380px;
   }
 
-  .chips > img {
+  .why-justo > img {
     max-width: 150px;
     top: -9%;
   }
 
-  .profit > img {
+  .topicality > img {
     top: -7%;
     max-width: 200px;
   }
@@ -781,8 +786,8 @@ main {
     width: 30%;
   }
 
-  .chips > img,
-  .profit > img {
+  .why-justo > img,
+  .topicality > img {
     display: none;
   }
 
