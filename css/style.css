@@ -772,8 +772,11 @@ main {
   }
 
   .topicality__list-item {
+    width: 80%;
+  }
+
+  .topicality__list-item p {
     font-size: 20px;
-    width: 50%;
   }
 
   .topicality__list-item img {
@@ -828,6 +831,34 @@ main {
     list-style: disc;
   }
 
+  .tarifs__plane-list-item {
+    width: 50%;
+  }
+
+  .tarifs__plane-list-title {
+    padding: 35px 0;
+  }
+
+  .tarifs__plane-list-title h3 {
+    padding: 15px 0;
+  }
+
+  .tarifs__plane-list-item ul {
+    margin: 20px 0 40px;
+  }
+
+  .tarifs__plane-list-item {
+    padding-bottom: 35px;
+  }
+
+  .tarifs__plane-list-item ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .tarifs__plane-list-item ul li span {
+    font-size: 18px;
+  }
+
   .how-to-work__title {
     padding: 0;
     margin-bottom: 10px;
@@ -868,6 +899,10 @@ main {
     font-size: 22px;
   }
 
+  h4 {
+    font-size: 20px;
+  }
+
   .menu__list-item:first-child {
     min-width: 120px;
   }
@@ -883,6 +918,25 @@ main {
   .button {
     font-size: 16px;
     padding: 10px;
+  }
+
+  .chips__list {
+    font-size: 20px;
+    margin: 20px 0 30px -50px;
+  }
+
+  .chips__list-item p {
+    font-size: 18px;
+  }
+
+  .view-personal__list-item img {
+    max-width: 200px;
+    max-height: 160px;
+    margin-bottom: 25px;
+}
+
+  .view-personal__list-item p {
+    font-size: 16px;
   }
 
   .why-justo__title svg,
@@ -904,11 +958,15 @@ main {
   }
 
   .topicality__list-item {
+    font-size: 20px;
+  }
+
+  .topicality__list-item p {
     font-size: 16px;
   }
 
-  .topicality__list-item:not(:last-child) {
-    margin-bottom: 35px;
+  .topicality__list-item + .topicality__list-item {
+    margin-top: 5px;
   }
 }
 
