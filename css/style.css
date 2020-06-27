@@ -585,6 +585,60 @@ main {
   background-color: #7da518;
 }
 
+.slider {
+  position: relative;
+  /* overflow: hidden; */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__item > img {
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  font-size: 0;
+  width: 35px;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider .slick-arrow:focus {
+  outline: 0;
+}
+
+.slider .slick-arrow:hover {
+  transform: translateY(-50%) scale(0.96);
+}
+
+.slider .slick-arrow.slick-prev {
+  left: -100px;
+  background: url("/img/arrow-left.png") 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: -100px;
+  background: url("/img/arrow-right.png") 0 0 / 100% no-repeat;
+}
+
 @media only screen and (max-width: 1440px) {
   .why-justo > img {
     top: -15%;
