@@ -554,6 +554,7 @@ main {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 45px;
+  font-weight: bold;
 }
 
 .contact-us__form > p span {
@@ -908,6 +909,10 @@ main {
   .why-justo__title svg,
   .why-justo__title image {
     width: 200px;
+  }
+
+  .why-justo__title {
+    margin-bottom: 0 !important;
   }
 
   .why-justo__content-list {

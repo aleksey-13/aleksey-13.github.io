@@ -603,6 +603,7 @@ main {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 45px;
+  font-weight: bold;
 }
 
 .contact-us__form > p span {
@@ -998,6 +999,14 @@ main {
 
   .why-justo-bottom__content-list {
     width: 45%;
+  }
+
+  .why-justo-bottom__title {
+    margin-bottom: 0 !important;
+  }
+
+  .why-justo-bottom__secondary-title {
+    margin-bottom: 30px;
   }
 
   .why-justo-bottom__content-item + .why-justo-bottom__content-item,
