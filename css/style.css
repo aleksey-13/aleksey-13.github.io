@@ -118,7 +118,7 @@ main {
   width: 100%;
   padding: 10.8vmax 0 10.15vmax;
   color: #fff;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 
 .banner__title {
@@ -149,7 +149,7 @@ main {
   padding: 45px 10px 40px 365px;
 }
 
-.banner__title--primary span, 
+.banner__title--primary span,
 .banner__title--secondary span {
   display: block;
 }
@@ -253,11 +253,6 @@ main {
   text-align: center;
 }
 
-.chips__content > div {
-  display: flex;
-  justify-content: center;
-}
-
 .chips__content h4:first-child {
   margin-bottom: 30px;
 }
@@ -330,7 +325,7 @@ main {
 .view-personal__list-item img {
   max-width: 270px;
   height: auto;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .view-personal__list-item h4 {
@@ -444,8 +439,7 @@ main {
 }
 
 .integrations__image {
-  max-width: 1000px;
-  width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -498,7 +492,6 @@ main {
 
 .tarifs__plane-list-title h3 {
   padding: 25px 0;
-
 }
 
 .tarifs__plane-list-item ul {
@@ -506,7 +499,7 @@ main {
   list-style: disc inside;
   color: var(--light-green);
   font-size: 20px;
-  padding: 0 50px;
+  padding: 0 45px;
 }
 
 .tarifs__plane-list-item ul li:not(:last-child) {
@@ -537,9 +530,9 @@ main {
 
 .contact-us > img {
   position: absolute;
-  bottom: 0;
-  left: 10px;
-  width: 45%;
+  bottom: 30px;
+  left: 270px;
+  max-width: 700px;
 }
 
 .contact-us__content {
@@ -601,6 +594,10 @@ main {
     top: -8%;
     max-width: 18%;
   }
+
+  .contact-us > img {
+    left: 70px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -636,7 +633,7 @@ main {
   }
 
   .contact-us > img {
-    max-width: 580px;
+    max-width: 420px;
   }
 }
 
@@ -690,8 +687,12 @@ main {
     min-height: 465px;
   }
 
+  .topicality__title {
+    margin-bottom: 40px;
+  }
+
   .topicality__list-item {
-    width: 80%;
+    width: 100%;
   }
 
   .topicality__list-item p {
@@ -699,15 +700,6 @@ main {
   }
 
   .topicality__list-item img {
-    max-width: 120px;
-  }
-
-  .pay::after {
-    left: -10px;
-  }
-
-  .pay::after,
-  .pay::before {
     max-width: 120px;
   }
 
@@ -785,6 +777,7 @@ main {
 
   .contact-us > img {
     max-width: 430px;
+    left: 50px;
   }
 
   .contact-us__form {
@@ -840,7 +833,7 @@ main {
     max-width: 200px;
     max-height: 160px;
     margin-bottom: 25px;
-}
+  }
 
   .view-personal__list-item p {
     font-size: 16px;
@@ -859,11 +852,6 @@ main {
     padding: 0 0 60px;
   }
 
-  .pay::after,
-  .pay::before {
-    width: 45%;
-  }
-
   .topicality__list-item {
     font-size: 20px;
   }
@@ -874,6 +862,18 @@ main {
 
   .topicality__list-item + .topicality__list-item {
     margin-top: 5px;
+  }
+
+  .contact-us__content {
+    justify-content: center;
+  }
+
+  .contact-us > img {
+    display: none !important;
+  }
+
+  .contact-us__form {
+    width: 65%;
   }
 }
 
@@ -965,7 +965,7 @@ main {
   }
 
   .view-personal__list {
-    display: block
+    display: block;
   }
 
   .view-personal__list-item {
@@ -1126,7 +1126,7 @@ main {
   .tarifs__plane-list-item ul {
     padding: 0 25px;
     margin-bottom: 30px;
-}
+  }
 
   .tarifs__plane-list-item ul li span {
     font-size: 16px;
@@ -1145,7 +1145,6 @@ main {
 }
 
 @media only screen and (max-width: 320px) {
-
 }
 
 /* .rotation-cube {
