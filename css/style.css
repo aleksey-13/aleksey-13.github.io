@@ -587,7 +587,6 @@ main {
 
 .slider {
   position: relative;
-  /* overflow: hidden; */
   width: 80%;
   margin: 0 auto;
 }
@@ -623,10 +622,6 @@ main {
 
 .slider .slick-arrow:focus {
   outline: 0;
-}
-
-.slider .slick-arrow:hover {
-  transform: translateY(-50%) scale(0.96);
 }
 
 .slider .slick-arrow.slick-prev {
@@ -930,6 +925,14 @@ main {
   .contact-us__form {
     width: 65%;
   }
+
+  .slider .slick-arrow.slick-prev {
+    left: -80px;
+  }
+
+  .slider .slick-arrow.slick-next {
+    right: -80px;
+  }
 }
 
 @media only screen and (max-width: 517px) {
@@ -1090,6 +1093,18 @@ main {
   .contact-us__form {
     width: 100%;
   }
+
+  .slider .slick-arrow {
+    width: 20px;
+  }
+
+  .slider .slick-arrow.slick-prev {
+    left: -50px;
+  }
+
+  .slider .slick-arrow.slick-next {
+    right: -50px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1197,65 +1212,12 @@ main {
     margin-bottom: 10px;
     font-size: 14px;
   }
-  .pay::after,
-  .pay::before {
-    top: 40%;
+
+  .slider .slick-arrow {
+    width: 10px;
+    transform: translateY(-25%);
   }
 }
 
 @media only screen and (max-width: 320px) {
 }
-
-/* .rotation-cube {
-  width: var(--size-cube);
-  height: var(--size-cube);
-  transform-style: preserve-3d;
-
-  animation-name: rotateCube;
-  animation-duration: 6s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-
-  position: absolute;
-  top: 50%;
-  right: 50%;
-}
-
-@keyframes rotateCube {
-  from {
-    transform: rotateX(-28deg) rotateY(0deg) rotateZ(50deg);
-  }
-  to {
-    transform: rotateX(-28deg) rotateY(360deg) rotateZ(50deg);
-  }
-}
-
-.side {
-  position: absolute;
-  width: var(--size-cube);
-  height: var(--size-cube);
-  border: 5px solid #fff;
-  backface-visibility: hidden;
-  background-image: url("https://miro.medium.com/max/592/1*eFN_Exto7UKvR3ak4tkDmA.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.front {
-  transform: translateZ(var(--translate-z));
-}
-.back {
-  transform: rotateY(180deg) translateZ(var(--translate-z));
-}
-.right {
-  transform: rotateY(90deg) translateZ(var(--translate-z));
-}
-.left {
-  transform: rotateY(-90deg) translateZ(var(--translate-z));
-}
-.top {
-  transform: rotateX(90deg) translateZ(var(--translate-z));
-}
-.bottom {
-  transform: rotateX(-90deg) translateZ(var(--translate-z));
-} */
