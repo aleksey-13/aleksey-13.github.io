@@ -22,10 +22,9 @@ AOS.init({
 $(document).ready(function () {
   $(".slider").slick({
     adaptiveHeight: true,
-    speed: 300,
-    // autoplay: true,
+    speed: 500,
+    autoplay: true,
     waitForAnimate: false,
     slidesToShow: 1,
-    // fade: true,
   });
 });
