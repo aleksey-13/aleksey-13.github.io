@@ -15,45 +15,6 @@
   box-sizing: border-box;
 }
 
-.cube {
-  width: var(--size-cube);
-  height: var(--size-cube);
-  transform-style: preserve-3d;
-  position: absolute;
-  top: 50px;
-  right: 600px;
-
-  animation-name: rotateCube;
-  animation-duration: 12s;
-  animation-timing-function: linear;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes rotateCube {
-  from { transform: rotateX(-50deg) rotateY(0deg) rotateZ(30deg); }
-  to { transform: rotateX(-50deg) rotateY(360deg) rotateZ(30deg); }
-}
-
-.side {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border: 5px solid #dedede;
-  backface-visibility: hidden;
-  background-image: url("https://miro.medium.com/max/592/1*eFN_Exto7UKvR3ak4tkDmA.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.front { transform: translateZ(var(--translate-z)); }
-.back { transform: rotateY(180deg) translateZ(var(--translate-z)); }
-.right { transform: rotateY(90deg) translateZ(var(--translate-z)); }
-.left { transform: rotateY(-90deg) translateZ(var(--translate-z)); }
-.top { transform: rotateX(90deg) translateZ(var(--translate-z)); }
-.bottom { transform: rotateX(-90deg) translateZ(var(--translate-z)); }
-
-
 ul {
   list-style: none;
 }
@@ -133,7 +94,7 @@ h4 {
 .cube-bottom-center {
   position: absolute;
   bottom: 100px;
-  right: 45%;
+  right: 40%;
   max-width: 170px;
 }
 
@@ -149,7 +110,7 @@ main {
 }
 
 .banner {
-  background-image: url("../img/banner-restaurant.png");
+  background-image: url("../img/banner-preorder.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -157,7 +118,7 @@ main {
   width: 100%;
   padding: 10.8vmax 0 10.15vmax;
   color: #fff;
-  /* margin-top: 70px; */
+  margin-top: 70px;
 }
 
 .banner__title {
@@ -179,19 +140,115 @@ main {
 
 .banner__title--primary {
   background-color: rgba(239, 127, 26, 0.8);
-  padding: 45px 20px 40px 365px;
+  padding: 45px 20px 40px 300px;
 }
 
 .banner__title--secondary {
   background-color: rgba(149, 193, 43, 0.8);
 
-  padding: 45px 10px 40px 365px;
+  padding: 45px 10px 40px 300px;
 }
 
 .banner__title--primary span,
 .banner__title--secondary span {
   display: block;
 }
+
+.time {
+  padding: 60px 15px 100px;
+  font-family: "Montserrat Medium", sans-serif;
+  font-size: 24px;
+
+}
+
+.time__title {
+  color: var(--main-orange);
+  margin-bottom: 40px;
+}
+
+.time__content {
+  display: flex;
+  justify-content: center;
+}
+
+.time__content-img {
+  background-image: url('../img/time-img.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 35%;
+}
+
+.time__content-text {
+  width: 55%;
+  color: var(--main-orange);
+  padding: 40px 0 80px;
+  margin-left: 40px;
+}
+
+.time__content-text p + p {
+  margin-top: 30px;
+}
+
+.time__answer {
+  background-color: var(--main-orange);
+  padding: 20px 65px 25px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.time__answer h3 {
+  margin-bottom: 20px;
+}
+
+.view {
+  padding: 90px 0;
+}
+
+.view__title {
+  color: var(--main-orange);
+  margin-bottom: 35px;
+}
+
+.view__secondary-title {
+  color: var(--light-green);
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.view__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view__content-text {
+  width: 60%;
+}
+
+.view__content > img {
+  width: 40%;
+}
+
+.view__content-title {
+  display: flex;
+  margin-bottom: 30px;
+  color: var(--main-orange);
+  align-items: center;
+}
+
+.view__content-title h4 {
+  width: 60%;
+}
+
+.view__content-title h4 span {
+  display: block;
+}
+
+.view__content-title img {
+  width: 30%;
+}
+
 
 .why-justo {
   background-color: #fff;
