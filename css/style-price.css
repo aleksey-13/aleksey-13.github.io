@@ -35,16 +35,9 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h4 {
   font-family: "Montserrat ExtraBold", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
 }
 
 .container {
@@ -174,6 +167,73 @@ main {
 .button.green-primary:hover {
   background-color: #628b00;
 }
+
+.price-list {
+
+}
+
+.price-list__table {
+  
+}
+
+.price-list__table-row {
+  
+}
+
+.price-list__table-row > li:nth-child(2n + 1) {
+  background-color: #e8e8e8;
+
+}
+
+.price-list__table-col {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  min-height: 60px;
+  font-family: "Montserrat Medium", sans-serif;
+  font-size: 25px;
+  padding: 15px 0;
+}
+
+.true,
+.false {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.true {
+  background-image: url('../img/true.png');
+}
+
+.false {
+  background-image: url('../img/false.png');
+}
+
+.price-list__table-col > li {
+  position: relative;
+}
+
+.price-list__table-col > li + li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-list__table-col > li:first-child{
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.price-list__table-header {
+  background-color: #95c22b;
+  color: #fff;
+  padding: 25px 0 30px;
+}
+
+.price-list__table-header > li {}
 
 .contact-us {
   padding: 100px 0 80px;
@@ -400,18 +460,22 @@ main {
   }
 }
 
-@media only screen and (max-width: 517px) {
+@media only screen and (max-width: 520px) {
   h2 {
     margin-bottom: 20px !important;
     font-size: 24px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   h4 {
     font-size: 16px;
+  }
+
+  .container {
+    padding: 0;
   }
 
   .cube-center-left,
@@ -429,6 +493,15 @@ main {
     line-height: 27px;
   }
 
+  .price-list__table-col {
+    font-size: 18px;
+  }
+
+  .true, .false {
+    width: 25px;
+    height: 25px;
+  }
+
   .contact-us__content {
     flex-flow: column;
   }
@@ -438,9 +511,10 @@ main {
   }
 }
 
-@media only screen and (max-width: 425px) {
-  h3 {
-    font-size: 16px;
+@media only screen and (max-width: 426px) {
+  h3,
+  .price-list__table-col {
+    font-size: 14px;
   }
 
   h4 {
@@ -451,6 +525,18 @@ main {
     margin-top: 70px;
   }
 
+  .price-list__table-header {
+    padding: 15px 0;
+  }
+
+  .price-list__table-col > li:first-child {
+    padding-left: 5px;
+  }
+
+  .true, .false {
+    width: 20px;
+    height: 20px;
+  }
 
   .contact-us__form > p {
     font-size: 16px;
@@ -492,4 +578,7 @@ main {
 }
 
 @media only screen and (max-width: 320px) {
+  h3, .price-list__table-col {
+    font-size: 10px;
+}
 }
