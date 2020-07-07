@@ -447,6 +447,10 @@ main {
     padding: 10px;
   }
 
+  .banner {
+    background-image: url("../img/banner-price-mobile.png");
+  }
+
   .contact-us__content {
     justify-content: center;
   }
@@ -573,12 +577,9 @@ main {
 
 }
 
-@media only screen and (max-width: 350px) {
-
-}
-
 @media only screen and (max-width: 320px) {
-  h3, .price-list__table-col {
+  h3, 
+  .price-list__table-col {
     font-size: 10px;
-}
+  }
 }
