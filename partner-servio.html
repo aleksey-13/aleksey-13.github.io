@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style-partner-servio.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-page chips">
+        <div class="container">
+          <h2 class="chips__title" data-aos="fade-up">
+            У ВАШОМУ ЗАКЛАДІ НЕМАЄ POS-СИСТЕМИ? ВСТАНОВЛЮЙТЕ SERVIO! 
+          </h2>
+
+          <div class="chips__video">
+            <iframe
+              src="https://www.youtube.com/embed/2nm0LtNNgQE"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-page how-to-work-integration">
+        <div class="container">
+          <h3 class="how-to-work-integration__title">ЯК ПРАЦЮЄ ІНТЕГРАЦІЯ?</h3>
+          <img src="img/partners-servio/how-to-work-integration-servio.png" alt="how-to-work-integration-servio" class="how-to-work-integration__bg-img">
+        </div>
+      </section>
+
+      <section class="section-page what-give-integration">
+        <div class="container">
+          <h3 class="what-give-integration-integration__title">Що дає інтеграція:</h3>
+          <ul class="what-give-integration-integration__list">
+            <li>
+              <img src="img/partners-servio/sky-whith-lines-dots.png" alt="">
+              <p>Автоматизація ресторану: дозволяє додати онлайн-меню і всі зміни додаються</p> 
+            </li>
+            <li>
+              <img src="img/partners-servio/consignments.png" alt="">
+              <p>Збільшення кількості замовлень, яке може прийняти 1 офіціант: замовлення потрапляють в систему автоматично без участі офіціанта в цьому процесі</p>
+            </li>
+            <li>
+              <img src="img/partners-servio/consignments2.png" alt="">
+              <p>Активний стоп-лист: якщо блюдо закінчилося, то його не буде в позиціях, які доступні гостю</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-page servio">
+        <div class="container">
+          <h2 class="servio__title">
+            <!-- <?php echo carbon_get_the_post_meta("servio__title") ?> -->
+          </h2>
+
+          <div class="servio__content">
+            <div>
+              <!-- <?php echo carbon_get_the_post_meta("servio__text") ?> -->
+
+              <ul class="servio__content-list">
+                <!-- <?php
+                  $list = carbon_get_post_meta( $post->ID, 'servio__list' );
+                  foreach( $list as $item ) {
+                    echo '<li><span>';
+                    echo $item['servio__list-text'];
+                    echo '</span></li>';
+                  }
+                ?> -->
+              </ul>
+
+              <a
+                class="button"
+                target="_blank"
+                href="<?php echo carbon_get_the_post_meta("servio__btn-link") ?>"
+                >
+                <!-- <?php echo carbon_get_the_post_meta("servio__btn-text") ?> -->
+                </a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- <?php
+            $img_data = carbon_get_the_post_meta("servio__img");
+            $src_img = wp_get_attachment_image_src( $img_data, 'full' );
+
+            echo '<img src="'.$src_img[0].'" data-pc-src="'.$src_img[0].'" alt="servio"/>'
+        ?> -->
+      </section>
+
+      <section class="section-page contact-us">
+        <div class="container">
+          <div class="contact-us__content">
+            <p>Ми повернемо вам гроші, якщо, після місяця використання, якість сервісу Justo вас вас не влаштує!</p>
+            <div class="contact-us__form">
+              <p>
+                <span>ЗАЛИШТЕ СВОЇ</span>
+                <span>КОНТАКТИ: МИ ЗВ’ЯЖЕМОСЬ</span>
+                <span>З ВАМИ НАЙБЛИЖЧИМ ЧАСОМ</span>
+              </p>
+              <form>
+                <input type="text" required placeholder="Ім'я" />
+                <input type="email" required placeholder="E-mail" />
+                <input type="tel" required placeholder="Телефон" />
+                <input type="hidden" value="Main Page" />
+                <input type="submit" value="Надіслати" />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <img src="img/partners-servio/contact-us-img.png" alt="contact-us" />
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

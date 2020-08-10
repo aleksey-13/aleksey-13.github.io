@@ -168,6 +168,27 @@ main {
   background-color: #628b00;
 }
 
+.price-list__sticker-img,
+.price-list__phone-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+.price-list__sticker-img {
+  left: 0;
+  bottom: 750px;
+  transform: translateX(-55%) rotate(27deg);
+  max-width: 700px;
+}
+
+.price-list__phone-img {
+  right: 0;
+  top: 500px;
+  transform: translateX(20%);
+  max-width: 445px;
+}
+
 .price-list {
 
 }
@@ -322,6 +343,11 @@ main {
 
   .contact-us > img {
     left: 70px;
+  }
+
+  .price-list__sticker-img,
+  .price-list__phone-img {
+    display: none !important;
   }
 }
 
