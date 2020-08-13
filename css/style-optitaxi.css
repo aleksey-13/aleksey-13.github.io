@@ -84,7 +84,7 @@ main {
 }
 
 .banner {
-  background-image: url('/img/partners-opti-taxi/НАКЛЕЙКА\ copy2.png');
+  background-image: url('/img/partners-opti-taxi/banner-opti-taxi.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,6 +121,19 @@ main {
   max-height: 200px;
   top: 10px;
   right: 570px;
+}
+
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-opti-taxi {
+  position: absolute;
+  right: 20px;
+  bottom: 200px;
+  max-width: 1000px;
 }
 
 .banner__title-primary {
@@ -288,6 +301,10 @@ main {
 }
 
 @media only screen and (max-width: 1441px) {
+  .car-opti-taxi {
+    max-width: 700px;
+  }
+
   .cube-top-left {
     max-width: 120px;
   }
@@ -310,6 +327,10 @@ main {
   .container {
     padding: 0 35px;
   }
+
+  .car-opti-taxi {
+    max-width: 600px;
+  }   
 
   .banner__title-secondary-list,
   .delivery-map__list-inside-list {
@@ -346,6 +367,16 @@ main {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .car-opti-taxi {
+    max-width: 500px;
+  }
+
+  .cube-bottom-top-center {
+    right: 140px;
+  }
+}
+
 @media only screen and (max-width: 876px) {
   h2 {
     font-size: 32px;
@@ -357,6 +388,11 @@ main {
 
   h4 {
     font-size: 22px;
+  }
+
+  .car-opti-taxi {
+    max-width: 450px;
+    bottom: 60px;
   }
 
   .section-page {
@@ -404,7 +440,7 @@ main {
   }
 
   .button {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .contact-us__content > p {
@@ -512,6 +548,7 @@ main {
     display: none !important;
   }
 
+  .car-opti-taxi,
   .contact-us > img {
     display: none !important;
   }
