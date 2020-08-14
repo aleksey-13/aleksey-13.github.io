@@ -154,6 +154,27 @@
         </div>
       </section>
 
+      <section class="section-page topicality">
+        <div class="container">
+          <h2 class="topicality__title" data-aos="fade-up">
+            <?php echo carbon_get_the_post_meta("topicality__title") ?>
+          </h2>
+
+          <ul class="topicality__list">
+            <?php
+              $list = carbon_get_post_meta( $post->ID, 'topicality__list' );
+              foreach( $list as $item ) {
+                $src_img = wp_get_attachment_image_src( $item['topicality__list-img'], 'full' );
+                echo '<li class="topicality__list-item" data-aos="'.$item['topicality__list-fade'].'">';
+                echo '<img src="'.$src_img[0].'" data-pc-src="'.$src_img[0].'" alt="topicality-ico"/>';
+                echo $item['topicality__list-text'];
+                echo '</li>';
+              }
+            ?>
+          </ul>
+        </div>
+      </section>
+
       <section class="section-page contact-us">
         <div class="container">
           <h2 class="contact-us__title" data-aos="fade-up">
