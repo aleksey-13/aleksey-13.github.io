@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap");
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --main-orange: #ef7f1a;
+  --light-green: #95c127;
+}    
+
+.button {
+    padding: 15px 20px 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:active {
+    transform: scale(.98);
+}
+
+.button.active {
+    border: 1px solid #fff;
+    background-color: var(--light-green);
+}
+
+.button.active:hover {
+    background-color: rgba(149, 193, 39, .7);
+}
+
+.button-primary {
+    background-color: var(--main-orange);
+}
+
+.button-primary:hover {
+    background-color: rgb(223, 107, 6);
+}
+
+body {
+    background-color: var(--light-green);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+#root {
+    max-width: 1200px;
+    min-width: 990px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 990px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main-orange);
+    padding: 20px 40px;
+    margin: 0 auto;
+    border-radius: 0 0 25px 25px;
+}
+
+.header__logo {
+    max-width: 300px;
+    margin-right: 50px;
+}
+
+.header__title {
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+}
+
+.header__title span {
+    display: block;
+}
+
+.btns-handler {
+    margin: 40px auto;
+    background-color: rgba(0,0,0,.2);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.btns-handler button + button {
+    margin-left: 40px;
+}
+
+.price {
+    padding: 0 35px 0;
+}
+
+.hide {
+    transition: opacity .2s ease-in;
+}
+
+.price.hide {
+    opacity: 0;
+}
+
+.show {
+    transition: opacity .2s ease-in;
+}
+
+.price.show {
+    opacity: 1;
+}
+
+.price__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    list-style: none;
+}
+
+.price__list-item {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    width: 30%;
+    height: 100%;
+}
+
+.price__list-item-title {
+    color: var(--light-green);
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.price__list-item-text {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.price__list-item-text span {
+    color: var(--main-orange);
+}
+
+.price__list-item-type {
+    color: rgba(0,0,0,.7);
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-weight: 800;
+}
+
+.price__list-item-inner-list {
+    margin: 5px 0 20px;
+    color: rgba(0,0,0,.7);
+    list-style: disc;
+}
+
+.price__list-item-inner-list li + li {
+    margin-top: 10px;
+}
+
+.price__list-item-price {
+    font-family: "Montserrat ExtraBold", sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--main-orange);
+    text-align: center;
+    font-weight: 800;
+}
+
+.opti-service {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--main-orange);
+    padding: 10px 0 15px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    max-width: 990px;
+    margin-bottom: 40px;
+}
+
+.opti-service__logo {
+    max-width: 150px;
+}
+
+.opti-service__title {
+    color: #fff;
+    margin-bottom: 10px;  
+}
+
+@media only screen and (max-width: 876px) {
+    #root {
+        min-width: 100%;
+    }
+
+    .header,
+    .opti-service {
+        max-width: 90%;
+        font-size: 18px;
+    }
+
+    .header__title,
+    .price__list-item-title {
+        font-size: 34px;
+    }
+
+    .price__list-item {
+        padding: 20px 30px;
+    }
+
+    .price__list {
+        font-size: 14px;
+    }
+
+    .price__list-item-price {
+        font-size: 22px;
+    }
+
+    .price__list-item-type {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header__logo {
+        max-width: 140px;
+    }
+
+    .header__title, .price__list-item-title {
+        font-size: 28px;
+    }
+
+    .price__list-item-type {
+        font-size: 18px;
+    }
+
+    .price__list-item-price {
+        font-size: 16px;
+    }
+
+    .opti-service {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 517px) { 
+    .header {
+        padding: 20px;
+        align-items: center;
+    }
+
+    .header__logo {
+        margin: 0px;
+    }
+
+    .header__title, 
+    .price__list-item-title {
+        font-size: 22px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .btns-handler button + button {
+        margin-left: 15px;
+    }
+
+    .price__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .price__list-item {
+        width: 100%;
+    }
+
+    .price__list-item + .price__list-item {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 426px) {  
+    .header__logo {
+        max-width: 120px;
+    }
+
+    .header__title, 
+    .price__list-item-title {
+        font-size: 18px;
+    }
+    
+    .btns-handler {
+        display: flex;
+        padding: 20px 10px;
+    }
+    
+    .opti-service {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 375px) {  
+    .btns-handler {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btns-handler .button {
+        width: 80%;
+    }
+
+    .btns-handler .button + .button{
+        margin: 10px 0 0 0;
+    }
+}
