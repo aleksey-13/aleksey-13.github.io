@@ -137,6 +137,29 @@ body {
     border-radius: 20px;
     width: 30%;
     height: 100%;
+    box-shadow: 20px 15px 10px rgba(0,0,0,0.2);
+}
+
+.price__list-item:nth-child(2) {
+    background-color: rgba(32, 32, 32, .4);
+    color: #fff;
+}
+
+.price__list-item:nth-child(2) .price__list-item-type {
+    color: gold;
+}
+
+.price__list-item:nth-child(2) .price__list-item-price,
+.price__list-item:nth-child(2) .price__list-item-text span {
+    color: darkorange;
+}
+
+.price__list-item:nth-child(2) .price__list-item-title {
+    color: greenyellow;
+}
+
+.price__list-item:nth-child(2) .price__list-item-inner-list {
+    color: rgba(255, 255, 255, .8);
 }
 
 .price__list-item-title {
@@ -316,11 +339,13 @@ body {
     
     .btns-handler {
         display: flex;
+        justify-content: center;
         padding: 20px 10px;
     }
     
     .opti-service {
         font-size: 14px;
+        padding: 0 10px 10px;
     }
 }
 

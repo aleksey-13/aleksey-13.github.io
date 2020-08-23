@@ -11,9 +11,8 @@ activeBtn.classList.add('active')
 
 btns.forEach(btn => btn.addEventListener('click', setPeriodHandler));
 
-
 function setPeriodHandler() {
-    if (activeBtn.getAttribute('id') !== this.getAttribute('id')) {
+    if (activeBtn.getAttribute('data-type') !== this.getAttribute('data-type')) {
         activeBtn.classList.remove('active')
 
         priceSection.classList.remove('show')
@@ -29,14 +28,14 @@ function setPeriodHandler() {
                     pro.innerText = '100$ / 1 месяц*'
                     break
                 case 'half-year':
-                    light.innerText = '108$ / 6 месяцев*'
-                    smart.innerText = '270$ / 6 месяцев*'
-                    pro.innerText = '540$ / 6 месяцев*'
+                    light.innerText = '18$ / 1 месяц*'
+                    smart.innerText = '45$ / 1 месяц*'
+                    pro.innerText = '90$ / 1 месяц*'
                     break
                 case 'year':
-                    light.innerText = '192$ / 12 месяцев*'
-                    smart.innerText = '480$ / 12 месяцев*'
-                    pro.innerText = '960$ / 12 месяцев*'
+                    light.innerText = '16$ / 1 месяц*'
+                    smart.innerText = '40$ / 1 месяц*'
+                    pro.innerText = '80$ / 1 месяц*'
                     break
             }
 
