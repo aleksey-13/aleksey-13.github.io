@@ -1,0 +1,59 @@
+.section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    @media only print,
+    screen and (max-width: $bp-medium) {
+        position: relative;
+    }
+}
+
+.wrap {
+    position: relative;
+    width: inherit;
+    height: 100%;
+
+    @media only print and (max-width: $bp-medium) {
+        height: 100vh;
+    }
+}
+
+.section-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section-summary {
+    background-image: linear-gradient(to right bottom, rgba(120, 187, 205, 0.8), rgba(255, 255, 255, 0.2)),
+        url(../img/hero.jpg);
+    background-size: 100% 100%;
+    background-position: top;
+    position: relative;
+    padding: 4rem 2rem;
+}
+
+.section-portfolio {
+    padding: 4rem 2rem;
+    position: relative;
+    background-image: linear-gradient(to right bottom,
+            rgba(120, 187, 205, 0.8),
+            rgba(255, 255, 255, 0.2)),
+        url(../img/nat-4.jpg);
+    background-size: cover;   
+}
+
+.header-box {
+    padding: 1rem;
+    background-color: rgba($color: #bcbbbf, $alpha: .6);
+    width: 22rem;
+    border-radius: 1rem;
+
+    @media only print and (max-width: $bp-medium) {
+        margin-bottom: 0 !important;
+        text-align: left !important;
+    }
+}
