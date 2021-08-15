@@ -11,10 +11,12 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="css/style.min.css" />
-        <title>Document</title>
+        <title>Добриво</title>
     </head>
     <body>
         <header class="header">
+            <div class="header__slider" id="slider"></div>
+
             <div class="container">
                 <div class="header__primary">
                     <h1 class="header-title">Добриво</h1>
@@ -148,7 +150,7 @@
                                 <h4 class="benefits__list-title">ЭКОНОМИЯ</h4>
                                 <p class="benefits__list-text">
                                     химических удобрений в хозяйстве
-                                </p>
+                                </p> 
                                 <p class="benefits__list-precent">до 70%</p>
                             </li>
                             <li class="benefits__list-item">
@@ -166,8 +168,18 @@
                                 <p class="benefits__list-precent">в 3-10раз</p>
                             </li>
                         </ul>
+                        <div class="learn_more">
+                            <div class="learn_more__title">
+                                <p class="learn_more__title-text">Хотитите трали-вали ла-лала?</p>
+                                <p class="learn_more__title-head"><span>УЗНАЙТЕ</span> О НАГРО БОЛЬШЕ!</p>
+                            </div>
+                            <div class="learn_more__link">
+                                <button class="learn_more__link-button"> 
+                                    УЗНАТЬ БОЛЬШЕ
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="learn_more"></div>
                     <div class="income">
                         <div class="container">
                             <div class="income__container">
@@ -184,25 +196,34 @@
                                     <span class="income-line"></span>
                                     <div class="income__form">
                                         <div class="form-control">
-                                        <label for="crop">Выберите культуру</label>
-                                        <select
-                                            class="income__form-input"
-                                            id="crop"
-                                        >
-                                            <i class="fa fa-caret-down"></i>
-                                            <option disabled value="0" selected>
-                                                -- культура --
-                                            </option>
-                                            <option value="3100">
-                                                Пшеница 3100 грн / т
-                                            </option>
-                                            <option value="2900">
-                                                Ячмень 2900 грн / т
-                                            </option>
-                                        </select>
-                                    </div>
+                                            <label for="crop"
+                                                >Выберите культуру</label
+                                            >
+                                            <select
+                                                class="income__form-input"
+                                                id="crop"
+                                            >
+                                                <i class="fa fa-caret-down"></i>
+                                                <option
+                                                    disabled
+                                                    value="0"
+                                                    selected
+                                                >
+                                                    -- культура --
+                                                </option>
+                                                <option value="3100">
+                                                    Пшеница 3100 грн / т
+                                                </option>
+                                                <option value="2900">
+                                                    Ячмень 2900 грн / т
+                                                </option>
+                                            </select>
+                                            <small>Error message</small>
+                                        </div>
                                         <div class="form-control">
-                                            <label for="yield">Урожайность, ц/га</label>
+                                            <label for="yield"
+                                                >Урожайность, ц/га</label
+                                            >
                                             <input
                                                 value=""
                                                 placeholder="0"
@@ -213,36 +234,39 @@
                                             <small>Error message</small>
                                         </div>
                                         <div class="form-control">
-                                        <label for="price">Стоимость хим. удобрения, грн/га</label>
-                                        <input
-                                            value=""
-                                            placeholder="0"
-                                            type="text"
-                                            class="income__form-input"
-                                            id="price"
-                                        />
-                                        <small>Error message</small>
+                                            <label for="price"
+                                                >Стоимость хим. удобрения,
+                                                грн/га</label
+                                            >
+                                            <input
+                                                value=""
+                                                placeholder="0"
+                                                type="text"
+                                                class="income__form-input"
+                                                id="price"
+                                            />
+                                            <small>Error message</small>
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="area"
+                                                >Посевная площадь, га</label
+                                            >
+                                            <input
+                                                value=""
+                                                placeholder="0"
+                                                type="text"
+                                                class="income__form-input"
+                                                id="area"
+                                            />
+                                            <small>Error message</small>
+                                        </div>
                                     </div>
-                                    <div class="form-control">
-                                        <label for="area">Посевная площадь, га</label>
-                                        <input
-                                            value=""
-                                            placeholder="0"
-                                            type="text"
-                                            class="income__form-input"
-                                            id="area"
-                                        />
-                                        <small>Error message</small>
-                                    </div>
-                                </div>
                                     <span class="income-line"></span>
                                     <div class="income__footer">
                                         <p class="income-text">
                                             Прибыль от ДОБРИВА
                                         </p>
-                                        <h3 class="income-h3" id="income">
-                                            0
-                                        </h3>
+                                        <h3 class="income-h3" id="income">0</h3>
                                         <p>грн</p>
                                     </div>
                                 </div>
@@ -252,6 +276,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- <script src="js/slick.min.js"></script> -->
         <script src="js/main.min.js"></script>
     </body>
 </html>
