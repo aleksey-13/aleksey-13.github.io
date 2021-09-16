@@ -1,0 +1,17 @@
+.main {
+    margin-left: 30rem;
+    position: relative;
+
+    @media only print,
+    screen and (max-width: $bp-medium) {
+        margin-left: 0;
+    }
+}
+
+.hideContainer {
+    transition: all .4s ease;
+}
+
+.showContainer {
+    transition: all .8s ease;
+}

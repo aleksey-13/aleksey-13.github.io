@@ -1,0 +1,902 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900')
+$colorRed : #f13f3f
+$colorText : #9b9b9b
+$mainFont: 'FontAwesome','Roboto', sans-serif, Arial Unicode MS
+$mainSize : 16px
+$background: url('../img/home/body-bg.jpg')
+
+=title 
+    font-size: $mainSize + 34
+    margin-bottom: 45px
+    padding-left: 20px
+    transform: scale(1,0.9)
+    border-left: 1px solid $colorRed
+
+=button
+    display: inline-block
+    position: relative
+    color: #fff
+    transform: scale(1,0.85)
+    font-weight: 500
+    text-align: center
+    padding: 15px 25px
+    z-index: 1
+    margin-bottom: 60px
+    &:before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        height: 100%
+        width: 65%
+        background: $colorRed
+        z-index: -1
+        transition: 0.3s
+    &:hover
+        &:before
+            width: 100%
+
+@media screen and (min-width: 1600px)
+    .header
+        &__wrap
+            width: 1400px
+            &:after
+                left: 770px
+        &__caption
+            width: 1400px
+        &__title
+            font-size: $mainSize + 57
+        &__description
+            width: 765px
+            font-size: $mainSize + 4
+        &__contacts
+            position: relative
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            width: 550px
+            margin: 0 auto
+            color: $colorRed
+            font-size: $mainSize + 1
+            z-index: 2
+        &__btn
+            font-size: $mainSize + 2
+        &__link
+            font-size: $mainSize + 6
+            &_nested
+                font-size: $mainSize + 2
+
+    .dark
+        font-size: $mainSize + 156
+        margin-left: -15px
+    .ink
+        font-size: $mainSize + 64
+
+    .salon
+        &__wrap
+            width: 1400px
+            &:after
+                left: 770px
+        &__title
+            font-size: $mainSize + 38
+        &__images
+            width: 770px
+        &__image
+            width: auto
+        &__about
+            width: 630px
+        &__paragraph_1
+            font-size: $mainSize + 2
+        &__paragraph_2
+            font-size: $mainSize + 1
+
+    .whatWeDo
+        &__wrap
+            width: 1400px
+            padding: 100px 0 200px
+            &:after
+                left: 770px
+        &__services
+            width: 740px
+        &__img
+            top: 0
+        &__title
+            font-size: $mainSize + 38
+    .service
+        width: 350px
+        &__name
+            font-size: $mainSize + 10
+        &__text
+            font-size: $mainSize + 2
+
+    .ourStaff
+        &__wrap
+            width: 1400px
+            &:after
+                left: 770px
+        .slick-slide
+            width: 450px
+            margin-right: 25px
+        &__title
+            font-size: $mainSize + 38
+    .person
+        width: 450px
+        height: 500px
+        &__name
+            font-size: $mainSize + 10
+            &:hover
+                color: $colorRed
+        &__profession
+            font-size: $mainSize + 2
+
+    .testimonials
+        &__wrap
+            width: 1400px
+            &:after
+                left: 770px
+        &__comment
+            width: 44%
+        &__text
+            font-size: $mainSize + 2
+        &__title
+            font-size: $mainSize + 38
+    
+    .author
+        &__name
+            font-size: $mainSize + 10
+        &__status
+            font-size: $mainSize + 2
+
+    .gallery
+        &__containTitle
+            width: 1400px
+        &__btn
+            font-size: $mainSize + 2
+            &:after
+                line-height: $mainSize 
+        &__title
+            font-size: $mainSize + 38
+        &_before_after
+            width: 1400px
+            &:after
+                left: 770px
+
+    .callback
+        &__wrap
+            width: 1400px
+            &:after
+                left: 770px
+        &__contain
+            width: 630px
+            padding-left: 0
+        &__fill
+            font-size: $mainSize + 2
+        &__title
+            font-size: $mainSize + 38
+
+    .form
+        &__btn
+            font-size: $mainSize + 1
+
+    .footer
+        &__wrap
+            width: 1400px
+        &__links
+            width: 780px
+            font-size: $mainSize + 4
+
+@media screen and (max-width: 1200px)
+    .header
+        &__img
+            right: 0
+            width: 380px
+        &__wrap
+            width: 970px
+            &:after
+                left: 600px
+        &__caption
+            width: 970px
+
+    .salon
+        &__wrap
+            width: 970px
+            &:after
+                left: 600px
+        &__images
+            position: relative
+            width: 600px
+        &__image
+            width: 250px
+        &__our_gallery
+            right: -20px
+        &__about
+            width: 370px
+        &__title
+            margin-bottom: 25px
+        &__signature
+            width: 140px
+            bottom: -25px   
+
+    .whatWeDo
+        &__wrap
+            width: 970px
+            &:after
+                left: 600px
+        &__services
+            width: 575px
+        &__img
+            width: 370px
+            bottom: 100px
+    .service
+        width: 280px
+        &__name
+            font-size: $mainSize + 6
+        &__text
+            font-size: $mainSize - 1
+
+    .ourStaff
+        &__wrap
+            width: 970px
+            &:after
+                left: 600px
+        .slick-slide
+            width: 310px
+            margin-right: 20px
+    .person
+        width: 310px
+        height: 410px
+
+    .testimonials
+        &__wrap
+            width: 970px
+            &:after
+                left: 600px
+        &__comment
+            width: 440px
+
+    .gallery
+        &__containTitle
+            width: 970px
+        &_before_after
+            width: 970px
+            &:after
+                left: 600px
+
+    .callback
+        &__wrap
+            width: 970px
+            &:after
+                left: 600px
+        &__img
+            position: absolute
+            left: 0
+            bottom: 0
+            display: none
+        &__contain
+            width: 390px
+
+    .footer
+        &__wrap
+            width: 970px
+        &__links
+            width: 680px
+
+
+@media screen and (max-width: 1024px)
+    .header
+        &__img
+            right: 0
+            width: 380px
+        &__wrap
+            width: 840px
+            &:after
+                left: 550px
+        &__caption
+            width: 840px
+
+    .salon
+        &__wrap
+            width: 840px
+            padding: 100px 0 50px
+            &:after
+                left: 550px
+        &__images
+            position: relative
+            width: 550px
+        &__image
+            width: 230px
+        &__our_gallery
+            display: none
+        &__about
+            width: 290px
+        &__title
+            margin-bottom: 25px
+        &__paragraph_1
+            font-size: $mainSize 
+        &__paragraph_2
+            font-size: $mainSize - 1
+        &__signature
+            width: 110px
+            bottom: -65px   
+
+    .whatWeDo
+        &__wrap
+            width: 840px
+            padding: 100px 0
+            &:after
+                left: 550px
+        &__services
+            width: 540px
+        &__img
+            bottom: auto
+            top: 250px
+            display: block
+    .service
+        width: 310px
+
+    .ourStaff
+        &__wrap
+            width: 840px
+            &:after
+                left: 550px
+        .slick-slide
+            width: 270px
+            margin-right: 15px
+    .person
+        width: 270px
+        height: 420px
+        &__about
+            bottom: 0
+        &__contacts
+            opacity: 1
+
+    .testimonials
+        &__wrap
+            width: 840px
+            &:after
+                left: 550px
+        &__comment
+            width: 100%
+            &:before
+                display: none
+        &__title
+            margin-bottom: 10px
+        &__text
+            margin-bottom: 20px
+
+    .gallery
+        padding-bottom: 0
+        &__containTitle
+            width: 840px
+        &_before_after
+            width: 840px
+            &:after
+                left: 550px
+
+    .callback
+        &__wrap
+            width: 840px
+            justify-content: flex-start
+            overflow: hidden
+            &:after
+                left: 550px
+        &__img
+            opacity: 0.4
+            left: auto
+            right: 0
+            width: 500px
+        &__contain
+            width: 550px
+            padding-left: 0
+    .footer
+        &__wrap
+            width: 840px
+        &__links
+            width: 580px
+
+
+@media screen and (max-width: 876px)
+    .header
+        &__img
+            right: 0
+            width: 380px
+            opacity: 0.7
+        &__wrap
+            width: 600px
+            &:after
+                display: none
+        &__caption
+            width: 600px
+        &__title
+            font-size: $mainSize + 43
+        &__description
+            width: 100%
+            font-size: $mainSize
+            margin-bottom: 40px
+        &__btn
+            font-size: $mainSize - 2
+        &__logo
+            img
+                width: 160px
+        &__link
+            font-size: $mainSize + 2
+            &_nested
+                font-size: $mainSize - 2
+                line-height: $mainSize + 24
+    .dark
+        font-size: $mainSize + 124
+        margin-left: -15px
+    .ink
+        font-size: $mainSize + 50
+        transform: rotate(-90deg) translate(25%, -45%)
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+        .ink
+            transform: rotate(-90deg) translate(25%, -35%)
+        .header__link_nested:hover
+            padding-left: 0
+
+    .free_call,
+    .opening_hours
+        font-size: $mainSize - 2
+
+
+    .salon
+        &__wrap
+            width: 600px
+            padding: 100px 0 50px
+            &:after
+                display: none
+        &__images
+            width: 100%
+        &__image
+            width: 45%
+        &__about
+            width: 100%
+        &__title
+            font-size: $mainSize + 28
+
+    .whatWeDo
+        &__wrap
+            width: 600px
+            padding: 100px 0
+            &:after
+                display: none
+        &__services
+            width: 560px
+            padding-left: 15px
+        &__img
+            visibility: hidden
+        &__title
+            font-size: $mainSize + 28
+    .service
+        width: 270px
+
+    .ourStaff
+        &__wrap
+            width: 600px
+            &:after
+                display: none
+        .slick-slide
+            width: 290px
+            margin-right: 20px
+        &__title
+            font-size: $mainSize + 28
+        &__btn
+            font-size: $mainSize - 2
+    .person
+        width: 290px
+        height: 420px
+        &__about
+            bottom: 0
+        &__contacts
+            opacity: 1
+        &__name
+            font-size: $mainSize + 4
+        &__profession
+            font-size: $mainSize - 1
+            line-height: $mainSize + 8
+
+    .testimonials
+        &__wrap
+            width: 600px
+            &:after
+                display: none
+        &__comment
+            width: 100%
+            &:before
+                display: none
+        &__title
+            margin-bottom: 10px
+            font-size: $mainSize + 28
+        &__text
+            margin-bottom: 20px
+            font-size: $mainSize - 2
+    
+    .author
+        &__name
+            font-size: $mainSize + 4
+        &__status
+            font-size: $mainSize - 1
+            line-height: $mainSize + 8
+
+    .gallery
+        padding-bottom: 0
+        &__title
+            font-size: $mainSize + 28
+        &__containTitle
+            width: 600px
+        &__btn
+            font-size: $mainSize - 1
+            &:after
+                line-height: $mainSize 
+        .slick-slide
+            width: 50vw
+        &_before_after
+            width: 600px
+            &:after
+                display: none
+
+    .callback
+        &__wrap
+            width: 600px
+            justify-content: flex-start
+            overflow: hidden
+            &:after
+                display: none
+        &__img
+            display: none
+            z-index: -100
+        &__contain
+            width: 100%
+            padding-left: 0
+        &__fill
+            font-size: $mainSize - 1
+        &__title
+            font-size: $mainSize + 28
+    .form__btn
+        font-size: $mainSize - 2
+    .footer
+        &__wrap
+            width: 600px
+        &__links
+            width: 410px
+            font-size: $mainSize
+
+
+@media screen and (max-width: 640px)
+    .header
+        &__img
+            right: 0
+            width: 310px
+            opacity: 0.7
+        &__wrap
+            width: 420px
+        &__nav_wrap
+            width: 240px
+        &__caption
+            width: 100%
+        &__title
+            font-size: $mainSize + 30
+        &__description
+            width: 100%
+            font-size: $mainSize - 2
+        &__btn
+            font-size: $mainSize - 3
+        &__logo
+            img
+                width: 160px
+        &__link
+            font-size: $mainSize 
+            &_nested
+                font-size: $mainSize - 3
+                line-height: $mainSize + 20
+        &__contacts
+            width: 100%
+        &__burger
+            &.open
+                right: 5%
+    .dark
+        font-size: $mainSize + 94
+        margin-left: -15px
+    .ink
+        font-size: $mainSize + 36
+        transform: rotate(-90deg) translate(25%, -45%)
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+        .ink
+            transform: rotate(-90deg) translate(25%, -35%)
+        .header__link_nested:hover
+            padding-left: 0
+
+    .free_call,
+    .opening_hours
+        font-size: $mainSize - 3
+
+
+    .salon
+        &__wrap
+            width: 420px
+            padding: 50px 0 25px
+        &__images
+            width: 100%
+        &__image
+            width: 45%
+        &__about
+            width: 100%
+        &__title
+            font-size: $mainSize + 22
+        &__paragraph_1
+            font-size: $mainSize - 2
+        &__paragraph_2
+            font-size: $mainSize - 1
+
+    .whatWeDo
+        &__wrap
+            width: 420px
+        &__services
+            width: 405px
+        &__title
+            font-size: $mainSize + 22
+    .service
+        width: 100%
+        &__name
+            font-size: $mainSize + 4
+        &__text
+            font-size: $mainSize - 2
+            padding: 10px 0
+
+    .ourStaff
+        &__wrap
+            width: 420px
+        .slick-slide
+            width: 420px
+            margin-left: 20px
+            &:first-child
+                margin-left: 0
+        &__title
+            font-size: $mainSize + 22
+        &__btn
+            font-size: $mainSize - 3
+    .person
+        width: 420px
+        height: 500px
+
+    .testimonials
+        &__wrap
+            width: 420px
+        &__comment
+            width: 100%
+            padding: 50px 0 0 30px
+            &:before
+                display: none
+        &__title
+            margin-bottom: 10px
+            font-size: $mainSize + 22
+        &__text
+            margin-bottom: 20px
+            font-size: $mainSize - 3
+    
+    .author
+        &__name
+            font-size: $mainSize + 2
+        &__status
+            font-size: $mainSize - 2
+            line-height: $mainSize + 8
+        &__photo
+            width: 69px
+            height: 69px
+            &_1
+                background-size: cover
+            &_2
+                background-size: cover
+
+    .gallery
+        &__title
+            font-size: $mainSize + 22
+        &__containTitle
+            width: 420px
+        &__btn
+            font-size: $mainSize - 3
+            &:after
+                line-height: $mainSize - 2
+        &_before_after
+            width: 420px
+
+    .callback
+        &__wrap
+            width: 420px
+            padding-top: 50px
+        &__fill
+            font-size: $mainSize - 2
+        &__title
+            font-size: $mainSize + 22
+    .form__btn
+        font-size: $mainSize - 3
+    .footer
+        &__wrap
+            width: 420px
+            justify-content: center
+        &__links
+            display: none
+    
+@media screen and (max-width: 480px)
+    .header
+        &__img
+            right: 0
+            width: 290px
+            opacity: 0.7
+        &__wrap
+            width: 300px
+        &__title
+            font-size: $mainSize + 20
+        &__description
+            width: 100%
+            font-size: $mainSize - 3
+        &__btn
+            font-size: $mainSize - 4
+        &__logo
+            img
+                width: 140px
+        &__link
+            font-size: $mainSize 
+            &_nested
+                font-size: $mainSize - 3
+                line-height: $mainSize + 20
+        &__contacts
+            width: 100%
+    .dark
+        font-size: $mainSize + 70
+        margin-left: -10px
+    .ink
+        font-size: $mainSize + 24
+        transform: rotate(-90deg) translate(25%, -45%)
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+        .ink
+            transform: rotate(-90deg) translate(25%, -35%)
+        .header__link_nested:hover
+            padding-left: 0
+
+    .free_call,
+    .opening_hours
+        font-size: $mainSize - 3
+        margin-bottom: 5px
+
+
+    .salon
+        &__wrap
+            width: 300px
+            padding: 50px 0 25px
+        &__images
+            width: 100%
+            &:before
+                display: none
+        &__image
+            width: 44%
+        &__about
+            width: 100%
+        &__title
+            font-size: $mainSize + 14
+        &__paragraph_1
+            font-size: $mainSize - 2
+        &__paragraph_2
+            font-size: $mainSize - 1
+
+    .whatWeDo
+        &__wrap
+            width: 300px
+        &__services
+            width: 285px
+        &__title
+            font-size: $mainSize + 14
+    .service
+        width: 100%
+        &__name
+            font-size: $mainSize + 4
+        &__text
+            font-size: $mainSize - 2
+            padding: 10px 0
+
+    .ourStaff
+        &__wrap
+            width: 300px
+        .slick-slide
+            width: 300px
+            margin-left: 20px
+            &:first-child
+                margin-left: 0
+        &__title
+            font-size: $mainSize + 14
+        &__btn
+            font-size: $mainSize - 4
+    .person
+        width: 300px
+        height: 500px
+
+    .testimonials
+        &__wrap
+            width: 300px
+        &__comment
+            width: 100%
+            padding: 50px 0 0 30px
+            &:before
+                display: none
+        &__title
+            margin-bottom: 10px
+            font-size: $mainSize + 14
+        &__text
+            margin-bottom: 20px
+            font-size: $mainSize - 3
+    
+    .author
+        &__name
+            font-size: $mainSize + 2
+        &__status
+            font-size: $mainSize - 2
+            line-height: $mainSize + 8
+        &__photo
+            width: 69px
+            height: 69px
+            &_1
+                background-size: cover
+            &_2
+                background-size: cover
+
+    .gallery
+        &__title
+            font-size: $mainSize + 14
+        &__containTitle
+            width: 300px
+        &__btn
+            font-size: $mainSize - 3
+            &:after
+                line-height: $mainSize - 2
+        &__img
+            width: 100%
+            height: 100%
+            transition: 0.3s
+            cursor: pointer
+            &:hover
+                transform: scale(1.1)
+            &_wrap
+                overflow: hidden
+        .slick-slide
+            width: 100vw
+        &_before_after
+            width: 300px
+
+    .callback
+        &__wrap
+            width: 300px
+            padding-top: 50px
+        &__fill
+            font-size: $mainSize - 2
+        &__title
+            font-size: $mainSize + 14
+    .form__btn
+        font-size: $mainSize - 4
+    .footer
+        &__wrap
+            width: 300px
+            justify-content: center
+        &__links
+            display: none
+
+    .popup
+        &__min_wrap
+            width: 300px
+        &__minImg
+            width: 54px
+            height: 40px
+
+
+@media screen and (orientation:landscape) 
+    /* стили для горизонтальной */
+    .popup
+        &__img
+            width: 50%
+        &__topBar
+            padding: 10px 25px 25px
+    .header
+        &__nav_wrap
+            padding-top: 60px
+        &__links
+            height: calc(100vh - 60px)

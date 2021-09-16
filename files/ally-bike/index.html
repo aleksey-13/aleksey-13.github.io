@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/media_index.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<title>AllyBike</title>
+	</head>
+	<body>
+		<div class="preloader" id="preloader">
+		    <span class="load"></span>
+		</div>
+
+		<header class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<img src="img/logo.png" alt="logo" class="logo">
+					<div class="panel">
+						<span class="drop__menu"></span>
+						<form class="search">
+							<input type="text" placeholder="Search" class="search__input">
+							<button type="submit" class="search__button"></button>
+							<span class="search__close"></span>
+						</form>
+						<span class="button-second"></span>
+						<div class="minicart minicart-mobile">
+							<button class="minicart__icon minicart-mobile__icon"></button>
+							<span class="minicart__count minicart-mobile__count">0</span>
+						</div>
+						<div class="profile">
+							<button class="profile__button"></button>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<ul class="header__nav">
+						<li class="frames__wrap">
+							<a href="" class="header__link frames">BIKES&FRAMES</a>
+							<span class="drop_button" data-drop="drop_frames"></span>
+							<div class="mini-catalog drop_frames">
+								<div class="mini-catalog__category">
+									<img class="mini-catalog__img" src="img/mini_catalog/fyxation_eastside_crimson_roja_bicicleta_urbana_1.jpg" alt="">
+									<a href=""><span class="mini-catalog__title">ROAD BIKES</span></a>
+									<ul class="mini-catalog__links">
+										<li><a class="header__link mini-catalog__link" href="">Performance</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Adventure / Gravel</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Touring</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Triathlon / Time Trial</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Track</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Frames</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Build Your Own Road Bike</a></li>
+									</ul>
+								</div>
+								<div class="mini-catalog__category">
+									<img class="mini-catalog__img" src="img/mini_catalog/prodeco_v5_phantom_x2_8_speed_folding_electric_bicycle_1.jpg" alt="">
+									<a href=""><span class="mini-catalog__title">MOUNTAIN BIKES</span></a>
+									<ul class="mini-catalog__links">
+										<li><a class="header__link mini-catalog__link" href="">Full suspension</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Hardtail</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Downhill / Freeride / Dirt Jump</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Fat Bikes</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Frames</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Frames</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Build Your Own Mountain Bike</a></li>
+									</ul>
+								</div>
+								<div class="mini-catalog__category">
+									<img class="mini-catalog__img" src="img/mini_catalog/fyxation-_eastside_negra_bicicleta_urbana_2.jpg" alt="">
+									<a href=""><span class="mini-catalog__title">CYCLOCROSS BIKES</span></a>
+									<ul class="mini-catalog__links">
+										<li><a class="header__link mini-catalog__link" href="">Urban / Fitness</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Urban / Hybrid</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Flat Bar</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Single Speed / Fixed Gear</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Cargo</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Folding</a></li>
+									</ul>
+								</div>
+								<div class="mini-catalog__category">
+									<img class="mini-catalog__img" src="img/mini_catalog/vintage_ladies_bella_1.jpg" alt="">
+									<a href=""><span class="mini-catalog__title">COMFORT BIKES</span></a>
+									<ul class="mini-catalog__links">
+										<li><a class="header__link mini-catalog__link" href="">Urban / Hybrid</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Cruiser / Classic</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Comfort / Upright Position</a></li>
+										<li><a class="header__link mini-catalog__link" href="">Three-wheelers</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="parts__wrap">
+							<a href="" class="header__link parts">BIKE PARTS</a>
+							<span class="drop_button" data-drop="drop_parts"></span>
+							<ul class="types__links parts__links drop_parts">
+								<li class="mountain">
+									<a class="header__link parts__link mountaina" href="">Mountain bikes</a>
+									<ul class="types__links mountain__links">
+										<li><a class="header__link mountain__link" href="">Cross Country mountain bikes</a></li>
+										<li><a class="header__link mountain__link" href="">Trail mountain bikes</a></li>
+										<li><a class="header__link mountain__link" href="">Downhill mountain bikes</a></li>
+										<li><a class="header__link mountain__link" href="">Electric mountain bikes</a></li>
+										<li><a class="header__link mountain__link" href="">Fat Bikes</a></li>
+									</ul>
+								</li>
+								<li class="road">
+									<a class="header__link parts__link" href="">Road bikes</a>
+									<ul class="types__links road__links">
+										<li><a class="header__link road__link" href="">Road bikes</a></li>
+										<li><a class="header__link road__link" href="">Cyclocross bikes</a></li>
+										<li><a class="header__link road__link" href="">Gravel bikes</a></li>
+										<li><a class="header__link road__link" href="">Triathlon bikes</a></li>
+										<li><a class="header__link road__link" href="">Frames</a></li>
+									</ul>
+								</li>
+								<li class="urban">
+									<a class="header__link parts__link" href="">Urban & commuter bikes</a>
+									<ul class="types__links urban__links">
+										<li><a class="header__link urban__link" href="">Hybrid bikes</a></li>
+										<li><a class="header__link urban__link" href="">Fitness bikes</a></li>
+										<li><a class="header__link urban__link" href="">Gravel bikes</a></li>
+										<li><a class="header__link urban__link" href="">Electric bikes</a></li>
+										<li><a class="header__link urban__link" href="">Cargo</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="tools__wrap"><a href="" class="header__link tools">BIKE TOOLS</a></li>
+						<li class="types__wrap">
+							<a href="" class="header__link types">PRODUCT TYPES</a>
+							<span class="drop_button" data-drop="drop_types"></span>
+							<ul class="types__links drop_types">
+								<li><a class="header__link parts__link types__link" href="">Configurable products</a></li>
+								<li><a class="header__link parts__link types__link" href="">Simple products</a></li>
+								<li><a class="header__link parts__link types__link" href="">Products with options</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="slider">
+				<div class="slide slide-1">
+					<img src="img/slider/slide1.jpg" alt="slide-1" class="slider__img">
+					<div class="slider__content">
+						<p class="slider__title">MOUNTAIN <br> BIKES</p>
+						<div class="slider__text">
+							<span class="slider__sale">10</span>
+							<span class="slider__parcent">% <br> OFF</span>
+						</div>
+						<a href=""><div class="slider__button">LEARN MORE</div></a>
+					</div>
+				</div>
+				<div class="slide slide-2">
+					<img src="img/slider/slide2.jpg" alt="slide-1" class="slider__img">
+					<div class="slider__content slider__content_pos_right">
+						<p class="slider__title">WOMEN'S <br> BIKES</p>
+						<div class="slider__text">
+							<span class="slider__sale">15</span>
+							<span class="slider__parcent">% <br> OFF</span>
+						</div>
+						<a href=""><div class="slider__button">LEARN MORE</div></a>
+					</div>
+				</div>
+				<div class="slide slide-3">
+					<img src="img/slider/slide3.jpg" alt="slide-1" class="slider__img">
+					<div class="slider__content slider__content_pos_left">
+						<p class="slider__title">MEN'S <br> CYCLING APPAREL</p>
+						<div class="slider__text">
+							<span class="slider__sale">20</span>
+							<span class="slider__parcent">% <br> OFF</span>
+						</div>
+						<a href=""><div class="slider__button">LEARN MORE</div></a>
+					</div>
+				</div>
+			</div>
+			<section class="categories">
+				<div class="categories__container">
+					<div class="category mountain-bikes">
+						<div class="category__container">
+							<p class="category__title">MOUNTAIN <br> BIKES</p>
+							<ul class="category__links">
+								<a href=""><li class="category__link">CROSS COUNTRY MOUNTAIN BIKES</li></a>
+								<a href=""><li class="category__link">TRAIL MOUNTAIN BIKES</li></a>
+								<a href=""><li class="category__link">DOWNHILL MOUNTAIN BIKES</li></a>
+								<a href=""><li class="category__link">ELECTRIC MOUNTAIN BIKES</li></a>
+							</ul>
+							<a href=""><span class="category__button">VIEW ALL</span></a>
+						</div>
+					</div>
+					<div class="category road-bikes">
+						<div class="category__container category__container_position_absolute">
+							<p class="category__title">ROAD <br> BIKES</p>
+							<ul class="category__links">
+								<a href=""><li class="category__link">ROAD BIKES</li></a>
+								<a href=""><li class="category__link">CYCLOCROSS BIKES</li></a>
+								<a href=""><li class="category__link">GRAVEL BIKES</li></a>
+								<a href=""><li class="category__link">TRIATHLON BIKES</li></a>
+							</ul>
+							<a href=""><span class="category__button">VIEW ALL</span></a>
+						</div>
+					</div>
+					<div class="category urban-bikes">
+						<div class="category__container">
+							<p class="category__title">URBAN & COMMUTER BIKES</p>
+							<ul class="category__links">
+								<a href=""><li class="category__link">HYBRID BIKES</li></a>
+								<a href=""><li class="category__link">FITNESS BIKES</li></a>
+								<a href=""><li class="category__link">GRAVEL BIKES</li></a>
+								<a href=""><li class="category__link">ELECTRIC BIKES</li></a>
+							</ul>
+							<a href=""><span class="category__button">VIEW ALL</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="brands brands_space_around">
+				<!-- <div class="arrows">
+					<span class="arrow arrow__left"></span>
+					<span class="arrow arrow__right"></span>
+				</div> -->
+				<a href=""><img src="img/brands/160/brand-1.png" alt="" class="brand"></a>
+				<a href=""><img src="img/brands/160/brand-2.png" alt="" class="brand"></a>
+				<a href=""><img src="img/brands/160/brand-3.png" alt="" class="brand"></a>
+				<a href=""><img src="img/brands/160/brand-4.png" alt="" class="brand"></a>
+				<a href=""><img src="img/brands/160/brand-5.png" alt="" class="brand"></a>
+				<a href=""><img src="img/brands/160/brand-6.png" alt="" class="brand"></a>
+			</section>
+			<section class="featured">
+				<div class="featured__container">
+					<div class="title__wrap">
+						<h2 class="title">FEATURED PRODUCTS</h2>
+					</div>
+					<div class="products" id="products">
+						<div class="products__item">
+							<a href=""><img src="img/featered/ladies_esprit_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">LADIES ESPRIT</a>
+								<span class="products__price">352.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/pacific_cycles-_ifmove_bicicleta_plegable_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">PACIFIC CYCLES- IFMOVE – BICICLETA PLEGABLE</a>
+								<span class="products__price">278.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/prodeco_v5_phantom_x2_8_speed_folding_electric_bicycle_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">PRODECO V5 PHANTOM X2 8 SPEED FOLDING ELECTRIC BICYCLE</a>
+								<span class="products__price">485.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/reid_vintage_roadster_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">REID VINTAGE ROADSTER</a>
+								<span class="products__price">390.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/reid_wayfarer_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">REID WAYFARER</a>
+								<span class="products__price">189.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/vintage_ladies_bella_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">VINTAGE LADIES BELLA</a>
+								<span class="products__price">254.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/vintage_ladies_deluxe_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">VINTAGE LADIES DELUXE</a>
+								<span class="products__price">258.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/vintage_ladies_lite_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">VINTAGE LADIES LITE</a>
+								<span class="products__price">278.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/fyxation-_eastside_negra_bicicleta_urbana_2.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">FYXATION- EASTSIDE NEGRA – BICICLETA URBANA</a>
+								<span class="products__price">480.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/featered/pacific_cycles-_if_reach_bicicleta_plegable_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">PACIFIC CYCLES- IF REACH – BICICLETA PLEGABLE</a>
+								<span class="products__price">395.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="banner">
+					<img src="img/ban/ban-1.jpg" alt="slide-1" class="banner__img">
+					<div class="banner__content">
+						<p class="banner__title-second">CHOOSE YOUR PERFECT BIKE AT</p>
+						<div class="banner__text">
+							<span class="banner__sale">50</span>
+							<span class="banner__parcent">% <br> OFF</span>
+						</div>
+						<p class="banner__title">HUGE SAVINGS!</p>
+						<a href=""><div class="banner__button">LEARN MORE</div></a>
+					</div>
+				</div>
+			</section>
+			<section class="featured">
+				<div class="featured__container">
+					<div class="title__wrap">
+						<h2 class="title">NEW PRODUCTS</h2>
+					</div>
+					<div class="products new">
+						<div class="products__item">
+							<a href=""><img src="img/new_products/fyxation_eastside_copper_bicicleta_urbana_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">FYXATION EASTSIDE COPPER – BICICLETA URBANA</a>
+								<span class="products__price">452.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+							<div class="products__new">NEW</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/new_products/biomega_nyc_2_vel._bicicleta_urbana_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">BIOMEGA NYC 2 VEL. – BICICLETA URBANA</a>
+								<span class="products__price">352.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+							<div class="products__new">NEW</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/new_products/biomega_nyc_2_vel._bicicleta_urbana_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">BIOMEGA NYC LADY – BICICLETA URBANA – MUJER</a>
+								<span class="products__price">325.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+							<div class="products__new">NEW</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/new_products/biomega-_pek_bicicleta_carga_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">BIOMEGA- PEK – BICICLETA CARGA</a>
+								<span class="products__price">390.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+							<div class="products__new">NEW</div>
+						</div>
+						<div class="products__item">
+							<a href=""><img src="img/new_products/fyxation_eastside_crimson_roja_bicicleta_urbana_1.jpg" alt="" class="products__img"></a>
+							<div class="products__item_wrap">
+								<a href="" class="products__link">FYXATION EASTSIDE CRIMSON ROJA – BICICLETA URBANA</a>
+								<span class="products__price">259.00$</span>
+							</div>
+							<div class="stars">
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_active"></span>
+								<span class="star_not_active"></span>
+							</div>
+							<div class="products__buttons">
+								<button class="minicart__icon"></button>
+								<button class="products__button products__button_like"></button>
+								<button class="products__button products__button_info"></button>
+							</div>
+							<div class="products__new">NEW</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sales-banner">
+				<div class="sales-banner__wrap">
+					<div class="sales-banner__one">
+						<div>
+							<img class="sales-banner__img" src="img/ban/550/ban-2.jpg" alt="">
+						</div>
+						<div class="sales-banner__content">
+							<p class="sales-banner__title">GET AN EXTRA</p>
+							<span class="sales-banner_sale">-20% OFF</span>
+							<p class="sales-banner__title-second">VINTAGE LADIES BELLA</p>
+							<a href=""><div class="sales-banner__button">Shop Now</div></a>
+						</div>
+					</div>
+					<div class="sales-banner__two">
+						<div>
+							<img class="sales-banner__img" src="img/ban/550/ban-3.jpg" alt="">
+						</div>
+						<div class="sales-banner__content">
+							<p class="sales-banner__title">SUPER SALE</p>
+							<span class="sales-banner_sale">-50% OFF</span>
+							<p class="sales-banner__title-second">VINTAGE LADIES BELLA</p>
+							<a href=""><div class="sales-banner__button">Shop Now</div></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blog">
+				<div class="blog__wrap">
+					<h2 class="blog__title">LATEST NEWS</h2>
+					<div class="blog__news">
+						<div class="item">
+							<a href=""><img class="item__img" src="img/blog/blog-1.jpg" alt=""></a>
+							<div class="item__wrap">
+								<h3><a href="" class="item__title">SPECIALIZED CYCLING CLOTHING FOR YOUR NEXT TRIP</a></h3>
+								<div class="item__info">
+									<span class="item__author">by Bernard Show</span>
+									<span class="item__date">Oct 26, 2016</span>
+									<a href="" class="item__comments">2</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<a href=""><img class="item__img" src="img/blog/blog-2.jpg" alt=""></a>
+							<div class="item__wrap">
+								<h3><a href="" class="item__title">DON’T MISS OUT ON SUPER SALES AND CLOSEOUTS</a></h3>
+								<div class="item__info">
+									<span class="item__author">by Kate</span>
+									<span class="item__date">Oct 21, 2016</span>
+									<a href="" class="item__comments">2</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<a href=""><img class="item__img" src="img/blog/blog-3.jpg" alt=""></a>
+							<div class="item__wrap">
+								<h3><a href="" class="item__title">SAVE ON WARM AND COLD WEATHER GEAR</a></h3>
+								<div class="item__info">
+									<span class="item__author">by Grey</span>
+									<span class="item__date">Oct 14, 2016</span>
+									<a href="" class="item__comments">0</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrap">
+				<div class="footer__links">
+					<div class="footer__information point">
+						<h4 class="footer__title">INFORMATION</h4>
+						<span class="open_links" data-drop="drop__info"></span>
+						<ul class="drop__info footer__list">
+							<a class="footer__link" href="">About Us</a>
+							<a class="footer__link" href="">Customer Service</a>
+							<a class="footer__link" href="">Template Settings</a>
+							<a class="footer__link" href="">Privacy Policy</a>
+							<a class="footer__link" href="">Search Terms</a>
+							<a class="footer__link" href="">Orders and Returns</a>
+							<a class="footer__link" href="">Contact Us</a>
+							<a class="footer__link" href="">Advanced Search</a>
+							<a class="footer__link" href="">Newsletter Subscription</a>
+						</ul>
+					</div>
+					<div class="footer__buy point">
+						<h4 class="footer__title">WHY BUY FROM US</h4>
+						<span class="open_links" data-drop="drop__buy"></span>
+						<ul class="footer__list drop__buy">
+							<a class="footer__link" href="">Shipping & Delivery</a>
+							<a class="footer__link" href="">Secure payment</a>
+							<a class="footer__link" href="">Support</a>
+							<a class="footer__link" href="">Guarantee</a>
+							<a class="footer__link" href="">Terms & Conditions</a>
+						</ul>
+					</div>
+					<div class="footer__account point">
+						<h4 class="footer__title">MY ACCOUNT</h4>
+						<span class="open_links" data-drop="drop__account"></span>
+						<ul class="footer__list drop__account">
+							<a class="footer__link" href="">Sign In</a>
+							<a class="footer__link" href="">View Cart</a>
+							<a class="footer__link" href="">My Wishlist</a>
+							<a class="footer__link" href="">FAQ</a>
+						</ul>
+					</div>
+				</div>
+				<div class="contacts">
+					<div class="contacts__telephone">
+						<a href="" class="contacts__title number">+3(800) 2345-6789</a>
+						<p class="contacts__text">Round-the-clock free hotline (24/7)</p>
+					</div>
+					<div class="contacts__shipping">
+						<span class="contacts__title shipping">FREE SHIPPING</span>
+						<p class="contacts__text">We provide you with fast and free delivery regardless of the product size and value.</p>
+					</div>
+					<div class="contacts__statisfaction">
+						<span class="contacts__title guarantee">SATISFACTION GUARANTEE</span>
+						<p class="contacts__text">We are committed to your satisfaction with every order.</p>
+					</div>
+				</div>
+				<div class="feedback">
+					<div class="feedback__sign-up">
+						<span class="contacts__title">SIGN UP FOR OUR NEWSLETTER</span>
+						<p class="contacts__text">Stay up-to-date with our latest promotions, discounts, sales, and special offers.</p>
+					</div>
+					<form class="feedback__search">
+						<input type="text" placeholder="Enter your email" class="feedback__input">
+						<button type="submit" class="feedback__button">SUBSCRIBE!</button>
+					</form>
+					<div class="feedback__social">
+						<a href=""><div class="soc fb"></div></a>
+						<a href=""><div class="soc tw"></div></a>
+						<a href=""><div class="soc google"></div></a>
+						<a href=""><div class="soc inst"></div></a>
+						<a href=""><div class="soc youtube"></div></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+
+		<script src="libs/jquery-3.3.1.js"></script>
+		<script src="libs/slick.min.js"></script>
+		<script src="js/text.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
