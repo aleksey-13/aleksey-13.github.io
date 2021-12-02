@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    position: relative;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    &__photo-box {
+        width: 10vmax;
+        height: 10vmax;
+        border-radius: 50%;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    &__photo {
+        height: 100%;
+    }
+
+    &__text-box {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
+}

@@ -1,0 +1,803 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+@media screen and (min-width: 1600px) {
+  .header__wrap {
+    width: 1400px; }
+    .header__wrap:after {
+      left: 770px; }
+  .header__caption {
+    width: 1400px; }
+  .header__title {
+    font-size: 73px; }
+  .header__description {
+    width: 765px;
+    font-size: 20px; }
+  .header__contacts {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 550px;
+    margin: 0 auto;
+    color: #f13f3f;
+    font-size: 17px;
+    z-index: 2; }
+  .header__btn {
+    font-size: 18px; }
+  .header__link {
+    font-size: 22px; }
+    .header__link_nested {
+      font-size: 18px; }
+  .dark {
+    font-size: 172px;
+    margin-left: -15px; }
+  .ink {
+    font-size: 80px; }
+  .salon__wrap {
+    width: 1400px; }
+    .salon__wrap:after {
+      left: 770px; }
+  .salon__title {
+    font-size: 54px; }
+  .salon__images {
+    width: 770px; }
+  .salon__image {
+    width: auto; }
+  .salon__about {
+    width: 630px; }
+  .salon__paragraph_1 {
+    font-size: 18px; }
+  .salon__paragraph_2 {
+    font-size: 17px; }
+  .whatWeDo__wrap {
+    width: 1400px;
+    padding: 100px 0 200px; }
+    .whatWeDo__wrap:after {
+      left: 770px; }
+  .whatWeDo__services {
+    width: 740px; }
+  .whatWeDo__img {
+    top: 0; }
+  .whatWeDo__title {
+    font-size: 54px; }
+  .service {
+    width: 350px; }
+    .service__name {
+      font-size: 26px; }
+    .service__text {
+      font-size: 18px; }
+  .ourStaff__wrap {
+    width: 1400px; }
+    .ourStaff__wrap:after {
+      left: 770px; }
+  .ourStaff .slick-slide {
+    width: 450px;
+    margin-right: 25px; }
+  .ourStaff__title {
+    font-size: 54px; }
+  .person {
+    width: 450px;
+    height: 500px; }
+    .person__name {
+      font-size: 26px; }
+      .person__name:hover {
+        color: #f13f3f; }
+    .person__profession {
+      font-size: 18px; }
+  .testimonials__wrap {
+    width: 1400px; }
+    .testimonials__wrap:after {
+      left: 770px; }
+  .testimonials__comment {
+    width: 44%; }
+  .testimonials__text {
+    font-size: 18px; }
+  .testimonials__title {
+    font-size: 54px; }
+  .author__name {
+    font-size: 26px; }
+  .author__status {
+    font-size: 18px; }
+  .gallery__containTitle {
+    width: 1400px; }
+  .gallery__btn {
+    font-size: 18px; }
+    .gallery__btn:after {
+      line-height: 16px; }
+  .gallery__title {
+    font-size: 54px; }
+  .gallery_before_after {
+    width: 1400px; }
+    .gallery_before_after:after {
+      left: 770px; }
+  .callback__wrap {
+    width: 1400px; }
+    .callback__wrap:after {
+      left: 770px; }
+  .callback__contain {
+    width: 630px;
+    padding-left: 0; }
+  .callback__fill {
+    font-size: 18px; }
+  .callback__title {
+    font-size: 54px; }
+  .form__btn {
+    font-size: 17px; }
+  .footer__wrap {
+    width: 1400px; }
+  .footer__links {
+    width: 780px;
+    font-size: 20px; } }
+
+@media screen and (max-width: 1200px) {
+  .header__img {
+    right: 0;
+    width: 380px; }
+  .header__wrap {
+    width: 970px; }
+    .header__wrap:after {
+      left: 600px; }
+  .header__caption {
+    width: 970px; }
+  .salon__wrap {
+    width: 970px; }
+    .salon__wrap:after {
+      left: 600px; }
+  .salon__images {
+    position: relative;
+    width: 600px; }
+  .salon__image {
+    width: 250px; }
+  .salon__our_gallery {
+    right: -20px; }
+  .salon__about {
+    width: 370px; }
+  .salon__title {
+    margin-bottom: 25px; }
+  .salon__signature {
+    width: 140px;
+    bottom: -25px; }
+  .whatWeDo__wrap {
+    width: 970px; }
+    .whatWeDo__wrap:after {
+      left: 600px; }
+  .whatWeDo__services {
+    width: 575px; }
+  .whatWeDo__img {
+    width: 370px;
+    bottom: 100px; }
+  .service {
+    width: 280px; }
+    .service__name {
+      font-size: 22px; }
+    .service__text {
+      font-size: 15px; }
+  .ourStaff__wrap {
+    width: 970px; }
+    .ourStaff__wrap:after {
+      left: 600px; }
+  .ourStaff .slick-slide {
+    width: 310px;
+    margin-right: 20px; }
+  .person {
+    width: 310px;
+    height: 410px; }
+  .testimonials__wrap {
+    width: 970px; }
+    .testimonials__wrap:after {
+      left: 600px; }
+  .testimonials__comment {
+    width: 440px; }
+  .gallery__containTitle {
+    width: 970px; }
+  .gallery_before_after {
+    width: 970px; }
+    .gallery_before_after:after {
+      left: 600px; }
+  .callback__wrap {
+    width: 970px; }
+    .callback__wrap:after {
+      left: 600px; }
+  .callback__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none; }
+  .callback__contain {
+    width: 390px; }
+  .footer__wrap {
+    width: 970px; }
+  .footer__links {
+    width: 680px; } }
+
+@media screen and (max-width: 1024px) {
+  .header__img {
+    right: 0;
+    width: 380px; }
+  .header__wrap {
+    width: 840px; }
+    .header__wrap:after {
+      left: 550px; }
+  .header__caption {
+    width: 840px; }
+  .salon__wrap {
+    width: 840px;
+    padding: 100px 0 50px; }
+    .salon__wrap:after {
+      left: 550px; }
+  .salon__images {
+    position: relative;
+    width: 550px; }
+  .salon__image {
+    width: 230px; }
+  .salon__our_gallery {
+    display: none; }
+  .salon__about {
+    width: 290px; }
+  .salon__title {
+    margin-bottom: 25px; }
+  .salon__paragraph_1 {
+    font-size: 16px; }
+  .salon__paragraph_2 {
+    font-size: 15px; }
+  .salon__signature {
+    width: 110px;
+    bottom: -65px; }
+  .whatWeDo__wrap {
+    width: 840px;
+    padding: 100px 0; }
+    .whatWeDo__wrap:after {
+      left: 550px; }
+  .whatWeDo__services {
+    width: 540px; }
+  .whatWeDo__img {
+    bottom: auto;
+    top: 250px;
+    display: block; }
+  .service {
+    width: 310px; }
+  .ourStaff__wrap {
+    width: 840px; }
+    .ourStaff__wrap:after {
+      left: 550px; }
+  .ourStaff .slick-slide {
+    width: 270px;
+    margin-right: 15px; }
+  .person {
+    width: 270px;
+    height: 420px; }
+    .person__about {
+      bottom: 0; }
+    .person__contacts {
+      opacity: 1; }
+  .testimonials__wrap {
+    width: 840px; }
+    .testimonials__wrap:after {
+      left: 550px; }
+  .testimonials__comment {
+    width: 100%; }
+    .testimonials__comment:before {
+      display: none; }
+  .testimonials__title {
+    margin-bottom: 10px; }
+  .testimonials__text {
+    margin-bottom: 20px; }
+  .gallery {
+    padding-bottom: 0; }
+    .gallery__containTitle {
+      width: 840px; }
+    .gallery_before_after {
+      width: 840px; }
+      .gallery_before_after:after {
+        left: 550px; }
+  .callback__wrap {
+    width: 840px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow: hidden; }
+    .callback__wrap:after {
+      left: 550px; }
+  .callback__img {
+    opacity: 0.4;
+    left: auto;
+    right: 0;
+    width: 500px; }
+  .callback__contain {
+    width: 550px;
+    padding-left: 0; }
+  .footer__wrap {
+    width: 840px; }
+  .footer__links {
+    width: 580px; } }
+
+@media screen and (max-width: 876px) {
+  .header__img {
+    right: 0;
+    width: 380px;
+    opacity: 0.7; }
+  .header__wrap {
+    width: 600px; }
+    .header__wrap:after {
+      display: none; }
+  .header__caption {
+    width: 600px; }
+  .header__title {
+    font-size: 59px; }
+  .header__description {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 40px; }
+  .header__btn {
+    font-size: 14px; }
+  .header__logo img {
+    width: 160px; }
+  .header__link {
+    font-size: 18px; }
+    .header__link_nested {
+      font-size: 14px;
+      line-height: 40px; }
+  .dark {
+    font-size: 140px;
+    margin-left: -15px; }
+  .ink {
+    font-size: 66px;
+    -webkit-transform: rotate(-90deg) translate(25%, -45%);
+        -ms-transform: rotate(-90deg) translate(25%, -45%);
+            transform: rotate(-90deg) translate(25%, -45%); } }
+
+@media screen and (max-width: 876px) and (-ms-high-contrast: active), screen and (max-width: 876px) and (-ms-high-contrast: none) {
+  .ink {
+    -webkit-transform: rotate(-90deg) translate(25%, -35%);
+        -ms-transform: rotate(-90deg) translate(25%, -35%);
+            transform: rotate(-90deg) translate(25%, -35%); }
+  .header__link_nested:hover {
+    padding-left: 0; } }
+
+@media screen and (max-width: 876px) {
+  .free_call,
+  .opening_hours {
+    font-size: 14px; }
+  .salon__wrap {
+    width: 600px;
+    padding: 100px 0 50px; }
+    .salon__wrap:after {
+      display: none; }
+  .salon__images {
+    width: 100%; }
+  .salon__image {
+    width: 45%; }
+  .salon__about {
+    width: 100%; }
+  .salon__title {
+    font-size: 44px; }
+  .whatWeDo__wrap {
+    width: 600px;
+    padding: 100px 0; }
+    .whatWeDo__wrap:after {
+      display: none; }
+  .whatWeDo__services {
+    width: 560px;
+    padding-left: 15px; }
+  .whatWeDo__img {
+    visibility: hidden; }
+  .whatWeDo__title {
+    font-size: 44px; }
+  .service {
+    width: 270px; }
+  .ourStaff__wrap {
+    width: 600px; }
+    .ourStaff__wrap:after {
+      display: none; }
+  .ourStaff .slick-slide {
+    width: 290px;
+    margin-right: 20px; }
+  .ourStaff__title {
+    font-size: 44px; }
+  .ourStaff__btn {
+    font-size: 14px; }
+  .person {
+    width: 290px;
+    height: 420px; }
+    .person__about {
+      bottom: 0; }
+    .person__contacts {
+      opacity: 1; }
+    .person__name {
+      font-size: 20px; }
+    .person__profession {
+      font-size: 15px;
+      line-height: 24px; }
+  .testimonials__wrap {
+    width: 600px; }
+    .testimonials__wrap:after {
+      display: none; }
+  .testimonials__comment {
+    width: 100%; }
+    .testimonials__comment:before {
+      display: none; }
+  .testimonials__title {
+    margin-bottom: 10px;
+    font-size: 44px; }
+  .testimonials__text {
+    margin-bottom: 20px;
+    font-size: 14px; }
+  .author__name {
+    font-size: 20px; }
+  .author__status {
+    font-size: 15px;
+    line-height: 24px; }
+  .gallery {
+    padding-bottom: 0; }
+    .gallery__title {
+      font-size: 44px; }
+    .gallery__containTitle {
+      width: 600px; }
+    .gallery__btn {
+      font-size: 15px; }
+      .gallery__btn:after {
+        line-height: 16px; }
+    .gallery .slick-slide {
+      width: 50vw; }
+    .gallery_before_after {
+      width: 600px; }
+      .gallery_before_after:after {
+        display: none; }
+  .callback__wrap {
+    width: 600px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow: hidden; }
+    .callback__wrap:after {
+      display: none; }
+  .callback__img {
+    display: none;
+    z-index: -100; }
+  .callback__contain {
+    width: 100%;
+    padding-left: 0; }
+  .callback__fill {
+    font-size: 15px; }
+  .callback__title {
+    font-size: 44px; }
+  .form__btn {
+    font-size: 14px; }
+  .footer__wrap {
+    width: 600px; }
+  .footer__links {
+    width: 410px;
+    font-size: 16px; } }
+
+@media screen and (max-width: 640px) {
+  .header__img {
+    right: 0;
+    width: 310px;
+    opacity: 0.7; }
+  .header__wrap {
+    width: 420px; }
+  .header__nav_wrap {
+    width: 240px; }
+  .header__caption {
+    width: 100%; }
+  .header__title {
+    font-size: 46px; }
+  .header__description {
+    width: 100%;
+    font-size: 14px; }
+  .header__btn {
+    font-size: 13px; }
+  .header__logo img {
+    width: 160px; }
+  .header__link {
+    font-size: 16px; }
+    .header__link_nested {
+      font-size: 13px;
+      line-height: 36px; }
+  .header__contacts {
+    width: 100%; }
+  .header__burger.open {
+    right: 5%; }
+  .dark {
+    font-size: 110px;
+    margin-left: -15px; }
+  .ink {
+    font-size: 52px;
+    -webkit-transform: rotate(-90deg) translate(25%, -45%);
+        -ms-transform: rotate(-90deg) translate(25%, -45%);
+            transform: rotate(-90deg) translate(25%, -45%); } }
+
+@media screen and (max-width: 640px) and (-ms-high-contrast: active), screen and (max-width: 640px) and (-ms-high-contrast: none) {
+  .ink {
+    -webkit-transform: rotate(-90deg) translate(25%, -35%);
+        -ms-transform: rotate(-90deg) translate(25%, -35%);
+            transform: rotate(-90deg) translate(25%, -35%); }
+  .header__link_nested:hover {
+    padding-left: 0; } }
+
+@media screen and (max-width: 640px) {
+  .free_call,
+  .opening_hours {
+    font-size: 13px; }
+  .salon__wrap {
+    width: 420px;
+    padding: 50px 0 25px; }
+  .salon__images {
+    width: 100%; }
+  .salon__image {
+    width: 45%; }
+  .salon__about {
+    width: 100%; }
+  .salon__title {
+    font-size: 38px; }
+  .salon__paragraph_1 {
+    font-size: 14px; }
+  .salon__paragraph_2 {
+    font-size: 15px; }
+  .whatWeDo__wrap {
+    width: 420px; }
+  .whatWeDo__services {
+    width: 405px; }
+  .whatWeDo__title {
+    font-size: 38px; }
+  .service {
+    width: 100%; }
+    .service__name {
+      font-size: 20px; }
+    .service__text {
+      font-size: 14px;
+      padding: 10px 0; }
+  .ourStaff__wrap {
+    width: 420px; }
+  .ourStaff .slick-slide {
+    width: 420px;
+    margin-left: 20px; }
+    .ourStaff .slick-slide:first-child {
+      margin-left: 0; }
+  .ourStaff__title {
+    font-size: 38px; }
+  .ourStaff__btn {
+    font-size: 13px; }
+  .person {
+    width: 420px;
+    height: 500px; }
+  .testimonials__wrap {
+    width: 420px; }
+  .testimonials__comment {
+    width: 100%;
+    padding: 50px 0 0 30px; }
+    .testimonials__comment:before {
+      display: none; }
+  .testimonials__title {
+    margin-bottom: 10px;
+    font-size: 38px; }
+  .testimonials__text {
+    margin-bottom: 20px;
+    font-size: 13px; }
+  .author__name {
+    font-size: 18px; }
+  .author__status {
+    font-size: 14px;
+    line-height: 24px; }
+  .author__photo {
+    width: 69px;
+    height: 69px; }
+    .author__photo_1 {
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .author__photo_2 {
+      -webkit-background-size: cover;
+              background-size: cover; }
+  .gallery__title {
+    font-size: 38px; }
+  .gallery__containTitle {
+    width: 420px; }
+  .gallery__btn {
+    font-size: 13px; }
+    .gallery__btn:after {
+      line-height: 14px; }
+  .gallery_before_after {
+    width: 420px; }
+  .callback__wrap {
+    width: 420px;
+    padding-top: 50px; }
+  .callback__fill {
+    font-size: 14px; }
+  .callback__title {
+    font-size: 38px; }
+  .form__btn {
+    font-size: 13px; }
+  .footer__wrap {
+    width: 420px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer__links {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  .header__img {
+    right: 0;
+    width: 290px;
+    opacity: 0.7; }
+  .header__wrap {
+    width: 300px; }
+  .header__title {
+    font-size: 36px; }
+  .header__description {
+    width: 100%;
+    font-size: 13px; }
+  .header__btn {
+    font-size: 12px; }
+  .header__logo img {
+    width: 140px; }
+  .header__link {
+    font-size: 16px; }
+    .header__link_nested {
+      font-size: 13px;
+      line-height: 36px; }
+  .header__contacts {
+    width: 100%; }
+  .dark {
+    font-size: 86px;
+    margin-left: -10px; }
+  .ink {
+    font-size: 40px;
+    -webkit-transform: rotate(-90deg) translate(25%, -45%);
+        -ms-transform: rotate(-90deg) translate(25%, -45%);
+            transform: rotate(-90deg) translate(25%, -45%); } }
+
+@media screen and (max-width: 480px) and (-ms-high-contrast: active), screen and (max-width: 480px) and (-ms-high-contrast: none) {
+  .ink {
+    -webkit-transform: rotate(-90deg) translate(25%, -35%);
+        -ms-transform: rotate(-90deg) translate(25%, -35%);
+            transform: rotate(-90deg) translate(25%, -35%); }
+  .header__link_nested:hover {
+    padding-left: 0; } }
+
+@media screen and (max-width: 480px) {
+  .free_call,
+  .opening_hours {
+    font-size: 13px;
+    margin-bottom: 5px; }
+  .salon__wrap {
+    width: 300px;
+    padding: 50px 0 25px; }
+  .salon__images {
+    width: 100%; }
+    .salon__images:before {
+      display: none; }
+  .salon__image {
+    width: 44%; }
+  .salon__about {
+    width: 100%; }
+  .salon__title {
+    font-size: 30px; }
+  .salon__paragraph_1 {
+    font-size: 14px; }
+  .salon__paragraph_2 {
+    font-size: 15px; }
+  .whatWeDo__wrap {
+    width: 300px; }
+  .whatWeDo__services {
+    width: 285px; }
+  .whatWeDo__title {
+    font-size: 30px; }
+  .service {
+    width: 100%; }
+    .service__name {
+      font-size: 20px; }
+    .service__text {
+      font-size: 14px;
+      padding: 10px 0; }
+  .ourStaff__wrap {
+    width: 300px; }
+  .ourStaff .slick-slide {
+    width: 300px;
+    margin-left: 20px; }
+    .ourStaff .slick-slide:first-child {
+      margin-left: 0; }
+  .ourStaff__title {
+    font-size: 30px; }
+  .ourStaff__btn {
+    font-size: 12px; }
+  .person {
+    width: 300px;
+    height: 500px; }
+  .testimonials__wrap {
+    width: 300px; }
+  .testimonials__comment {
+    width: 100%;
+    padding: 50px 0 0 30px; }
+    .testimonials__comment:before {
+      display: none; }
+  .testimonials__title {
+    margin-bottom: 10px;
+    font-size: 30px; }
+  .testimonials__text {
+    margin-bottom: 20px;
+    font-size: 13px; }
+  .author__name {
+    font-size: 18px; }
+  .author__status {
+    font-size: 14px;
+    line-height: 24px; }
+  .author__photo {
+    width: 69px;
+    height: 69px; }
+    .author__photo_1 {
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .author__photo_2 {
+      -webkit-background-size: cover;
+              background-size: cover; }
+  .gallery__title {
+    font-size: 30px; }
+  .gallery__containTitle {
+    width: 300px; }
+  .gallery__btn {
+    font-size: 13px; }
+    .gallery__btn:after {
+      line-height: 14px; }
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer; }
+    .gallery__img:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+    .gallery__img_wrap {
+      overflow: hidden; }
+  .gallery .slick-slide {
+    width: 100vw; }
+  .gallery_before_after {
+    width: 300px; }
+  .callback__wrap {
+    width: 300px;
+    padding-top: 50px; }
+  .callback__fill {
+    font-size: 14px; }
+  .callback__title {
+    font-size: 30px; }
+  .form__btn {
+    font-size: 12px; }
+  .footer__wrap {
+    width: 300px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer__links {
+    display: none; }
+  .popup__min_wrap {
+    width: 300px; }
+  .popup__minImg {
+    width: 54px;
+    height: 40px; } }
+
+@media screen and (orientation: landscape) {
+  /* стили для горизонтальной */
+  .popup__img {
+    width: 50%; }
+  .popup__topBar {
+    padding: 10px 25px 25px; }
+  .header__nav_wrap {
+    padding-top: 60px; }
+  .header__links {
+    height: -webkit-calc(100vh - 60px);
+    height: calc(100vh - 60px); } }

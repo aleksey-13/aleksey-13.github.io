@@ -1,0 +1,855 @@
+$color_gray : #243238
+$color_lightBlue : #3d9bef
+$color_lightGray : #f5f5f5
+$main_size : 16px
+$main_font : 'Montserrat', sans-serif
+
+=button
+	width: 39px
+	height: 39px
+	cursor: pointer
+	transition: 0.3s ease
+	outline: 0
+	border: none
+	&:before 
+		font-family: FontAwesome
+		font-size: $main_size
+		line-height: 39px
+=slider_content
+	position: absolute
+	color: #fff	
+	top: 20%
+	left: 48%
+=slider_title
+	font-weight: bold
+	font-size: $main_size + 28
+	line-height: $main_size + 28
+=slider_text
+	display: flex
+	align-items: center
+=slider_sale
+	font-size: $main_size + 154
+	line-height: $main_size + 144
+	font-weight: bold
+=slider_parcent
+	display: flex
+	flex-direction: column
+	font-weight: bold
+	font-size: $main_size + 54
+	line-height: $main_size + 50
+=slider_button
+	display: inline-block
+	font-weight: 700
+	font-size: $main_size - 2
+	padding: 15px 25px
+	border: 2px solid #fff
+	color: #fff
+	margin-top: 10px
+	transition: 0.3s ease
+	&:hover
+		background: rgba(255,255,255,0.7)
+		border-color: $color_gray
+		color: $color_gray
+=dropDownLink
+	display: inline-block
+	font-size: $main_size - 4
+	padding-bottom: 0
+	margin-bottom: 10px
+	&:before
+		display: none
+
+ul
+	list-style: none
+a 
+	text-decoration: none
+body
+	width: 100%
+	font-family: $main_font
+@keyframes loading
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+.preloader
+	position: fixed
+	width: 100vw
+	height: 100vh
+	padding-bottom: 50px
+	margin-top: -50px
+	z-index: 9999
+	opacity: 1
+	background: rgba(255,255,255, 1)
+.load
+	display: inline-block
+	position: relative
+	width: 80px
+	height: 80px
+	border: 5px solid rgba(61,155,239,0.5)
+	border-radius: 50%
+	left: 50%
+	top: 50%
+	margin-left: -40px
+	margin-top: -40px
+	animation: loading 1.2s ease infinite
+	&:before
+		content: ""
+		position: absolute
+		left: 50%
+		top: -10px
+		transform: translateX(-50%)
+		width: 15px
+		height: 15px
+		border-radius: 50%
+		background: $color_lightBlue
+.header
+	width: 100%
+.header__container
+	width: 1170px
+	margin: 35px auto 20px
+.header__inner
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 25px
+
+.mobile
+	z-index: -99
+	left: -300px
+.mobile_active
+	left: 0 !important
+.header__nav
+	display: flex
+	justify-content: space-between
+	width: 530px
+	margin-left: -20px
+.header__link
+	position: relative
+	transition: 0.3s ease
+	font-size: $main_size - 2
+	padding-bottom: 20px
+	letter-spacing: 0.01em
+	color: $color_gray
+	&:hover
+		color: $color_lightBlue
+	&:before
+		position: absolute
+		content: "\f107"
+		font-family: FontAwesome
+		line-height: $main_size
+		right: -13px
+.tools
+	&:before
+		display: none
+
+.parts__wrap
+	position: relative
+	&:hover .parts__links
+		@media screen and (min-width: 1024px)
+			display: block
+.parts__link
+	display: inline-block
+	font-size: $main_size - 4
+	line-height: $main_size 
+	padding-bottom: 0
+	margin-bottom: 10px
+	&:before
+		content: "\f105"
+
+.types__wrap
+	position: relative
+	&:hover .types__links
+		@media screen and (min-width: 1024px)
+			display: block
+.types__links
+	position: absolute
+	top: 39px
+	left: -20px
+	z-index: 5
+	background: #fff
+	padding: 15px 30px
+	box-shadow: 0px -5px 16px -8px rgba(0,0,0,0.75)
+	width: 160px
+	display: none
+.types__link
+	+dropDownLink
+.mountain
+	width: 120%
+	&__link
+		+dropDownLink
+	&__links
+		top: 30px
+		left: 221px
+	&:hover .mountain__links
+		@media screen and (min-width: 1024px)
+			display: block
+.road
+	width: 120%
+	&__link
+		+dropDownLink
+	&__links
+		top: 55px
+		left: 221px
+	&:hover .road__links
+		@media screen and (min-width: 1024px)
+			display: block
+.urban
+	width: 120%
+	&__link
+		+dropDownLink
+	&__links
+		top: 80px
+		left: 221px
+	&:hover .urban__links
+		@media screen and (min-width: 1024px)
+			display: block
+
+.frames__wrap
+	position: relative
+	&:hover .mini-catalog
+		@media screen and (min-width: 1024px)
+			display: flex
+.mini-catalog
+	position: absolute
+	top: 39px
+	left: 0
+	width: 750px
+	z-index: 9999
+	padding: 20px
+	background: #fff
+	box-shadow: 0px -5px 16px -8px rgba(0,0,0,0.75)
+	display: none
+	&__category
+		padding: 0 20px
+		border-right: 1px solid #e8e8e8
+		&:last-child
+			border-right: none
+	&__title
+		display: inline-block
+		font-size: $main_size - 2
+		font-weight: 600
+		margin-bottom: 15px
+		color: $color_gray
+		transition: 0.3s ease
+		&:hover
+			color: $color_lightBlue
+	&__links
+		margin-left: -22px
+	&__link
+		+dropDownLink
+.panel
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+.drop__menu
+	cursor: pointer
+	transition: 0.3s ease
+	display: none
+	&:before
+		position: absolute
+		top: 0
+		left: 30px
+		content: '\f0c9'
+		font-weight: 300
+		color: #fff
+		line-height: 60px
+		font-size: $main_size + 16
+		font-family: FontAwesome
+.drop_button
+	display: none
+.button-second
+	+button
+	margin-right: -15px
+	display: none
+	&:before 
+		content: "\f002"
+		color: #fff
+		font-size: $main_size + 6
+.search 
+	position: relative
+	width: 190px
+	&__close
+		display: none
+		cursor: pointer
+		opacity: 0.7
+		transition: 0.3s ease
+		&:before
+			position: absolute
+			top: 0
+			right: 25px
+			content: '\f00d'
+			color: $color_gray
+			line-height: 64px
+			font-size: $main_size + 18
+			font-family: FontAwesome
+	&__input 
+		width: 121px
+		height: 35px
+		padding-left: 20px
+		padding-right: 10px
+		border: 1px solid #B6C0A5
+		outline: none
+		background: #fff
+		color: #9E9C9C
+	&__button 
+		+button
+		position: absolute
+		top: 0
+		right: -25px
+		margin-right: 25px
+		background: $color_gray
+		&:before 
+			content: "\f002"
+			color: #fff
+		&:hover
+			background: $color_lightBlue
+input::-webkit-input-placeholder 
+	color: #B6C0A5
+input:-moz-placeholder 
+	color: #B6C0A5
+input:-ms-input-placeholder 
+	color: #B6C0A5
+.search-active
+	opacity: 1 !important
+	z-index: 9999 !important
+
+.minicart
+	display: flex
+	&:hover &__icon
+		background: $color_gray
+	&__icon
+		+button
+		background: $color_lightBlue
+		&:hover
+			background: $color_gray
+		&:before
+			content: '\f07a'
+			font-size: $main_size + 4
+			color: #fff
+	&__count
+		+button
+		display: block
+		background: $color_lightGray
+		text-align: center
+		color: $color_gray
+		font-weight: bold
+		font-size: $main_size - 2
+		line-height: 39px
+
+.profile__button
+	+button
+	background: $color_lightGray
+	&:before
+		content: '\f007'
+	&:hover
+		background: $color_lightBlue
+.minicart,.profile__button
+	margin-left: 15px
+
+.slider
+	max-width: 100%
+	&__img
+		width: 100%
+		min-height: 140px
+	//slider-1 style
+	.slick-dots
+		width: auto
+		bottom: 80px
+		right: 50px
+	.slick-dots li
+		margin: 0 13px
+	.slick-dots li button:before
+		font-size: 60px
+		color: #fff
+		opacity: 1
+	.slick-dots li.slick-active button:before
+		color: #46433f
+		opacity: 1
+
+.slide
+	position: relative
+	cursor: grab
+	z-index: 1
+	&:active
+		cursor: grabbing	
+.slider__content
+	+slider_content
+.slider__title
+	+slider_title
+.slider__text
+	+slider_text
+.slider__sale
+	+slider_sale
+.slider__parcent
+	+slider_parcent
+.slider__button
+	+slider_button
+.slider__content_pos_right
+	left: 58%
+.slider__content_pos_left
+	left: 5%
+
+.categories
+	width: 100%
+	padding-bottom: 70px
+	&__container
+		width: 1170px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+.mountain-bikes
+	background: url('../img/category_bikes/350/cat-1.jpg') 
+.road-bikes
+	background: url('../img/category_bikes/350/cat-2.jpg')
+.urban-bikes
+	background: url('../img/category_bikes/350/cat-3.jpg')
+.category
+	width: 360px
+	height: 300px
+	padding: 30px 0
+	background-size: 100% 100%
+	overflow: hidden
+	&__container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 260px
+		height: 300px
+		margin-left: 30px
+		padding-top: 55%
+		overflow: hidden
+		transition: 0.5s ease
+	&__title
+		font-size: $main_size + 14
+		line-height: $main_size + 18
+		color: #fff
+		font-weight: 700
+		transition: 0.5s ease
+		margin-bottom: 150px
+		transform: translateY(-50%)
+		cursor: pointer
+		&:hover
+			color: $color_lightBlue
+	&__links
+		margin-bottom: 30px
+	&__link
+		position: relative
+		color: #fff
+		font-size: $main_size - 3
+		line-height: $main_size + 6
+		transition: 0.5s ease
+		&:hover
+			color: $color_lightBlue
+		&:before
+			position: absolute
+			content: '•'
+			left: -23px
+			top: -4px
+			color: $color_lightBlue
+			font-size: $main_size + 35
+	&__button
+		background: $color_gray
+		padding: 17px 35px
+		color: #fff
+		font-weight: 700
+		font-size: $main_size - 2
+		line-height: $main_size + 26
+		transition: 0.5s ease
+		&:hover
+			background: $color_lightBlue
+	&:hover &__container
+		padding-top: 0
+	&:hover &__title
+		margin-bottom: 10px
+		transform: translateY(0)
+
+.brands
+	position: relative
+	width: 100%
+
+
+.brands_space_around
+	width: 1170px
+	margin: 0 auto
+	padding-bottom: 70px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+.brand
+	opacity: 0.3
+	transition: 0.3s ease
+	&:hover
+		opacity: 1
+
+.featured__container
+	width: 1170px
+	margin: 0 auto 70px
+	overflow: hidden
+.title__wrap
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 10px
+.title
+	font-size: $main_size + 4
+
+.products
+	display: flex
+	justify-content: space-between
+	transition: 0.5s
+	&__item
+		&:first-child
+			margin-left: 0
+	&__img
+		width: 260px 
+	&__item_wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__link
+		font-size: $main_size - 2
+		color: $color_gray
+		transition: 0.3s ease
+		&:hover
+			color: $color_lightBlue
+	&__price
+		font-size: $main_size + 4
+		font-weight: 700
+	&__button
+		+button
+		background: $color_lightGray
+		color: gray
+		margin-left: 5px
+		&:hover
+			background: $color_gray
+			color: #fff
+	&__button_like
+		&:before
+			content: '\f004'
+	&__button_info
+		&:before
+			content: '\f0c9'
+	//slider-2 style
+	.slick-slide
+		width: 260px
+		margin-right: 43.333px
+	.slick-prev:before,
+	.slick-next:before
+		font-family: FontAwesome
+		color: $color_gray
+		opacity: 1
+		font-size: $main_size + 10
+		line-height: $main_size + 8
+		font-weight: 700
+		transition: 0.3s ease
+		z-index: 100
+	.slick-prev
+		right: 52px
+		left: auto
+		&:before
+			content: "\f104"
+	.slick-next
+		right: 0
+		&:before
+			content: "\f105"
+	.slick-prev,
+	.slick-next
+		top: -30px
+		&:hover
+			&:before
+				color: $color_lightBlue
+
+.stars
+	margin: 5px 0 10px
+.star_active
+	&:before
+		color: #ffa800
+		content: "\f005"
+		font-family: FontAwesome
+.star_not_active
+	&:before
+		color: lightgray
+		content: "\f005"
+		font-family: FontAwesome
+
+.banner
+	position: relative
+	max-width: 100%
+	margin-bottom: 70px
+	&__img
+		width: 100%
+	&__content
+		+slider_content
+		left: auto
+		right: 10%
+	&__title
+		+slider_title
+	&__title-second
+		font-size: $main_size + 4
+	&__text
+		+slider_text
+	&__sale
+		+slider_sale
+	&__parcent
+		+slider_parcent
+	&__button
+		+slider_button
+//slider new product
+.products__item
+	position: relative
+.products__new
+	display: inline-block
+	position: absolute
+	top: 10px
+	right: 0
+	background: $color_lightBlue
+	color: #fff
+	padding: 5px 10px
+	font-weight: 700
+	font-size: $main_size - 4
+
+
+.sales-banner__one,
+.sales-banner__two
+	position: relative
+	&:hover .sales-banner__img
+			filter: grayscale(0)
+.sales-banner
+	&__img
+		position: relative
+		filter: grayscale(1)
+		transition: .3s filter ease
+	&__wrap
+		width: 1170px
+		margin: 70px auto
+		display: flex
+		justify-content: space-between
+	&__content
+		position: absolute
+		top: 15%
+		left: 40%
+		color: $color_gray
+	&__title
+		font-size: $main_size + 12
+	&_sale
+		font-size: $main_size + 40
+		font-weight: 700
+	&__title-second
+		font-size: $main_size - 2
+		margin-bottom: 20px
+	&__button
+		display: inline-block
+		background: $color_lightBlue
+		padding: 15px 30px
+		color: #fff
+		font-size: $main_size - 2
+		font-weight: 700
+		transition: 0.3s ease
+		filter: none
+		&:hover
+			background: $color_gray
+
+.blog
+	min-width: 100%
+	background: url('../img/blog/blog_bg.jpg') no-repeat
+	background-size: cover
+	&__wrap
+		width: 1170px
+		margin: 0 auto
+		padding: 50px 0 20px
+	&__title
+		color: #fff
+		font-size: $main_size + 4
+	&__news
+		display: flex
+		justify-content: space-between
+		padding: 30px 0
+
+.item
+	position: relative
+	overflow: hidden
+	&:hover 
+		.item__wrap
+			top: 47%
+		.item__img
+			filter: grayscale(0)
+		.item__info
+			opacity: 1
+	&__img
+		width: 360px
+		overflow: hidden
+		position: relative
+		filter: grayscale(1)
+		transition: .3s filter ease
+	&__wrap
+		position: absolute
+		top: 65%
+		left: 0
+		padding: 25px
+		color: #fff
+		transition: 0.5s ease
+	&__info
+		display: flex
+		justify-content: space-between
+		transition: 1s ease
+		opacity: 0
+	&__title
+		display: inline-block
+		color: #fff
+		margin-bottom: 25px
+		transition: 0.3s ease
+		&:hover
+			color: $color_lightBlue
+	&__date
+		&:before
+			content: "\f017"
+			font-family: FontAwesome
+			padding-right: 4px
+	&__comments
+		color: #fff
+		transition: 0.3s ease
+		&:hover
+			color: $color_lightBlue
+		&:before
+			content: "\f075"
+			font-family: FontAwesome
+			padding-right: 4px
+
+.footer
+	background: #292929
+	width: 100%
+	padding: 50px 0
+	&__wrap
+		width: 1170px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+	&__links
+		display: flex
+		justify-content: space-between
+		width: 500px
+	&__title
+		color: #fff
+		font-weight: 500
+		font-size: $main_size - 2
+		line-height: $main_size + 20
+		margin-bottom: 10px
+	&__list
+		display: flex
+		flex-direction: column
+		margin-left: -22px
+	&__link
+		color: #777
+		font-size: $main_size - 4
+		margin-bottom: 15px
+		transition: 0.3s ease
+		&:hover
+			color: $color_lightBlue
+
+.contacts
+	width: 280px
+	&__title
+		color: #fff
+		font-size: $main_size - 2
+		line-height: $main_size + 20
+	&__text
+		color: #777
+		font-size: $main_size - 3
+		line-height: $main_size + 4
+
+.number
+	&:before
+		content: "\f095"
+		font-family: FontAwesome
+		color: $color_lightBlue
+		font-size: $main_size + 4
+		margin-right: 10px
+		vertical-align: middle
+.shipping
+	&:before
+		content: "\f0d1"
+		font-family: FontAwesome
+		color: $color_lightBlue
+		font-size: $main_size + 4
+		margin-right: 10px
+		vertical-align: middle
+.guarantee
+	&:before
+		content: "\f164"
+		font-family: FontAwesome
+		color: $color_lightBlue
+		font-size: $main_size + 4
+		margin-right: 10px
+		vertical-align: middle
+
+.contacts__telephone,
+.contacts__shipping,
+.contacts__statisfaction
+	margin-bottom: 30px
+
+@keyframes rotate
+	50%
+		transform: scale(0.8)
+	100%
+		transform: scale(1)
+
+.feedback
+	width: 270px
+	&__sign-up
+		margin-bottom: 30px
+	&__search 
+		position: relative
+		width: 190px
+		margin-bottom: 50px
+	&__input 
+		width: 100px
+		height: 35px
+		padding-left: 15px
+		padding-right: 123px
+		border: 1px solid #B6C0A5
+		outline: none
+		background: #fff
+		color: #9E9C9C
+	&__button 
+		+button
+		width: auto
+		position: absolute
+		top: 0
+		right: -50px
+		padding: 0 15px
+		background: $color_lightBlue
+		transition: 0
+		color: #fff
+		&:hover
+			animation: rotate 0.3s linear
+	&__social
+		width: 89%
+		display: flex
+		justify-content: space-between
+input::-webkit-input-placeholder 
+	color: #B6C0A5
+input:-moz-placeholder 
+	color: #B6C0A5
+input:-ms-input-placeholder 
+	color: #B6C0A5
+
+
+.fb
+	background: url(../img/soc_icons/fb.png) no-repeat center
+.tw
+	background: url(../img/soc_icons/twitter.png) no-repeat center
+.google
+	background: url(../img/soc_icons/google.png) no-repeat center
+.inst
+	background: url(../img/soc_icons/inst.png) no-repeat center
+.youtube
+	background: url(../img/soc_icons/youtube.png) no-repeat center
+.soc
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	background-color: #303436
+	transition: 0.3s ease
+	&:hover
+		background-color: $color_lightBlue
