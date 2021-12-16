@@ -1,311 +1,347 @@
 <!DOCTYPE html>
 <html lang="ru">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Aleksey Melnyk - Developer</title>
+  <meta
+   name="keywords"
+   content="aleksey melnyk, portfolio, front-end, разработчик, responsive, ux, CSS3, JS, javascript"
+  />
+  <meta
+   name="description"
+   content="Portfolio of Aleksey Melnyk front-end developer"
+  />
+  <meta name="author" lang="ru" content="Aleksey Melnyk" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Aleksey Melnyk - Developer</title>
-    <meta name="keywords"
-        content="aleksey melnyk, portfolio, front-end, разработчик, responsive, ux, CSS3, JS, javascript" />
-    <meta name="description" content="Portfolio of Aleksey Melnyk front-end developer" />
-    <meta name="author" lang="ru" content="Aleksey Melnyk" />
+  <meta property="og:title" content="Алексей мельник - front-end разработчик" />
+  <meta
+   property="og:description"
+   content="Portfolio of Aleksey Melnyk front-end developer"
+  />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://aleksey-13.github.io/" />
+  <meta
+   property="og:image"
+   content="https://aleksey-13.github.io/img/og-image.jpg"
+  />
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:width" content="500" />
+  <meta property="og:image:height" content="400" />
 
-    <meta property="og:title" content="Алексей мельник - front-end разработчик" />
-    <meta property="og:description" content="Portfolio of Aleksey Melnyk front-end developer" />
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://aleksey-13.github.io/" />
-    <meta property="og:image" content="https://aleksey-13.github.io/img/og-image.jpg" />
-    <meta property="og:image:type" content="image/jpg">
-    <meta property="og:image:width" content="500" />
-    <meta property="og:image:height" content="400" />
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary" />
+  <meta
+   name="twitter:title"
+   content="Алексей мельник - front-end разработчик"
+  />
+  <meta
+   name="twitter:description"
+   content="Portfolio of Aleksey Melnyk front-end developer"
+  />
+  <meta name="twitter:creator" content="@ol_mlnk" />
+  <meta
+   name="twitter:image:src"
+   content="https://aleksey-13.github.io/img/og-image.jpg"
+  />
+  <meta name="twitter:domain" content="https://aleksey-13.github.io/" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <!-- Twitter card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Алексей мельник - front-end разработчик">
-    <meta name="twitter:description" content="Portfolio of Aleksey Melnyk front-end developer">
-    <meta name="twitter:creator" content="@ol_mlnk">
-    <meta name="twitter:image:src" content="https://aleksey-13.github.io/img/og-image.jpg">
-    <meta name="twitter:domain" content="https://aleksey-13.github.io/">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+   async
+   src="https://www.googletagmanager.com/gtag/js?id=G-3D3DSLZQ60"
+  ></script>
+  <script>
+   window.dataLayer = window.dataLayer || []
+   function gtag() {
+    dataLayer.push(arguments)
+   }
+   gtag('js', new Date())
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="import" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
+   gtag('config', 'G-3D3DSLZQ60')
+  </script>
 
-<body>
-    <aside class="side-pannel">
-        <header class="header">
-            <div class="header__photo-box">
-                <img src="img/my_photo_bw.jpg" alt="photo" class="header__photo" />
-            </div>
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Алексей Мельник</span>
-                    <span class="heading-primary--sub">веб разработчик</span>
-                </h1>
-            </div>
-        </header>
+  <link
+   href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+   rel="import"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+ </head>
 
-        <div class="navigation">
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item navigation__item--active">
-                        <a href="#" class="navigation__link">Главная</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Резюме</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Портфолио</a>
-                    </li>
-                </ul>
-            </nav>
+ <body>
+  <aside class="side-pannel">
+   <header class="header">
+    <div class="header__photo-box">
+     <img src="img/my_photo_bw.jpg" alt="photo" class="header__photo" />
+    </div>
+    <div class="header__text-box">
+     <h1 class="heading-primary">
+      <span class="heading-primary--main">Алексей Мельник</span>
+      <span class="heading-primary--sub">веб разработчик</span>
+     </h1>
+    </div>
+   </header>
+
+   <div class="navigation">
+    <nav class="navigation__nav">
+     <ul class="navigation__list">
+      <li class="navigation__item navigation__item--active">
+       <a href="#" class="navigation__link">Главная</a>
+      </li>
+      <li class="navigation__item">
+       <a href="#" class="navigation__link">Резюме</a>
+      </li>
+      <li class="navigation__item">
+       <a href="#" class="navigation__link">Портфолио</a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+
+   <div class="cv">
+    <a href="files/oleksii_melnyk_cv.pdf" class="cv__link">
+     <span class="cv__title">Просмотреть резюме</span>
+     <img src="img/svg/download.svg" alt="Download cv" class="cv__icon" />
+    </a>
+   </div>
+
+   <div class="social">
+    <div class="social__contact">
+     <a href="mailto:oleksii.mlnk@gmail.com" aria-label="email"
+      >oleksii.mlnk@gmail.com</a
+     >
+     <a href="tel:+380634821032" aria-label="tel" class="social__contact--tel"
+      >+38 063 482 10 32</a
+     >
+    </div>
+    <nav class="social__nav">
+     <ul class="social__list">
+      <li class="social__item">
+       <a
+        href="https://www.linkedin.com/in/aleksey-melnyk/"
+        class="social__link"
+        target="_blank"
+        aria-label="Linkedin"
+        rel="nofollow noopener"
+       >
+        <svg class="social__icon">
+         <use xlink:href="img/svg/linkedin.svg#Linkedin"></use>
+        </svg>
+       </a>
+      </li>
+
+      <li class="social__item">
+       <a
+        href="whatsapp://send?phone=+380970221817"
+        class="social__link"
+        aria-label="WhatsApp"
+       >
+        <svg class="social__icon">
+         <use xlink:href="img/svg/whatsapp-logo.svg#WhatsApp"></use>
+        </svg>
+       </a>
+      </li>
+
+      <li class="social__item">
+       <a
+        href="https://github.com/aleksey-13"
+        class="social__link"
+        target="_blank"
+        aria-label="GitHub"
+        rel="nofollow noopener"
+       >
+        <svg class="social__icon">
+         <use xlink:href="img/svg/github-logo.svg#GitHub"></use>
+        </svg>
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </aside>
+
+  <main class="main">
+   <section class="section">
+    <div class="wrap section-home">
+     <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+       <source src="img/video.mp4" type="video/mp4" />
+       <source src="img/video.webm" type="video/webm" />
+       Your browser is not supported!
+      </video>
+     </div>
+
+     <div class="home">
+      <div class="home__text">
+       <h2 class="heading-secondary">
+        <span class="heading-secondary--main"> Алексей Мельник </span>
+        <span class="heading-secondary--sub">
+         Веб разработчик
+         <span class="heading-secondary--marker">&#8226;</span>
+         <span id="age"></span> лет
+        </span>
+       </h2>
+
+       <p>
+        Front-end разработчик. Владею HTML и CSS, умею писать скрипты на JS,
+        использую GitHub. Для стандартизации кода я использую Bootstrap и
+        методологию BEM. Постоянно развиваюсь в направлении разработки и
+        программирования, изучаю новые технологии и тем самым совершенствую свои
+        знания и навыки.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <section class="section">
+    <div class="wrap section-summary">
+     <div class="header-box u-center-text u-margin-bottom-medium">
+      <h3 class="heading-third">Образование</h3>
+     </div>
+
+     <div class="summary-box">
+      <ul class="summary-box__list">
+       <li class="summary-box--item">
+        <div class="summary-box--date">
+         <p class="link">2013 - 2016</p>
+        </div>
+        <div class="summary-box--text">
+         <p class="paragraph--main">
+          Частное высшее учебное заведение Общества содействия обороне Украины
+          &laquo;Коростенский технический колледж&raquo;
+         </p>
+         <p>
+          Получена квалификация младший специалист техник с вычислительной
+          техники
+         </p>
+        </div>
+       </li>
+
+       <li class="summary-box--item">
+        <div class="summary-box--date">
+         <p class="link">2016 - 2018</p>
+        </div>
+        <div class="summary-box--text">
+         <p class="paragraph--main">
+          &laquo;Житомирский государственный технологический университет&raquo;
+         </p>
+         <a
+          class="link"
+          href="https://ztu.edu.ua/ua/structure/faculties/fikt/kpzot.php"
+          target="_blank"
+          rel="nofollow noopener"
+          >Инженерия ПО</a
+         >
+         <p>
+          Получена квалификация бакалавр инженерии программного обеспечения
+         </p>
+        </div>
+       </li>
+      </ul>
+     </div>
+
+     <div
+      class="
+       header-box
+       u-center-text u-margin-top-medium u-margin-bottom-medium
+      "
+     >
+      <h3 class="heading-third">Навыки</h3>
+     </div>
+
+     <div class="skills-box">
+      <ul class="skills-box__list">
+       <li class="skills-box--item">
+        <div class="skills-box--icon">
+         <svg>
+          <use xlink:href="img/svg/skill-icon-0.svg#icon-0"></use>
+         </svg>
+        </div>
+        <div class="skills-box--text">
+         <h4 class="paragraph--main">HTML + CSS</h4>
+         <p>Использование препроцессоров SASS и LESS</p>
+        </div>
+       </li>
+
+       <li class="skills-box--item">
+        <div class="skills-box--icon">
+         <svg>
+          <use xlink:href="img/svg/skill-icon-1.svg#icon-1"></use>
+         </svg>
         </div>
 
-        <div class="cv">
-            <a href="files/oleksii_melnyk_cv.pdf" class="cv__link">
-                <span class="cv__title">Просмотреть резюме</span>
-                <img src="img/svg/download.svg" alt="Download cv" class="cv__icon" />
-            </a>
+        <div class="skills-box--text">
+         <h4 class="paragraph--main">Adaptive Layout</h4>
+         <p>Адаптивная верстка с использованием flexbox и медиа-запросов</p>
         </div>
+       </li>
 
-        <div class="social">
-            <div class="social__contact">
-                <a href="mailto:oleksii.mlnk@gmail.com" aria-label="email">oleksii.mlnk@gmail.com</a>
-                <a href="tel:+380634821032" aria-label="tel" class="social__contact--tel">+38 063 482 10 32</a>
-            </div>
-            <nav class="social__nav">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a href="https://www.linkedin.com/in/aleksey-melnyk/" class="social__link" target="_blank"
-                            aria-label="Linkedin" rel="nofollow noopener">
-                            <svg class="social__icon">
-                                <use xlink:href="img/svg/linkedin.svg#Linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social__item">
-                        <a href="whatsapp://send?phone=+380970221817" class="social__link" aria-label="WhatsApp">
-                            <svg class="social__icon">
-                                <use xlink:href="img/svg/whatsapp-logo.svg#WhatsApp"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social__item">
-                        <a href="https://github.com/aleksey-13" class="social__link" target="_blank" aria-label="GitHub"
-                            rel="nofollow noopener">
-                            <svg class="social__icon">
-                                <use xlink:href="img/svg/github-logo.svg#GitHub"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+       <li class="skills-box--item">
+        <div class="skills-box--icon">
+         <svg>
+          <use xlink:href="img/svg/skill-icon-2.svg#icon-2"></use>
+         </svg>
         </div>
-    </aside>
+        <div class="skills-box--text">
+         <h4 class="paragraph--main">Cross-Browser</h4>
+         <p>Оптимальное отображение сайта во всех современных браузерах</p>
+        </div>
+       </li>
 
-    <main class="main">
-        <section class="section">
-            <div class="wrap section-home">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4" />
-                        <source src="img/video.webm" type="video/webm" />
-                        Your browser is not supported!
-                    </video>
-                </div>
+       <li class="skills-box--item">
+        <div class="skills-box--icon">
+         <svg>
+          <use xlink:href="img/svg/skill-icon-3.svg#icon-3"></use>
+         </svg>
+        </div>
+        <div class="skills-box--text">
+         <h4 class="paragraph--main">JavaScript</h4>
+         <p>Хорошие знания JavaScript.</p>
+        </div>
+       </li>
 
-                <div class="home">
-                    <div class="home__text">
-                        <h2 class="heading-secondary">
-                            <span class="heading-secondary--main">
-                                Алексей Мельник
-                            </span>
-                            <span class="heading-secondary--sub">
-                                Веб разработчик
-                                <span class="heading-secondary--marker">&#8226;</span>
-                                <span id="age"></span> лет
-                            </span>
-                        </h2>
+       <li class="skills-box--item">
+        <div class="skills-box--icon">
+         <svg>
+          <use xlink:href="img/svg/skill-icon-4.svg#icon-4"></use>
+         </svg>
+        </div>
+        <div class="skills-box--text">
+         <h4 class="paragraph--main">Validator</h4>
+         <p>Соответствие стандартам W3C</p>
+        </div>
+       </li>
 
-                        <p>
-                            Front-end разработчик. Владею HTML и CSS, умею
-                            писать скрипты на JS, использую GitHub. Для
-                            стандартизации кода я использую Bootstrap и
-                            методологию BEM. Постоянно развиваюсь в
-                            направлении разработки и программирования,
-                            изучаю новые технологии и тем самым
-                            совершенствую свои знания и навыки.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <li class="skills-box--item">
+        <div class="skills-box--icon">
+         <svg>
+          <use xlink:href="img/svg/skill-icon-5.svg#icon-5"></use>
+         </svg>
+        </div>
+        <div class="skills-box--text">
+         <h4 class="paragraph--main">Photoshop</h4>
+         <p>Использование фотошопа для работы с макетами</p>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
 
-        <section class="section">
-            <div class="wrap section-summary">
-                <div class="header-box u-center-text u-margin-bottom-medium">
-                    <h3 class="heading-third">Образование</h3>
-                </div>
+   <section class="section">
+    <div class="wrap section-portfolio">
+     <div class="header-box u-center-text u-margin-bottom-medium">
+      <h3 class="heading-third">Портфолио работ</h3>
+     </div>
 
-                <div class="summary-box">
-                    <ul class="summary-box__list">
-                        <li class="summary-box--item">
-                            <div class="summary-box--date">
-                                <p class="link">2013 - 2016</p>
-                            </div>
-                            <div class="summary-box--text">
-                                <p class="paragraph--main">
-                                    Частное высшее учебное заведение
-                                    Общества содействия обороне Украины
-                                    &laquo;Коростенский технический
-                                    колледж&raquo;
-                                </p>
-                                <p>
-                                    Получена квалификация младший специалист
-                                    техник с вычислительной техники
-                                </p>
-                            </div>
-                        </li>
+     <ul class="work-list"></ul>
+    </div>
+   </section>
+  </main>
 
-                        <li class="summary-box--item">
-                            <div class="summary-box--date">
-                                <p class="link">2016 - 2018</p>
-                            </div>
-                            <div class="summary-box--text">
-                                <p class="paragraph--main">
-                                    &laquo;Житомирский государственный
-                                    технологический университет&raquo;
-                                </p>
-                                <a class="link" href="https://ztu.edu.ua/ua/structure/faculties/fikt/kpzot.php"
-                                    target="_blank" rel="nofollow noopener">Инженерия ПО</a>
-                                <p>
-                                    Получена квалификация бакалавр инженерии
-                                    программного обеспечения
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="
-                            header-box
-                            u-center-text
-                            u-margin-top-medium
-                            u-margin-bottom-medium
-                        ">
-                    <h3 class="heading-third">Навыки</h3>
-                </div>
-
-                <div class="skills-box">
-                    <ul class="skills-box__list">
-                        <li class="skills-box--item">
-                            <div class="skills-box--icon">
-                                <svg>
-                                    <use xlink:href="img/svg/skill-icon-0.svg#icon-0"></use>
-                                </svg>
-                            </div>
-                            <div class="skills-box--text">
-                                <h4 class="paragraph--main">HTML + CSS</h4>
-                                <p>
-                                    Использование препроцессоров SASS и LESS
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="skills-box--item">
-                            <div class="skills-box--icon">
-                                <svg>
-                                    <use xlink:href="img/svg/skill-icon-1.svg#icon-1"></use>
-                                </svg>
-                            </div>
-
-                            <div class="skills-box--text">
-                                <h4 class="paragraph--main">
-                                    Adaptive Layout
-                                </h4>
-                                <p>
-                                    Адаптивная верстка с использованием
-                                    flexbox и медиа-запросов
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="skills-box--item">
-                            <div class="skills-box--icon">
-                                <svg>
-                                    <use xlink:href="img/svg/skill-icon-2.svg#icon-2"></use>
-                                </svg>
-                            </div>
-                            <div class="skills-box--text">
-                                <h4 class="paragraph--main">
-                                    Cross-Browser
-                                </h4>
-                                <p>
-                                    Оптимальное отображение сайта во всех
-                                    современных браузерах
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="skills-box--item">
-                            <div class="skills-box--icon">
-                                <svg>
-                                    <use xlink:href="img/svg/skill-icon-3.svg#icon-3"></use>
-                                </svg>
-                            </div>
-                            <div class="skills-box--text">
-                                <h4 class="paragraph--main">JavaScript</h4>
-                                <p>Хорошие знания JavaScript.</p>
-                            </div>
-                        </li>
-
-                        <li class="skills-box--item">
-                            <div class="skills-box--icon">
-                                <svg>
-                                    <use xlink:href="img/svg/skill-icon-4.svg#icon-4"></use>
-                                </svg>
-                            </div>
-                            <div class="skills-box--text">
-                                <h4 class="paragraph--main">Validator</h4>
-                                <p>Соответствие стандартам W3C</p>
-                            </div>
-                        </li>
-
-                        <li class="skills-box--item">
-                            <div class="skills-box--icon">
-                                <svg>
-                                    <use xlink:href="img/svg/skill-icon-5.svg#icon-5"></use>
-                                </svg>
-                            </div>
-                            <div class="skills-box--text">
-                                <h4 class="paragraph--main">Photoshop</h4>
-                                <p>
-                                    Использование фотошопа для работы с
-                                    макетами
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="wrap section-portfolio">
-                <div class="header-box u-center-text u-margin-bottom-medium">
-                    <h3 class="heading-third">Портфолио работ</h3>
-                </div>
-
-                <ul class="work-list"></ul>
-            </div>
-        </section>
-    </main>
-
-    <script type="text/javascript" src="js/bundle.js"></script>
-</body>
-
+  <script type="text/javascript" src="js/bundle.js"></script>
+ </body>
 </html>
