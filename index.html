@@ -1,347 +1,1214 @@
 <!DOCTYPE html>
-<html lang="ru">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Aleksey Melnyk - Developer</title>
-  <meta
-   name="keywords"
-   content="aleksey melnyk, portfolio, front-end, разработчик, responsive, ux, CSS3, JS, javascript"
-  />
-  <meta
-   name="description"
-   content="Portfolio of Aleksey Melnyk front-end developer"
-  />
-  <meta name="author" lang="ru" content="Aleksey Melnyk" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Muzik</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="logo" href="#">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <button class="header__menu-btn" data-type="header-menu-btn">
+            <span class="header__menu-btn--line"></span>
+          </button>
+          <nav class="header__nav menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a
+                  class="menu__list-link header__nav-link"
+                  href="#"
+                  data-type="header-link"
+                  >Home</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a
+                  class="menu__list-link header__nav-link menu__list-dropdown"
+                  href="#"
+                  data-type="header-link"
+                  >Speakers</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a
+                  class="menu__list-link header__nav-link menu__list-dropdown"
+                  href="#"
+                  data-type="header-link"
+                  >Schedule</a
+                >
+              </li>
+              <li class="menu__list-item" data-type="header-link">
+                <a
+                  class="menu__list-link header__nav-link"
+                  href="#"
+                  data-type="header-link"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button class="header__top-btn">GET TICKETS</button>
+        </div>
 
-  <meta property="og:title" content="Алексей мельник - front-end разработчик" />
-  <meta
-   property="og:description"
-   content="Portfolio of Aleksey Melnyk front-end developer"
-  />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://aleksey-13.github.io/" />
-  <meta
-   property="og:image"
-   content="https://aleksey-13.github.io/img/og-image.jpg"
-  />
-  <meta property="og:image:type" content="image/jpg" />
-  <meta property="og:image:width" content="500" />
-  <meta property="og:image:height" content="400" />
-
-  <!-- Twitter card -->
-  <meta name="twitter:card" content="summary" />
-  <meta
-   name="twitter:title"
-   content="Алексей мельник - front-end разработчик"
-  />
-  <meta
-   name="twitter:description"
-   content="Portfolio of Aleksey Melnyk front-end developer"
-  />
-  <meta name="twitter:creator" content="@ol_mlnk" />
-  <meta
-   name="twitter:image:src"
-   content="https://aleksey-13.github.io/img/og-image.jpg"
-  />
-  <meta name="twitter:domain" content="https://aleksey-13.github.io/" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-   async
-   src="https://www.googletagmanager.com/gtag/js?id=G-3D3DSLZQ60"
-  ></script>
-  <script>
-   window.dataLayer = window.dataLayer || []
-   function gtag() {
-    dataLayer.push(arguments)
-   }
-   gtag('js', new Date())
-
-   gtag('config', 'G-3D3DSLZQ60')
-  </script>
-
-  <link
-   href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-   rel="import"
-  />
-  <link rel="stylesheet" href="css/style.css" />
- </head>
-
- <body>
-  <aside class="side-pannel">
-   <header class="header">
-    <div class="header__photo-box">
-     <img src="img/my_photo_bw.jpg" alt="photo" class="header__photo" />
-    </div>
-    <div class="header__text-box">
-     <h1 class="heading-primary">
-      <span class="heading-primary--main">Алексей Мельник</span>
-      <span class="heading-primary--sub">веб разработчик</span>
-     </h1>
-    </div>
-   </header>
-
-   <div class="navigation">
-    <nav class="navigation__nav">
-     <ul class="navigation__list">
-      <li class="navigation__item navigation__item--active">
-       <a href="#" class="navigation__link">Главная</a>
-      </li>
-      <li class="navigation__item">
-       <a href="#" class="navigation__link">Резюме</a>
-      </li>
-      <li class="navigation__item">
-       <a href="#" class="navigation__link">Портфолио</a>
-      </li>
-     </ul>
-    </nav>
-   </div>
-
-   <div class="cv">
-    <a href="files/oleksii_melnyk_cv.pdf" class="cv__link">
-     <span class="cv__title">Просмотреть резюме</span>
-     <img src="img/svg/download.svg" alt="Download cv" class="cv__icon" />
-    </a>
-   </div>
-
-   <div class="social">
-    <div class="social__contact">
-     <a href="mailto:oleksii.mlnk@gmail.com" aria-label="email"
-      >oleksii.mlnk@gmail.com</a
-     >
-     <a href="tel:+380634821032" aria-label="tel" class="social__contact--tel"
-      >+38 063 482 10 32</a
-     >
-    </div>
-    <nav class="social__nav">
-     <ul class="social__list">
-      <li class="social__item">
-       <a
-        href="https://www.linkedin.com/in/aleksey-melnyk/"
-        class="social__link"
-        target="_blank"
-        aria-label="Linkedin"
-        rel="nofollow noopener"
-       >
-        <svg class="social__icon">
-         <use xlink:href="img/svg/linkedin.svg#Linkedin"></use>
-        </svg>
-       </a>
-      </li>
-
-      <li class="social__item">
-       <a
-        href="whatsapp://send?phone=+380970221817"
-        class="social__link"
-        aria-label="WhatsApp"
-       >
-        <svg class="social__icon">
-         <use xlink:href="img/svg/whatsapp-logo.svg#WhatsApp"></use>
-        </svg>
-       </a>
-      </li>
-
-      <li class="social__item">
-       <a
-        href="https://github.com/aleksey-13"
-        class="social__link"
-        target="_blank"
-        aria-label="GitHub"
-        rel="nofollow noopener"
-       >
-        <svg class="social__icon">
-         <use xlink:href="img/svg/github-logo.svg#GitHub"></use>
-        </svg>
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </div>
-  </aside>
-
-  <main class="main">
-   <section class="section">
-    <div class="wrap section-home">
-     <div class="bg-video">
-      <video class="bg-video__content" autoplay muted loop>
-       <source src="img/video.mp4" type="video/mp4" />
-       <source src="img/video.webm" type="video/webm" />
-       Your browser is not supported!
-      </video>
-     </div>
-
-     <div class="home">
-      <div class="home__text">
-       <h2 class="heading-secondary">
-        <span class="heading-secondary--main"> Алексей Мельник </span>
-        <span class="heading-secondary--sub">
-         Веб разработчик
-         <span class="heading-secondary--marker">&#8226;</span>
-         <span id="age"></span> лет
-        </span>
-       </h2>
-
-       <p>
-        Front-end разработчик. Владею HTML и CSS, умею писать скрипты на JS,
-        использую GitHub. Для стандартизации кода я использую Bootstrap и
-        методологию BEM. Постоянно развиваюсь в направлении разработки и
-        программирования, изучаю новые технологии и тем самым совершенствую свои
-        знания и навыки.
-       </p>
+        <div class="header__content">
+          <h1 class="header__content-title">
+            The Best experience of
+            <mark class="attention">music</mark> in 2021
+          </h1>
+          <p class="header__content-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            vitae ligula placerat, eleifend ex non, vehicula libero. Suspendisse
+            eget tellus lectus.
+          </p>
+          <div class="header__content-buttons">
+            <a class="header__content-started" href="#">Get Started</a>
+            <a class="header__content-video" href="#">Watch Video</a>
+          </div>
+        </div>
       </div>
-     </div>
-    </div>
-   </section>
+      <div class="timer">
+        <span class="timer__days">22d</span>
+        <span class="timer__hours">13h</span>
+        <span class="timer__minutes">46m</span>
+        <span class="timer__seconds">18s</span>
+      </div>
+    </header>
 
-   <section class="section">
-    <div class="wrap section-summary">
-     <div class="header-box u-center-text u-margin-bottom-medium">
-      <h3 class="heading-third">Образование</h3>
-     </div>
+    <section class="page-section categories">
+      <div class="container">
+        <h2 class="categories__title primary-title">
+          <mark class="attention">Explore</mark> By Category
+        </h2>
+      </div>
+      <div class="categories__inner categories__swiper">
+        <ul class="categories__list swiper-wrapper">
+          <li class="categories__list-item swiper-slide light-orange">
+            <img
+              class="categories__list-img"
+              src="images/category-1.svg"
+              alt="icon"
+            />
+            <h3 class="categories__list-title secondary-title">Pop</h3>
+            <p class="categories__list-text">
+              Duis nec sodales nibh. Proin lectus tortor, rudivum vel vulputate
+              vitae
+            </p>
+          </li>
+          <li class="categories__list-item swiper-slide light-red">
+            <img
+              class="categories__list-img"
+              src="images/category-2.svg"
+              alt="icon"
+            />
+            <h3 class="categories__list-title secondary-title">Folk</h3>
+            <p class="categories__list-text">
+              Duis nec sodales nibh. Proin lectus tortor, rudivum vel vulputate
+              vitae
+            </p>
+          </li>
+          <li class="categories__list-item swiper-slide light-brown">
+            <img
+              class="categories__list-img"
+              src="images/category-3.svg"
+              alt="icon"
+            />
+            <h3 class="categories__list-title secondary-title">
+              Insdivumental
+            </h3>
+            <p class="categories__list-text">
+              Duis nec sodales nibh. Proin lectus tortor, rudivum vel vulputate
+              vitae
+            </p>
+          </li>
+          <li class="categories__list-item swiper-slide light-violet">
+            <img
+              class="categories__list-img"
+              src="images/category-4.svg"
+              alt="icon"
+            />
+            <h3 class="categories__list-title secondary-title">Rock</h3>
+            <p class="categories__list-text">
+              Duis nec sodales nibh. Proin lectus tortor, rudivum vel vulputate
+              vitae
+            </p>
+          </li>
+          <li class="categories__list-item swiper-slide light-blue">
+            <img
+              class="categories__list-img"
+              src="images/category-5.svg"
+              alt="icon"
+            />
+            <h3 class="categories__list-title secondary-title">Jazz</h3>
+            <p class="categories__list-text">
+              Duis nec sodales nibh. Proin lectus tortor, rudivum vel vulputate
+              vitae
+            </p>
+          </li>
+        </ul>
+      </div>
+      <img
+        class="categories__confetti-1 confetties"
+        src="images/category-confetti-1.svg"
+        alt="confetti"
+      />
+      <img
+        class="categories__confetti-2 confetties"
+        src="images/category-confetti-2.svg"
+        alt="confetti"
+      />
+      <img
+        class="categories__confetti-3 confetties"
+        src="images/category-confetti-3.svg"
+        alt="confetti"
+      />
+      <img
+        class="categories__confetti-4 confetties"
+        src="images/category-confetti-4.svg"
+        alt="confetti"
+      />
+    </section>
 
-     <div class="summary-box">
-      <ul class="summary-box__list">
-       <li class="summary-box--item">
-        <div class="summary-box--date">
-         <p class="link">2013 - 2016</p>
+    <section class="page-section about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__img-box">
+            <img
+              class="about__img-front"
+              src="images/about-2.png"
+              alt="about"
+            />
+            <img class="about__img-back" src="images/about-1.png" alt="about" />
+          </div>
+          <div class="about__descriprion">
+            <h2 class="about__descriprion-title primary-title">About Musik</h2>
+            <p class="about__descriprion-text">
+              Fusce justo mi, vehicula id arcu et, dapibus divistique lectus.
+              Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
+              augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
+              non neque suscipit luctus. Mauris et erat id ipsum condimentum
+              cursus. Sed tempus enim non massa mattis iaculis. In quis massa
+              risus
+            </p>
+            <a class="about__descriprion-btn" href="#">Learn More</a>
+          </div>
         </div>
-        <div class="summary-box--text">
-         <p class="paragraph--main">
-          Частное высшее учебное заведение Общества содействия обороне Украины
-          &laquo;Коростенский технический колледж&raquo;
-         </p>
-         <p>
-          Получена квалификация младший специалист техник с вычислительной
-          техники
-         </p>
-        </div>
-       </li>
+      </div>
+      <img
+        class="about__confetti-1 confetties"
+        src="images/about-confetti-1.svg"
+        alt="confetti"
+      />
+    </section>
 
-       <li class="summary-box--item">
-        <div class="summary-box--date">
-         <p class="link">2016 - 2018</p>
+    <section class="page-section singers">
+      <div class="container">
+        <div class="singers__inner">
+          <div class="singers__descriprion">
+            <h2 class="singers__descriprion-title primary-title">Singers</h2>
+            <p class="singers__descriprion-text">
+              Fusce justo mi, vehicula id arcu et, dapibus divistique lectus.
+              Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
+              augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
+              non neque suscipit luctus. Mauris et erat id ipsum condimentum
+              cursus. Sed tempus enim non massa mattis iaculis. In quis massa
+              risus
+            </p>
+            <a class="singers__descriprion-btn" href="#">View All Singers</a>
+          </div>
+          <div class="singers__images">
+            <img
+              class="singers__images--1"
+              src="images/singer-1.png"
+              alt="singer"
+            />
+            <img
+              class="singers__images--2"
+              src="images/singer-2.png"
+              alt="singer"
+            />
+            <img
+              class="singers__images--3"
+              src="images/singer-3.png"
+              alt="singer"
+            />
+            <img
+              class="singers__images--4"
+              src="images/singer-4.png"
+              alt="singer"
+            />
+          </div>
         </div>
-        <div class="summary-box--text">
-         <p class="paragraph--main">
-          &laquo;Житомирский государственный технологический университет&raquo;
-         </p>
-         <a
-          class="link"
-          href="https://ztu.edu.ua/ua/structure/faculties/fikt/kpzot.php"
-          target="_blank"
-          rel="nofollow noopener"
-          >Инженерия ПО</a
-         >
-         <p>
-          Получена квалификация бакалавр инженерии программного обеспечения
-         </p>
-        </div>
-       </li>
-      </ul>
-     </div>
+      </div>
 
-     <div
-      class="
-       header-box
-       u-center-text u-margin-top-medium u-margin-bottom-medium
-      "
-     >
-      <h3 class="heading-third">Навыки</h3>
-     </div>
+      <img
+        class="singers__confetti-1 confetties"
+        src="images/singers-confetti-1.svg"
+        alt="confetti"
+      />
+      <img
+        class="singers__confetti-2 confetties"
+        src="images/singers-confetti-2.svg"
+        alt="confetti"
+      />
+      <img
+        class="singers__confetti-3 confetties"
+        src="images/singers-confetti-3.svg"
+        alt="confetti"
+      />
+    </section>
 
-     <div class="skills-box">
-      <ul class="skills-box__list">
-       <li class="skills-box--item">
-        <div class="skills-box--icon">
-         <svg>
-          <use xlink:href="img/svg/skill-icon-0.svg#icon-0"></use>
-         </svg>
-        </div>
-        <div class="skills-box--text">
-         <h4 class="paragraph--main">HTML + CSS</h4>
-         <p>Использование препроцессоров SASS и LESS</p>
-        </div>
-       </li>
+    <section class="page-section events">
+      <div class="container">
+        <div class="events__inner">
+          <h2 class="events__title primary-title">Event Schedule</h2>
+          <ul class="events__tabs">
+            <li
+              class="events__tab events__tab--active"
+              data-type="tab"
+              data-tab-name="tab-1"
+            >
+              <h3 class="events__tab-title secondary-title">Day 01</h3>
+              <h5 class="events__tab-subtitle">16 August</h5>
+              <span class="events__tab-line"></span>
+            </li>
+            <li class="events__tab" data-type="tab" data-tab-name="tab-2">
+              <h3 class="events__tab-title secondary-title">Day 02</h3>
+              <h5 class="events__tab-subtitle">17 August</h5>
+              <span class="events__tab-line"></span>
+            </li>
+            <li class="events__tab" data-type="tab" data-tab-name="tab-3">
+              <h3 class="events__tab-title secondary-title">Day 03</h3>
+              <h5 class="events__tab-subtitle">18 August</h5>
+              <span class="events__tab-line"></span>
+            </li>
+          </ul>
 
-       <li class="skills-box--item">
-        <div class="skills-box--icon">
-         <svg>
-          <use xlink:href="img/svg/skill-icon-1.svg#icon-1"></use>
-         </svg>
+          <div
+            class="events__table events__table--active table"
+            data-type="tab-content"
+            data-tab-content="tab-1"
+          >
+            <div class="table__head">
+              <div class="table__row">
+                <div class="table__col">Time</div>
+                <div class="table__col">Content</div>
+                <div class="table__col">Speakers</div>
+                <div class="table__col"></div>
+              </div>
+            </div>
+            <div class="table__body">
+              <div class="table__row">
+                <div class="table__col">
+                  <p class="table__col-time">11:00 AM to 12:00 PM</p>
+                </div>
+                <div class="table__col">
+                  <p class="table__col-content">
+                    Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                  </p>
+                </div>
+                <div class="table__col">
+                  <ul class="table__speakers">
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Yui Ronald</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F12</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__col">
+                  <a class="table__link" href="#">
+                    Preview
+                    <img
+                      class="table__link-icon"
+                      src="images/play-icon.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="table__row">
+                <div class="table__col">
+                  <p class="table__col-time">12:00 PM to 03:00 PM</p>
+                </div>
+                <div class="table__col">
+                  <p class="table__col-content">
+                    Duis nec sodales nibh. Proin lectus tortor, rudivum vel
+                    vulputate vitae, fringilla id magna. Vestibulum ornare eget
+                    urna nec pulvinar. Praesent porttitor convallis blandit.
+                    Fusce vel egestas dolor. Donec eu augue enim. Donec rudivum
+                    non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex.
+                  </p>
+                </div>
+                <div class="table__col">
+                  <ul class="table__speakers">
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-2.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Bob John</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>3G12</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Yui Ronald</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F12</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Emma Satoshi</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2A35</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__col">
+                  <a class="table__link" href="#">
+                    Live
+                    <img
+                      class="table__link-icon"
+                      src="images/live-camera-icon.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="table__row">
+                <div class="table__col">
+                  <p class="table__col-time">11:00 AM to 12:00 PM</p>
+                </div>
+                <div class="table__col">
+                  <p class="table__col-content">
+                    Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                  </p>
+                </div>
+                <div class="table__col">
+                  <ul class="table__speakers">
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-4.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Sasha Jackson</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F18</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-5.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Diana Brock</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F24</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__col">
+                  <a class="table__link" href="#">
+                    Upcoming
+                    <img
+                      class="table__link-icon"
+                      src="images/clock-icon.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="events__table table"
+            data-type="tab-content"
+            data-tab-content="tab-2"
+          >
+            <div class="table__head">
+              <div class="table__row">
+                <div class="table__col">Time</div>
+                <div class="table__col">Content</div>
+                <div class="table__col">Speakers</div>
+                <div class="table__col"></div>
+              </div>
+            </div>
+            <div class="table__body">
+              <div class="table__row">
+                <div class="table__col">
+                  <p class="table__col-time">11:00 AM to 12:00 PM</p>
+                </div>
+                <div class="table__col">
+                  <p class="table__col-content">
+                    Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                  </p>
+                </div>
+                <div class="table__col">
+                  <ul class="table__speakers">
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Yui Ronald</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F12</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__col">
+                  <a class="table__link" href="#">
+                    Preview
+                    <img
+                      class="table__link-icon"
+                      src="images/play-icon.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="table__row">
+                <div class="table__col">
+                  <p class="table__col-time">12:00 PM to 03:00 PM</p>
+                </div>
+                <div class="table__col">
+                  <p class="table__col-content">
+                    Duis nec sodales nibh. Proin lectus tortor, rudivum vel
+                    vulputate vitae, fringilla id magna. Vestibulum ornare eget
+                    urna nec pulvinar. Praesent porttitor convallis blandit.
+                    Fusce vel egestas dolor. Donec eu augue enim. Donec rudivum
+                    non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex.
+                  </p>
+                </div>
+                <div class="table__col">
+                  <ul class="table__speakers">
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-2.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Bob John</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>3G12</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Yui Ronald</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F12</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Emma Satoshi</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2A35</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__col">
+                  <a class="table__link" href="#">
+                    Live
+                    <img
+                      class="table__link-icon"
+                      src="images/live-camera-icon.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="events__table table"
+            data-type="tab-content"
+            data-tab-content="tab-3"
+          >
+            <div class="table__head">
+              <div class="table__row">
+                <div class="table__col">Time</div>
+                <div class="table__col">Content</div>
+                <div class="table__col">Speakers</div>
+                <div class="table__col"></div>
+              </div>
+            </div>
+            <div class="table__body">
+              <div class="table__row">
+                <div class="table__col">
+                  <p class="table__col-time">11:00 AM to 12:00 PM</p>
+                </div>
+                <div class="table__col">
+                  <p class="table__col-content">
+                    Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                  </p>
+                </div>
+                <div class="table__col">
+                  <ul class="table__speakers">
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Yui Ronald</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F12</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__col">
+                  <a class="table__link" href="#">
+                    Preview
+                    <img
+                      class="table__link-icon"
+                      src="images/play-icon.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="table__row">
+                <div class="table__col">
+                  <p class="table__col-time">11:00 AM to 12:00 PM</p>
+                </div>
+                <div class="table__col">
+                  <p class="table__col-content">
+                    Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                  </p>
+                </div>
+                <div class="table__col">
+                  <ul class="table__speakers">
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-4.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Sasha Jackson</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F18</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-5.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Diana Brock</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F24</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__col">
+                  <a class="table__link" href="#">
+                    Upcoming
+                    <img
+                      class="table__link-icon"
+                      src="images/clock-icon.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="table__row">
+                <div class="table__col">
+                  <p class="table__col-time">12:00 PM to 03:00 PM</p>
+                </div>
+                <div class="table__col">
+                  <p class="table__col-content">
+                    Duis nec sodales nibh. Proin lectus tortor, rudivum vel
+                    vulputate vitae, fringilla id magna. Vestibulum ornare eget
+                    urna nec pulvinar. Praesent porttitor convallis blandit.
+                    Fusce vel egestas dolor. Donec eu augue enim. Donec rudivum
+                    non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex.
+                  </p>
+                </div>
+                <div class="table__col">
+                  <ul class="table__speakers">
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-2.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Bob John</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>3G12</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Yui Ronald</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2F12</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="table__speakers-item">
+                      <img
+                        class="table__speakers-img"
+                        src="images/speaker-1.png"
+                        alt="speaker"
+                      />
+                      <div class="table__speakers-title">
+                        <p class="table__speakers-name">Emma Satoshi</p>
+                        <p class="table__speakers-booth">
+                          Booth: <span>2A35</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__col">
+                  <a class="table__link" href="#">
+                    Live
+                    <img
+                      class="table__link-icon"
+                      src="images/live-camera-icon.svg"
+                      alt="icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <img
+        class="events__confetti-1 confetties"
+        src="images/event-confetti-1.png"
+        alt="confetti"
+      />
+      <img
+        class="events__confetti-2 confetties"
+        src="images/event-confetti-2.png"
+        alt="confetti"
+      />
+      <img
+        class="events__confetti-3 confetties"
+        src="images/event-confetti-3.png"
+        alt="confetti"
+      />
+    </section>
 
-        <div class="skills-box--text">
-         <h4 class="paragraph--main">Adaptive Layout</h4>
-         <p>Адаптивная верстка с использованием flexbox и медиа-запросов</p>
+    <section class="page-section tickets">
+      <div class="container">
+        <div class="tickets__inner">
+          <h2 class="tickets__title primary-title">
+            Choose a Tier that’s right for you
+          </h2>
+          <ul class="tickets__list">
+            <li class="tickets__list-item">
+              <h3 class="tickets__list-title secondary-title">Basic</h3>
+              <p class="tickets__list-price">$100</p>
+              <p class="tickets__list-description">1 Seat Available</p>
+              <p class="tickets__list-description disabled">
+                Access to Wifi Router
+              </p>
+              <p class="tickets__list-description disabled">
+                Free Food & Coffee
+              </p>
+              <button class="tickets__list-button outlined-btn">
+                Get Tickets
+              </button>
+            </li>
+            <li class="tickets__list-item">
+              <h3 class="tickets__list-title secondary-title">Standard</h3>
+              <p class="tickets__list-price">$150</p>
+              <p class="tickets__list-description">1 Seat Available</p>
+              <p class="tickets__list-description">Access to Wifi Router</p>
+              <p class="tickets__list-description disabled">
+                Free Food & Coffee
+              </p>
+              <button class="tickets__list-button">Get Tickets</button>
+            </li>
+            <li class="tickets__list-item">
+              <h3 class="tickets__list-title secondary-title">Premium</h3>
+              <p class="tickets__list-price">$200</p>
+              <p class="tickets__list-description">1 Seat Available</p>
+              <p class="tickets__list-description">Access to Wifi Router</p>
+              <p class="tickets__list-description">Free Food & Coffee</p>
+              <button class="tickets__list-button outlined-btn">
+                Get Tickets
+              </button>
+            </li>
+          </ul>
         </div>
-       </li>
+      </div>
+      <img
+        class="tickets__confetti-1 confetties"
+        src="images/tickets-confetti-1.png"
+        alt="confetti"
+      />
+      <img
+        class="tickets__confetti-2 confetties"
+        src="images/tickets-confetti-2.png"
+        alt="confetti"
+      />
+    </section>
 
-       <li class="skills-box--item">
-        <div class="skills-box--icon">
-         <svg>
-          <use xlink:href="img/svg/skill-icon-2.svg#icon-2"></use>
-         </svg>
+    <section class="page-section sponsors">
+      <div class="container">
+        <div class="sponsors__inner">
+          <h2 class="sponsors__title primary-title">Our Sponsors</h2>
+          <ul class="sponsors__list">
+            <li class="sponsors__list-item">
+              <img
+                class="sponsors__list-img"
+                src="images/sponsor-1.png"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__list-item">
+              <img
+                class="sponsors__list-img"
+                src="images/sponsor-2.png"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__list-item">
+              <img
+                class="sponsors__list-img"
+                src="images/sponsor-3.png"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__list-item">
+              <img
+                class="sponsors__list-img"
+                src="images/sponsor-4.png"
+                alt="sponsor"
+              />
+            </li>
+          </ul>
+          <ul class="sponsors__list">
+            <li class="sponsors__list-item">
+              <img
+                class="sponsors__list-img"
+                src="images/sponsor-5.png"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__list-item">
+              <img
+                class="sponsors__list-img"
+                src="images/sponsor-6.png"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__list-item">
+              <img
+                class="sponsors__list-img"
+                src="images/sponsor-7.png"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__list-item">
+              <img
+                class="sponsors__list-img"
+                src="images/sponsor-8.png"
+                alt="sponsor"
+              />
+            </li>
+          </ul>
+          <a class="sponsors__btn" href="#">Become a Sponsor</a>
         </div>
-        <div class="skills-box--text">
-         <h4 class="paragraph--main">Cross-Browser</h4>
-         <p>Оптимальное отображение сайта во всех современных браузерах</p>
-        </div>
-       </li>
+      </div>
+      <img
+        class="sponsors__confetti-1 confetties"
+        src="images/sponsors-confetti-1.png"
+        alt="confetti"
+      />
+      <img
+        class="sponsors__confetti-2 confetties"
+        src="images/sponsors-confetti-2.png"
+        alt="confetti"
+      />
+    </section>
 
-       <li class="skills-box--item">
-        <div class="skills-box--icon">
-         <svg>
-          <use xlink:href="img/svg/skill-icon-3.svg#icon-3"></use>
-         </svg>
+    <section class="page-section testimonials">
+      <div class="testimonials__inner">
+        <h2 class="testimonials__title primary-title">Testimonials</h2>
+        <div class="testimonials__swiper">
+          <ul class="testimonials__slider swiper-wrapper">
+            <li class="testimonials__slider-item swiper-slide">
+              <p class="testimonials__slider-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                indusdivy. Lorem Ipsum has been the indusdivy's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="testimonials__slider-person-data">
+                <img
+                  class="testimonials__slider-img"
+                  src="images/testimonial-1.png"
+                  alt="person"
+                />
+                <h4 class="testimonials__slider-name">Ellie James</h4>
+                <a class="testimonials__slider-link" href="#">lorem.com</a>
+              </div>
+            </li>
+            <li class="testimonials__slider-item swiper-slide">
+              <p class="testimonials__slider-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                indusdivy. Lorem Ipsum has been the indusdivy's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="testimonials__slider-person-data">
+                <img
+                  class="testimonials__slider-img"
+                  src="images/testimonial-2.png"
+                  alt="person"
+                />
+                <h4 class="testimonials__slider-name">Johnny Doe</h4>
+                <a class="testimonials__slider-link" href="#">ipsum.com</a>
+              </div>
+            </li>
+            <li class="testimonials__slider-item swiper-slide">
+              <p class="testimonials__slider-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                indusdivy. Lorem Ipsum has been the indusdivy's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="testimonials__slider-person-data">
+                <img
+                  class="testimonials__slider-img"
+                  src="images/testimonial-3.png"
+                  alt="person"
+                />
+                <h4 class="testimonials__slider-name">Myne Barack</h4>
+                <a class="testimonials__slider-link" href="#">ipsum.com</a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="skills-box--text">
-         <h4 class="paragraph--main">JavaScript</h4>
-         <p>Хорошие знания JavaScript.</p>
-        </div>
-       </li>
+      </div>
+    </section>
 
-       <li class="skills-box--item">
-        <div class="skills-box--icon">
-         <svg>
-          <use xlink:href="img/svg/skill-icon-4.svg#icon-4"></use>
-         </svg>
-        </div>
-        <div class="skills-box--text">
-         <h4 class="paragraph--main">Validator</h4>
-         <p>Соответствие стандартам W3C</p>
-        </div>
-       </li>
+    <section class="page-section best-shots">
+      <div class="container">
+        <h2 class="best-shots__title primary-title">See our Best Shots</h2>
+        <img
+          class="best-shots__background-img"
+          src="./images/best-shots-instagram-icon.svg"
+          alt="instagram"
+        />
+      </div>
+      <div class="best-shots__inner best-shots__swiper">
+        <ul class="best-shots__slider swiper-wrapper">
+          <li class="best-shots__slider-item swiper-slide">
+            <img
+              class="best-shots__slider-img"
+              src="images/best-shot-1.png"
+              alt="image"
+            />
+            <div class="best-shots__slider-rating">
+              <a class="best-shots__slider-likes" href="#">412 </a>
+              <a class="best-shots__slider-comments" href="#">140 </a>
+            </div>
 
-       <li class="skills-box--item">
-        <div class="skills-box--icon">
-         <svg>
-          <use xlink:href="img/svg/skill-icon-5.svg#icon-5"></use>
-         </svg>
+            <p class="best-shots__slider-title">Lorem Ipsum Amet</p>
+
+            <p class="best-shots__slider-hastags">
+              #music #concert #conference #london #event #artist #dj
+              #sounddivack #dance
+            </p>
+          </li>
+          <li class="best-shots__slider-item swiper-slide">
+            <img
+              class="best-shots__slider-img"
+              src="images/best-shot-2.png"
+              alt="image"
+            />
+            <div class="best-shots__slider-rating">
+              <a class="best-shots__slider-likes" href="#"> 412 </a>
+              <a class="best-shots__slider-comments" href="#"> 140 </a>
+            </div>
+
+            <p class="best-shots__slider-title">Lorem Ipsum Amet</p>
+
+            <p class="best-shots__slider-hastags">
+              #music #concert #conference #london #event #artist #dj
+              #sounddivack #dance
+            </p>
+          </li>
+          <li class="best-shots__slider-item swiper-slide">
+            <img
+              class="best-shots__slider-img"
+              src="images/best-shot-3.png"
+              alt="image"
+            />
+            <div class="best-shots__slider-rating">
+              <a class="best-shots__slider-likes" href="#"> 412 </a>
+              <a class="best-shots__slider-comments" href="#"> 140 </a>
+            </div>
+
+            <p class="best-shots__slider-title">Lorem Ipsum Amet</p>
+
+            <p class="best-shots__slider-hastags">
+              #music #concert #conference #london #event #artist #dj
+              #sounddivack #dance
+            </p>
+          </li>
+          <li class="best-shots__slider-item swiper-slide">
+            <img
+              class="best-shots__slider-img"
+              src="images/best-shot-4.png"
+              alt="image"
+            />
+            <div class="best-shots__slider-rating">
+              <a class="best-shots__slider-likes" href="#"> 412 </a>
+              <a class="best-shots__slider-comments" href="#"> 140 </a>
+            </div>
+
+            <p class="best-shots__slider-title">Lorem Ipsum Amet</p>
+
+            <p class="best-shots__slider-hastags">
+              #music #concert #conference #london #event #artist #dj
+              #sounddivack #dance
+            </p>
+          </li>
+          <li class="best-shots__slider-item swiper-slide">
+            <img
+              class="best-shots__slider-img"
+              src="images/best-shot-5.png"
+              alt="image"
+            />
+            <div class="best-shots__slider-rating">
+              <a class="best-shots__slider-likes" href="#"> 412 </a>
+              <a class="best-shots__slider-comments" href="#"> 140 </a>
+            </div>
+
+            <p class="best-shots__slider-title">Lorem Ipsum Amet</p>
+
+            <p class="best-shots__slider-hastags">
+              #music #concert #conference #london #event #artist #dj
+              #sounddivack #dance
+            </p>
+          </li>
+        </ul>
+        <div class="best-shots__slider-button-next"></div>
+        <div class="best-shots__slider-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__inner">
+        <div class="contacts__info">
+          <h2 class="contacts__info-title primary-title">Contact us</h2>
+          <p class="contacts__info-text">
+            Have an inquiry? We’ll be happy to assist you
+          </p>
+          <a
+            class="contacts__info-phone contacts__info-contact"
+            href="tel:+923336527366"
+            >+92 333 6527366</a
+          >
+          <a
+            class="contacts__info-email contacts__info-contact"
+            href="mailto:abuzer@greelogix.com"
+            >abuzer@greelogix.com</a
+          >
+          <a
+            class="contacts__info-location contacts__info-contact"
+            href="https://goo.gl/maps/73vPqsrSKZ4F2tu88"
+            target="_blank"
+            rel="noopener"
+          >
+            Plot 252, Block L Phase 2 Johar Town, Lahore, PK
+          </a>
         </div>
-        <div class="skills-box--text">
-         <h4 class="paragraph--main">Photoshop</h4>
-         <p>Использование фотошопа для работы с макетами</p>
+        <div class="contacts__container">
+          <div class="contacts__form">
+            <form>
+              <h3 class="contacts__form-title secondary-title">
+                Fill in your details
+              </h3>
+
+              <label class="contacts__form-label">
+                <span class="contacts__form-subtitle">Name</span>
+                <input
+                  class="contacts__form-input contacts__form-field"
+                  type="text"
+                  placeholder="Name"
+                />
+              </label>
+
+              <label class="contacts__form-label">
+                <span class="contacts__form-subtitle">Email</span>
+                <input
+                  class="contacts__form-input contacts__form-field"
+                  type="email"
+                  placeholder="Email"
+                />
+              </label>
+
+              <label class="contacts__form-label">
+                <span class="contacts__form-subtitle">Message</span>
+                <textarea
+                  class="contacts__form-textarea contacts__form-field"
+                  placeholder="Type text..."
+                ></textarea>
+              </label>
+
+              <button class="contacts__form-btn" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
-       </li>
-      </ul>
-     </div>
-    </div>
-   </section>
+      </div>
+    </section>
 
-   <section class="section">
-    <div class="wrap section-portfolio">
-     <div class="header-box u-center-text u-margin-bottom-medium">
-      <h3 class="heading-third">Портфолио работ</h3>
-     </div>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo" href="#">
+          <img src="images/logo.svg" alt="logo" />
+        </a>
+        <div class="footer__inner">
+          <ul class="footer__nav menu">
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#">Home</a>
+            </li>
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#">Company</a>
+            </li>
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#">Blog</a>
+            </li>
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#">Contact us</a>
+            </li>
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#">sitemap</a>
+            </li>
+          </ul>
+          <ul class="footer__social menu">
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#"
+                ><img
+                  class="menu__item-icon"
+                  src="images/facebook.svg"
+                  alt="icon"
+              /></a>
+            </li>
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#"
+                ><img
+                  class="menu__item-icon"
+                  src="images/twitter.svg"
+                  alt="icon"
+              /></a>
+            </li>
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#">
+                <img
+                  class="menu__item-icon"
+                  src="images/linkedin.svg"
+                  alt="icon"
+              /></a>
+            </li>
+            <li class="menu__f-list-item">
+              <a class="menu__list-link" href="#">
+                <img
+                  class="menu__item-icon"
+                  src="images/instagram.svg"
+                  alt="icon"
+              /></a>
+            </li>
+          </ul>
+          <p class="footer__copy">© musik.com, 2021</p>
+        </div>
+      </div>
+    </footer>
 
-     <ul class="work-list"></ul>
-    </div>
-   </section>
-  </main>
-
-  <script type="text/javascript" src="js/bundle.js"></script>
- </body>
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

@@ -1,7 +1,0 @@
-@mixin animSidePanl {
-    -webkit-transition: .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-    -moz-transition: .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-    -o-transition: .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-    -ms-transition: .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-    transition: all .3s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-}
