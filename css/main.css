@@ -703,7 +703,7 @@ body {
 }
 @media only print and (max-width: 56.25em) {
   .wrap {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -711,7 +711,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .section-summary {
