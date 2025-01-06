@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    font-size: 42px;
+}
+
+.timer {
+    margin-bottom: 50px;
+}
+
+.container > button {
+    background-color: rgb(255, 69, 0);
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 32px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container > button:active {
+    transform: scale(.98);
+}
+
+.container > button:focus {
+    outline: 0;
+}
+
+.counter {
+    margin-top: 50px;
+}
